@@ -3,8 +3,15 @@
  Peço a colaboração de todos que mexam somente na pasta que está o seu nome (Alterar o nome conforme a pagina que você está criando).
 
                               *SOBRE O SITE*
- 1 - PALETA DE COR - (Ainda não tem)
- 2 - FORNTE PARA O SITE - (Ainda não tem)
+ 1 - PALETA DE COR - 
+ https://paletadecores.com/paleta/f7f4e8/daf3ea/85e6c0/6bb39b/0b0b0d/
+
+ 2.1 - FONTE PARA O SITE - 
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+ 2.2 - CHAMAR A FONTE - 
+  font-family: "Raleway", sans-serif;
+
  3 - LOGO GERAL - (Ainda não tem)
  4 - CABEÇALHO - (Ainda não tem)
  5 - RODAPÉ - (Ainda não tem)
@@ -15,11 +22,19 @@
 2 - USAR APENAS px (Vamos usar rem, vh, vw, em...).
 3 - EXAGERAR NO px (Por favor vamos deixar o site mais "Organizado").
 4 - IMAGEM LEVE (Se for usar uma imagem não esqueça de colocar o loading="lazy")
-5 - EXPANSIVO
+5 - RESPONSIVO
 
 
  Na apresentação geral, cada um vai explicar o que fez e também os demais vão estudar um pouco de cada página também 
  (Pois se o colega estiver precisando de ajuda já vai ter alguém para explicar)
 
 *TEM QUE VIM COM ROUPA PRETA (O Jaleco só podemos retirar quando for apresentar).*
+
+
+
+INFORMAÇÃO - YAGO   
+OUVIDORIA (FEEDBACK) - MANUEL
+NOTICIAS - GABRIEL
+CADASTRE-Se - LUANA
+PLANOS DE SAUDE - GUI
 
