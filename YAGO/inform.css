@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Raleway", sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+/* ===========================================SESSÃO1====================================== */
+.sobre {
+    width: 100%;
+    padding: 100px;
+    background-color: #f7f4e8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sobre h2 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inform {
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+.inform p {
+    font-size: 30px;
+    padding: 5rem;
+    margin: 75px;
+    text-align: center;
+}
+
+.robo {
+    text-align: center;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 2px 2px 15px black;
+    height: 35rem;
+}
+.robo h3 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.robo .zap {
+    width: 2rem;
+}
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contato button {
+    margin: 5px;
+    background-color: greenyellow;
+    border-color: #000000b6;
+    border-radius: 20px;
+    width: 10rem;
+}
+.contato button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: black;
+}
+/* ===========================================SESSÃO2====================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================================MOBILE====================================== */
+@media (max-width = 840px) {
+
+}
