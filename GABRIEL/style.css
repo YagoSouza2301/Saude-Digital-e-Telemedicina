@@ -8,6 +8,9 @@
     list-style: none;
     font-family: "Raleway", sans-serif;
 }
+body{
+    background-color: black;
+}
 html {
     width: 100%;
     height: 100vh;
@@ -62,5 +65,31 @@ header a {
   /* Define a animação ao passar o mouse */
   .menu li a:hover::after {
     transform: scaleX(1); /* Expande a linha da direita para a esquerda */
+    transform-origin: bottom left;
+  }
+  header button{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    border-radius: 10px;
+    width: 8vw;
+    height: 5vh;
+  }
+  header button::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: white; 
+    transform: scaleX(0); 
+    transform-origin: bottom right; 
+    transition: transform 0.8s; 
+  }
+  header button:hover::after{
+    transform: scaleX(1); 
     transform-origin: bottom left;
   }
