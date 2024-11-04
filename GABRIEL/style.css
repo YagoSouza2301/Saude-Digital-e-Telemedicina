@@ -41,7 +41,7 @@ header a {
 }
 
 
-.menu li {
+ul li {
     position: relative;
     padding: 10px 0;
     cursor: pointer;
@@ -63,7 +63,7 @@ header a {
   }
   
   /* Define a animação ao passar o mouse */
-  .menu li a:hover::after {
+  ul li a:hover::after {
     transform: scaleX(1); /* Expande a linha da direita para a esquerda */
     transform-origin: bottom left;
   }
