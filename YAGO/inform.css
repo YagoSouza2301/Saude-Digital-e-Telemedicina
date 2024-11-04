@@ -6,6 +6,7 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-weight: 600;
 }
 
 html {
@@ -16,7 +17,7 @@ html {
 /* ===========================================SESSÃO1====================================== */
 .sobre {
     width: 100%;
-    padding: 100px;
+    padding: 80px;
     background-color: #f7f4e8;
     display: flex;
     justify-content: space-around;
@@ -25,16 +26,30 @@ html {
 
 .sobre h2 {
     font-size: 50px;
+<<<<<<< HEAD
+=======
+    margin: 50px;
+>>>>>>> 60b196c8dc0bcb2923bef9b885d8993a15980162
     text-align: center;
 }
 
 .inform {
+<<<<<<< HEAD
     display: flex;  
 }
 .inform p {
     font-size: 30px;
     padding: 3rem;
     margin: 50px;
+=======
+    gap: 35px;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+.inform p {
+    font-size: 30px;
+>>>>>>> 60b196c8dc0bcb2923bef9b885d8993a15980162
     text-align: center;
 }
 
@@ -43,8 +58,9 @@ html {
     background-color: white;
     border-radius: 100%;
     box-shadow: 2px 2px 15px black;
-    height: 35rem;
+    height: 25rem;
 }
+
 .robo h3 {
     color: rgb(0, 0, 0);
     font-size: 20px;
@@ -68,6 +84,7 @@ html {
     font-weight: 700;
     color: black;
 }
+
 /* ===========================================SESSÃO2====================================== */
 .segurança {
     width: 100%;
