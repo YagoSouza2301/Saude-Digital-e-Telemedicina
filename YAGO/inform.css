@@ -120,8 +120,8 @@ html {
     opacity: 0.2;
     text-align: center;
     width: 25vw;
-    height: 60vh;
-    padding: 15px;
+    height: auto;
+    padding: 20px;
     transition: 0.6s;
 }
 .box-inform:hover {
