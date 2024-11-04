@@ -26,22 +26,17 @@ html {
 
 .sobre h2 {
     font-size: 50px;
-<<<<<<< HEAD
-=======
     margin: 50px;
->>>>>>> 60b196c8dc0bcb2923bef9b885d8993a15980162
     text-align: center;
 }
 
 .inform {
-<<<<<<< HEAD
     display: flex;  
 }
 .inform p {
     font-size: 30px;
     padding: 3rem;
     margin: 50px;
-=======
     gap: 35px;
     display: flex;
     flex-wrap: nowrap;
@@ -49,7 +44,6 @@ html {
 }
 .inform p {
     font-size: 30px;
->>>>>>> 60b196c8dc0bcb2923bef9b885d8993a15980162
     text-align: center;
 }
 
