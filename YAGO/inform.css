@@ -25,20 +25,16 @@ html {
 
 .sobre h2 {
     font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .inform {
-    display: flex;
-    flex-wrap: nowrap;
-    
+    display: flex;  
 }
 .inform p {
     font-size: 30px;
-    padding: 5rem;
-    margin: 75px;
+    padding: 3rem;
+    margin: 50px;
     text-align: center;
 }
 
@@ -58,13 +54,8 @@ html {
 .robo .zap {
     width: 2rem;
 }
-.contato {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .contato button {
-    margin: 5px;
+    margin: 10px;
     background-color: greenyellow;
     border-color: #000000b6;
     border-radius: 20px;
@@ -78,6 +69,28 @@ html {
     color: black;
 }
 /* ===========================================SESSÃO2====================================== */
+.segurança {
+    width: 100%;
+    padding: 100px;
+    background-color: #f7f4e8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.segurança div {
+    text-align: center;
+}
+.segurança div h2 {
+    margin: 50px;
+    margin-top: -5rem;
+    font-size: 40px;
+}
+.segurança div p {
+    font-size: 20px;
+}
+
 
 
 
