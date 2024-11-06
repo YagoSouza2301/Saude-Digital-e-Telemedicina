@@ -49,7 +49,7 @@ ul li {
   }
   
   /* Linha oculta inicialmente */
-  .menu li a::after {
+  ul li a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -65,7 +65,7 @@ ul li {
   /* Define a animação ao passar o mouse */
   ul li a:hover::after {
     transform: scaleX(1); /* Expande a linha da direita para a esquerda */
-    transform-origin: bottom left;
+    transform-origin: bottom  left;
   }
   header button{
     position: relative;
