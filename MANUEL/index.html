@@ -8,88 +8,235 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+            <!-- Header Aqui -->
+            <!---->
+            <!---->
+            <!-- fim do header -->
 
-                            <!--inicio da sessão-1 -->
-    <section class="section-ouvidoria-1">
+    <main>
+    <!--Conteudo Principal-->
 
-        <h2 class="h2-ouvidoria">Ouvidoria - Sua voz é importante para nós</h2>
 
-        <div class="div-pai-ouvidoria">
+    <!--============================== Ainda Estilizando (INCOMPLETO) ============================================-->
+    <!--============================== Ainda Estilizando (INCOMPLETO) ============================================-->
 
-            <div class="div-filho-ouvidoria">
 
-                <h2>Bem-vindo à nossa Ouvidoria!</h2>
-                <p>
-                    Nosso compromisso é garantir que você tenha uma experiência positiva e transparente com nossa instituição. A Ouvidoria é um canal direto e independente para que você possa registrar suas sugestões, elogios, reclamações e críticas. Sua opinião é fundamental para que possamos aprimorar continuamente nossos serviços, identificar oportunidades de melhoria e garantir que suas necessidades sejam atendidas com respeito e seriedade.
-                </p>
 
-                <h2>Como funciona?</h2>
 
-                <p>Por meio deste canal, você pode:</p>
 
-                <p>
-                    <span>Registrar sugestões:</span> sua contribuição é essencial para que possamos inovar e melhorar.
 
-                    <span>Fazer reclamações:</span> estamos prontos para ouvir e tomar as providências necessárias.
+<!--========================================================= sessão 1 ===========================================-->
+        <section class="section-ouvidoria">
 
-                    <span>Enviar elogios:</span> reconhecemos a importância do feedback positivo para reforçar boas práticas.
+            <div class="div-container">
+            <!-- DIV Container para guardar as DIV filhos -->
 
-                    <span>Tirar dúvidas:</span> se precisar de esclarecimentos sobre nossos serviços ou processos, estamos à disposição.
-                </p>
+                <div class="content" id="home">
+                <!-- DIV filho topo (com ID e class) -->
+
+                    <h2>Bem-vindo à Doctor Web</h2>
+                    <!-- Sub titulo -->
+
+                    <p>Estamos aqui para ouvir você! Se você tem alguma denúncia, 
+                        sugestão ou reclamação sobre os serviços de saúde digital, 
+                        nossa equipe está pronta para ajudar.</p>
+                    <!-- Paragrafo -->
+
+                </div> 
+
+                <div class="content" id="denuncia">
+                <!-- DIV Filho denuncia -->
+
+                    <h2>Denúncia</h2>
+                    <!-- Sub titolo -->
+
+                    <form>
+                    <!-- Formulario -->
+
+                        <div class="form-group">
+                        <!-- Div filho guardando o nome (Todas têm a mesma classe.) -->
+
+                            <label for="nome">Seu nome:</label>
+                            <!-- label = (Perguntando qual é o nome do cliente?) -->
+
+                            <input type="text" id="nome" name="nome" required>
+                            <!-- input = (Criando a área onde o cliente irá digitar seu nome.) -->
+
+                        </div>
+
+                        <div class="form-group">
+                        <!-- Div filho guardando o e-mail (Todas têm a mesma classe.) -->
+
+                            <label for="email">Seu e-mail:</label>
+                            <!---->
+
+                            <input type="email" id="email" name="email" required>
+                            <!---->
+
+                        </div>
+
+                        <div class="form-group">
+                        <!-- Div filho guardando o 3º Grupo (Todas têm a mesma classe.) -->
+
+                            <label for="descricao">Descrição da denúncia:</label>
+                            <!---->
+
+                            <textarea id="descricao" name="descricao" required></textarea>
+                            <!---->
+
+                        </div>
+
+                        <button type="submit">Enviar Denúncia</button>
+                        <!---->
+
+                    </form>
+
+                </div>
+            </div>
+            <div class="div-container">
+            <!---->
+
+                <div class="content" id="sugestao">
+                <!---->
+
+                    <h2>Sugestão</h2>
+                    <!---->
+
+                    <form action="#" method="POST">
+                    <!---->
+
+                        <div class="form-group">
+                        <!-- Div filho guardando o nome (Todas têm a mesma classe.) -->
+
+                            <label for="nome_sugestao">Seu nome:</label>
+                            <!---->
+
+                            <input type="text" id="nome_sugestao" name="nome_sugestao" required>
+                            <!---->
+
+                        </div>
+
+                        <div class="form-group">
+                        <!-- Div filho guardando o e-mail (Todas têm a mesma classe.) -->
+                            
+                            <label for="email_sugestao">Seu e-mail:</label>
+                            <!---->
+
+                            <input type="email" id="email_sugestao" name="email_sugestao" required>
+                            <!---->
+
+                        </div>
+
+                        <div class="form-group">
+                        <!-- Div filho guardando sugestão (Todas têm a mesma classe.) -->
+
+                            <label for="sugestao_texto">Sua sugestão:</label>
+                            <!---->
+
+                            <textarea id="sugestao_texto" name="sugestao_texto" required></textarea>
+                            <!---->
+
+                        </div>
+
+                        <button type="submit">Enviar Sugestão</button>
+                        <!---->
+
+                    </form>
+
+                </div>
+                
+
             </div>
 
-            <div class="div-filho-ouvidoria-form">
-                <form class="form-textarea-feedback">
-                    <textarea name="" id="" cols="40" rows="10" placeholder="De seu Feedback aqui!"></textarea>
+        </section>
+<!--==================================================== FIM da sessão 1 ===========================================-->
 
-                    <input type="submit" value="Enviar">
 
-                </form>
+
+
+
+
+
+
+<!--========================================================= sessão 2 =============================================-->
+        <section class="section-ouvidoria">
+
+            <div class="div-container">
+            <!---->
+
+                <div id="reclamacao" class="content">
+                <!---->
+
+                    <h2>Reclamação</h2>
+                    <!---->
+
+                    <form action="#" method="POST">
+                    <!---->
+
+                        <div class="form-group">
+                        <!-- Div filho guardando o 7º Grupo (Todas têm a mesma classe.) -->
+
+                            <label for="nome_reclamacao">Seu nome:</label>
+                            <!---->
+
+                            <input type="text" id="nome_reclamacao" name="nome_reclamacao" required>
+                            <!---->
+
+                        </div>
+
+                        <div class="form-group">
+                        <!-- Div filho guardando o 8º Grupo (Todas têm a mesma classe.) -->
+
+                            <label for="email_reclamacao">Seu e-mail:</label>
+                            <!---->
+
+                            <input type="email" id="email_reclamacao" name="email_reclamacao" required>
+                            <!---->
+
+                        </div>
+
+                        <div class="form-group">
+                        <!-- Div filho guardando o 9º Grupo (Todas têm a mesma classe.) -->
+
+                            <label for="reclamacao_texto">Sua reclamação:</label>
+                            <!---->
+
+                            <textarea id="reclamacao_texto" name="reclamacao_texto" required></textarea>
+                            <!---->
+
+                        </div>
+
+                        <button type="submit">Enviar Reclamação</button>
+                        <!---->
+
+                    </form>
+
+                </div>
+
+                <div id="contato" class="content">
+                <!---->
+
+                    <h2>Contato</h2>
+                    <!---->
+
+                    <p>Se preferir, entre em contato diretamente com nossa equipe pelo e-mail ou telefone abaixo:</p>
+                    <!---->
+
+                    <p>Email: <a href="#">Ouvidoria@DoctorWeb.com.br</a></p>
+                    <!---->
+
+                    <p>Telefone: +55 xx xxxx-xxxx</p>
+                    <!---->
+
+                </div>
+
             </div>
 
-        </div>
+        </section>
+<!--========================================================= FIM da sessão 2 ========================================-->
 
-    </section>
-                            <!--fim da sessão-1 -->
 
-    <section>
 
-        <h2>Confidencialidade e Impessoalidade</h2>
-
-        <p>A Ouvidoria atua de forma imparcial, garantindo que todas as manifestações sejam tratadas com respeito, sigilo e seriedade. Suas informações serão tratadas com total confidencialidade, de acordo com as normas de privacidade e proteção de dados.</p>
-
-        <h2>Acompanhamento</h2>
-
-        <p>Após o registro de sua manifestação, nossa equipe se compromete a responder dentro do prazo estabelecido e a acompanhá-la até sua completa resolução. Você poderá acompanhar o andamento do seu caso e obter respostas claras sobre as providências tomadas.</p>
-
-        <h2>Agradecemos seu contato!</h2>
-
-        <p>Cada opinião recebida é uma oportunidade para melhorar e oferecer um serviço ainda melhor. Contamos com sua participação para seguir evoluindo e proporcionando a melhor experiência possível.</p>
-
-        <h2>Atenciosamente,</h2>
-        <h2>[Doctor Web]</h2>
-        <form action="/enviar-manifestacao" method="POST">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" requir
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="tipo">Tipo de Manifestação:</label>
-            <select id="tipo" name="tipo" required>
-                <option value="sugestao">Sugestão</option>
-                <option value="elogio">Elogio</option>
-                <option value="reclamacao">Reclamação</option>
-                <option value="duvida">Dúvida</option>
-            </select>
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-            <button type="submit">Enviar Manifestação</button>
-        </form>
-    </section>
-    <!--  Fazendo á aparte html emquanto tenho ideias para o css e html  -->
-    
+    </main>
 </body>
 </html>
