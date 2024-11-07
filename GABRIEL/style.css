@@ -90,27 +90,104 @@ ul li {
     transform: scaleX(1); 
     transform-origin: bottom left;
   }
+
+  /* ================================== COMEÇANDO A ESTILIZAÇÃO DA PRIMEIRA SEÇÃO ================================= */
   .section1{
-    padding: min();
+    padding: min(10vh, 30rem);
+    text-align:  center;
   }
-  .div-dad{
+  .div-pai{
+    display: flex;
+    gap: 30px;
+  }
+  .div-dad1{
     width: 900px;
     height: auto;
     border-color: black;
     border: black;
     box-shadow: 0px 0px 15px black;
     border-radius: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
   }
-  .div-dad div{
+  .div-dad2{
+    width: 30rem;
+    height: 13rem;
+    border-color: black;
+    border: black;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    
+  }
+  .div3{
+    width: 30rem;
+    height: 13rem;
+    border-color: black;
+    border: black;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 64px;
+    margin-left: -20px;
+  }
+  .div-dad1 .div1{
     display: flex;
     gap: 30px;
     margin-top: 20px;
+
   }
-  .div-dad h2{
+  .div-dad1 h2{
     font-size: 30px;
   }
-
-  .section1 .img1{
-    width: 300px;
-
+  .div1 img {
+    border-radius: 15px;
+    width: 18rem;
   }
+.div2 img{
+  width: 18rem;
+  border-radius: 15px;
+}
+.div2{
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+.div-dad2 img{ 
+  width: 10rem;
+  
+}
+.div-dad2 {
+  font-size: 0.7em ;
+}
+/* ================================= TERMINANDO A ESTILIZAÇÃO DA PRIMEIRA SEÇÃO =================================== */
+
+/* ================================= COMEÇANDO A ESTILIZAÇÃO DA SEGUNDA SEÇÃO ==================================== */
+
+.section2 {
+  padding: min(14vh, 30rem);
+  width: 100%;
+}
+.card{
+  background-color: beige;
+  padding: 9rem;
+  text-align: center;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0 4px 8px black;
+  }
+   
+  .card p{
+      font-size: 14px;
+      color: black;
+  }
+   
+  .card h3{
+      color: black;
+  }
+   

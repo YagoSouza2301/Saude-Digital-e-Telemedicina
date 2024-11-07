@@ -1,60 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <script src="script.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOCTOR WEB | SITE OFICIAL</title>
-</head>
-<body>
-    <header>
-        <img src="../YAGO/img/doutor IA.webp" alt="hfba">
-        <h1 id="typed-Text">DOCTOR WEB</h1>
-        <nav>
-            <ul id="listas">
-                <li>
-                    <a href="" >Informações</a>
-                  
-                </li>
-                <li>
-                    <a href="" >Notícias</a>
-                   
-                </li>
-                <li>
-                    <a href="" >Planos</a>
-                   
-                </li>
-            </ul>
-        </nav>
-        <button>
-           <a href="">Cadastre-se</a> 
-        </button>
-    </header>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <script src="script.js" defer></script>
+        <!-- script para o scrollRevel -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOCTOR WEB | SITE OFICIAL</title>
+    </head>
+    <body>
+        <header>
+            <img src="../YAGO/img/doutor IA.webp" alt="hfba">
+            <h1>DOCTOR WEB</h1>
+            <nav>
+                <ul id="listas">
+                    <li>
+                        <a href>Informações</a>
 
+                    </li>
+                    <li>
+                        <a href>Notícias</a>
 
-    <main>
-        <section class="section1">
-            <div class="div-dad">
+                    </li>
+                    <li>
+                        <a href>Planos</a>
+
+                    </li>
+                </ul>
+            </nav>
+            <button>
+                <a href>Cadastre-se</a>
+            </button>
+        </header>
+
+        <main>
+            <section class="section1">
                 <h2>NOTICIAS GERAIS</h2>
-                <div>
-    
-                    <img src="img/pills-3673645_1280.jpg" alt="Remedios" class="img1">
-                    <h3>Câmara aprova projeto que isenta medicamentos de imposto de importação</h3>
+                <div class="div-pai">
+
+                    <div class="div-dad1">
+
+                        <div class="div1">
+
+                            <img src="img/pills-3673645_1280.jpg"
+                                alt="Remedios">
+                            <h3>Câmara aprova projeto que isenta medicamentos de
+                                imposto de importação</h3>
+                        </div>
+                        <div class="div2">
+                            <img
+                                src="img/desenvolvimento-de-novos-medicamentos.jpg"
+                                alt="imagem de remedios">
+                            <h3>Medicamentos com preço regulado ficarão mais
+                                baratos com nova regra de cobrança de imposto;
+                                entenda</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="div-dad2">
+                        <div>
+                            <img
+                                src="img/Dez-medicamentos-perderao-patente-nos-EUA-em-2021.jpg"
+                                alt="imagem de remedios">
+                            <h2>Polifarmácia: os riscos do uso de diversos
+                                remédios ao mesmo tempo</h2>
+
+                        </div>
+
+                        <div class="div3">
+                            <img src="img/genericos.webp"
+                                alt="remedios genericos">
+                            <h3>Rivotril de 0,5 mg não será mais fabricado,
+                                anuncia farmacêutica; entenda</h3>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
-    
-            <div>
-    
-            </div>
-    
-            <div>
-    
-            </div>
-    
+
             </section>
-    
-    </main>
-    
-</body>
+
+            <section class="section2">
+                <div class="carousel">
+                    <div class="card">
+                        <h3>PROMOÇÃO</h3>
+                        <p>Faça sua primeira inscrição e ganhe um consulta gratis</p>
+                    </div>
+                    <div class="card">
+                        <h3>Card 2</h3>
+                        <p>Descrição do card 2.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Card 3</h3>
+                        <p>Descrição do card 3.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Card 4</h3>
+                        <p>Descrição do card 4.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Card 5</h3>
+                        <p>Descrição do card 5.</p>
+                    </div>
+
+            </section>
+
+        </main>
+
+
+
+
+
+
+
+
+
+
+        <!--  Inclui jQuery (biblioteca de JavaScript que simplefica o codigo) -->
+      <!-- jQuery é necessario para o Slick Carousel funcionar, por isso deve ser adicionado antes -->
+       <!-- aqui, usamos o link CDN para obter o jQuery diretamente da web -->
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       <!-- inclui o JavaScript do Slick Carousel, que controla a funcionalidade do carrossel -->
+       <!-- Link CDN do JavaScript do Slick, essencial para inicializar e configurar o carrossel -->
+       <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </body>
 </html>
