@@ -10,38 +10,85 @@
 <body>
 
                             <!--inicio da sessão-1 -->
-    <section class="section-ouvidoria">
+    <section class="section-ouvidoria-1">
 
-        <h2 class="h2-ouvidoria">Ouvidoria</h2>
+        <h2 class="h2-ouvidoria">Ouvidoria - Sua voz é importante para nós</h2>
 
         <div class="div-pai-ouvidoria">
 
             <div class="div-filho-ouvidoria">
 
-                <h2 class="h2-feedback">Feedback</h2>
+                <h2>Bem-vindo à nossa Ouvidoria!</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-                     odio enim voluptate id a eum fugiat cum ad vel? Modi nobis
-                     voluptate soluta quaerat autem repellendus vero debitis aliquid at.
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam 
-                     blanditiis quos sint harum vitae consectetur nostrum unde accusantium sed,
-                     iusto delectus possimus 
-                     temporibus quisquam in voluptas quidem mollitia adipisci libero!
+                    Nosso compromisso é garantir que você tenha uma experiência positiva e transparente com nossa instituição. A Ouvidoria é um canal direto e independente para que você possa registrar suas sugestões, elogios, reclamações e críticas. Sua opinião é fundamental para que possamos aprimorar continuamente nossos serviços, identificar oportunidades de melhoria e garantir que suas necessidades sejam atendidas com respeito e seriedade.
+                </p>
+
+                <h2>Como funciona?</h2>
+
+                <p>Por meio deste canal, você pode:</p>
+
+                <p>
+                    <span>Registrar sugestões:</span> sua contribuição é essencial para que possamos inovar e melhorar.
+
+                    <span>Fazer reclamações:</span> estamos prontos para ouvir e tomar as providências necessárias.
+
+                    <span>Enviar elogios:</span> reconhecemos a importância do feedback positivo para reforçar boas práticas.
+
+                    <span>Tirar dúvidas:</span> se precisar de esclarecimentos sobre nossos serviços ou processos, estamos à disposição.
                 </p>
             </div>
 
-            <form class="form-textarea-feedback">
-                <textarea name="" id="" cols="30" rows="10" placeholder="De seu Feedback aqui!"></textarea>
+            <div class="div-filho-ouvidoria-form">
+                <form class="form-textarea-feedback">
+                    <textarea name="" id="" cols="40" rows="10" placeholder="De seu Feedback aqui!"></textarea>
 
-                <input type="submit-feedback" value="Enviar">
+                    <input type="submit" value="Enviar">
 
-            </form>
+                </form>
+            </div>
 
         </div>
 
     </section>
                             <!--fim da sessão-1 -->
 
+    <section>
+
+        <h2>Confidencialidade e Impessoalidade</h2>
+
+        <p>A Ouvidoria atua de forma imparcial, garantindo que todas as manifestações sejam tratadas com respeito, sigilo e seriedade. Suas informações serão tratadas com total confidencialidade, de acordo com as normas de privacidade e proteção de dados.</p>
+
+        <h2>Acompanhamento</h2>
+
+        <p>Após o registro de sua manifestação, nossa equipe se compromete a responder dentro do prazo estabelecido e a acompanhá-la até sua completa resolução. Você poderá acompanhar o andamento do seu caso e obter respostas claras sobre as providências tomadas.</p>
+
+        <h2>Agradecemos seu contato!</h2>
+
+        <p>Cada opinião recebida é uma oportunidade para melhorar e oferecer um serviço ainda melhor. Contamos com sua participação para seguir evoluindo e proporcionando a melhor experiência possível.</p>
+
+        <h2>Atenciosamente,</h2>
+        <h2>[Doctor Web]</h2>
+        <form action="/enviar-manifestacao" method="POST">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" requir
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tipo">Tipo de Manifestação:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="sugestao">Sugestão</option>
+                <option value="elogio">Elogio</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="duvida">Dúvida</option>
+            </select>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar Manifestação</button>
+        </form>
+    </section>
     <!--  Fazendo á aparte html emquanto tenho ideias para o css e html  -->
     
 </body>
