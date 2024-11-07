@@ -159,6 +159,20 @@ html {
     background-position: center;
     background-size: cover;
 }
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.botao button {
+    width: 10vw;
+    height: 4vh;
+    border-radius: 20px;
+    background-color: #85e6c0;
+    border-color: #427a68;
+    font-size: 15px;
+}
 .img3 {
     background-image: url(img/grupo\ qualificado.jpg);
     background-position: center;
