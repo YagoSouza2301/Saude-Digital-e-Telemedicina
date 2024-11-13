@@ -39,54 +39,189 @@ header a {
 }
 
 ul li {
-    position: relative;
-    padding: 10px 0;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
   
-  /* Linha oculta inicialmente */
-  ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 3px;
-    background-color: black; /* Cor da linha */
-    transform: scaleX(0); /* Oculta a linha inicialmente */
-    transform-origin: bottom right; /* Origem da animação */
-    transition: transform 0.3s; /* Animação suave */
-  }
+/* Linha oculta inicialmente */
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: black; /* Cor da linha */
+  transform: scaleX(0); /* Oculta a linha inicialmente */
+  transform-origin: bottom right; /* Origem da animação */
+  transition: transform 0.3s; /* Animação suave */
+}
   
-  /* Define a animação ao passar o mouse */
-  ul li a:hover::after {
-    transform: scaleX(1); /* Expande a linha da direita para a esquerda */
-    transform-origin: bottom left;
-  }
-  header button{
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    cursor: pointer;
-    transition: color 0.3s;
-    border-radius: 10px;
-    width: 9vw;
-    height: 5vh;
-  }
-  header button::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 3px;
-    background-color: white; 
-    transform: scaleX(0); 
-    transform-origin: bottom right; 
-    transition: transform 0.8s; 
-  }
-  header button:hover::after{
-    transform: scaleX(1); 
-    transform-origin: bottom left;
-  }
+/* Define a animação ao passar o mouse */
+ul li a:hover::after {
+  transform: scaleX(1); /* Expande a linha da direita para a esquerda */
+  transform-origin: bottom left;
+}
+
+header button{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  border-radius: 10px;
+  width: 9vw;
+  height: 5vh;
+}
+
+header button::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: white; 
+  transform: scaleX(0); 
+  transform-origin: bottom right; 
+  transition: transform 0.8s; 
+}
+
+header button:hover::after{
+  transform: scaleX(1); 
+  transform-origin: bottom left;
+}
+/* ========================================= Fim do Header ============================================ */
+
+/* ======================================== Início da Section 01 =======================================*/
+
+.section01 {
+  background: linear-gradient(180deg,#85e6bfb7, #f7f4e8b6);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+.content {
+  
+  width: 80vw;
+  height: 80vh;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.content h1 {
+  padding: 4rem;
+  font-size: 4rem;
+}
+
+/*Estilizando o parágrafo*/
+.content p {
+  font-size: 1.8rem; /*Tamanho da fonte*/
+  font-weight: 400; /*Peso da fonte*/
+}
+
+.content span {
+  font-weight: 800;
+  color:  rgb(0, 94, 122);
+}
+
+
+/* ======================================== Fim da Section 01 ==========================================*/
+
+/* ======================================== Início da Section 02 =======================================*/
+
+.section02 {
+  background:linear-gradient(180deg, #f7f4e8b6, #85e6bfb7);
+}
+
+.section02 h2 {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 4rem;
+}
+
+.caixas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 4rem;
+  margin-top: -2rem;
+}
+
+/*Estilizando as caixas*/
+.caixa01 {
+  background-color: rgba(132, 173, 173, 0.356); /*Cor de fundo*/
+  border-radius: 12px; /*Borda da caixa*/
+  box-shadow: 0px 6px 0px;
+  width: 20vw; /*Largura da caixa*/
+  height: 65vh; /*Altura da caixa*/
+  padding: 20px; /*Respiro da caixa*/
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+}
+
+.caixa01 i {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+/*Aplicando o hover*/
+.caixa01:hover {
+  transition: 0.5s; /*Tempo de transição*/
+  transform: scale(1.04, 1.04); /*Escala de movimentação dos eixos X e Y*/
+  box-shadow: none;
+}
+
+/*Estilizando o parágrafo*/
+.caixa01 p {
+  font-size: 1.3rem; /*Tamanho da fonte*/
+  font-weight: 400; /*Peso da fonte*/
+}
+
+.caixa01 h3 {
+  font-size: 2rem; /*Peso da fonte*/
+}
+
+/* ======================================== Fim da Section 02 ==========================================*/
+
+/* ======================================== Início da Section 03 =======================================*/
+.section03 {
+  background: linear-gradient(180deg,#85e6bfb7, #f7f4e8b6);
+  padding: 20px;
+}
+
+.card {
+  background-color: rgba(28, 134, 148, 0.63);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  margin: 14px;
+  box-shadow: 0 5px 0px #009790;
+  width: 40vw;
+  height: 10vh;
+}
+.card:hover {
+  transition: 0.8s;
+  transform: scale(1.3 1.3);
+  box-shadow: rgba(0, 0, 0, 0.63);
+  background-color: rgb(1, 145, 137);
+}
+
+
+.carrossel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 2rem;
+  color:  rgba(255, 230, 0, 0.877);
+  padding: 15px;
+}

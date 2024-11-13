@@ -3,8 +3,15 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <script src="script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inclui o CSS do Slick Carousel, essencial para o estilo do carrossel -->
+    <!-- Este link está usando a CDN do Slick Carousel, uma forma rápida de acessar a biblioteca diretamente da web -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <script src="https://kit.fontawesome.com/fc4de0ca49.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Doctor Web | Site Oficial</title>
 </head>
 <body>
@@ -33,7 +40,9 @@
     </header>
     <section class="section01">
         <div class="content">
-            <h1></h1>
+            <h1>O Que são os <br> <span id="plano"></span></h1>
+
+            <p>Os planos de saúde digitais e a telemedicina representam uma revolução na forma como a saúde é prestada e consumida. <br> Com mais conveniência, agilidade e redução de custos, essas opções estão tornando o cuidado médico mais acessível e eficiente, principalmente para aqueles que enfrentam barreiras geográficas ou temporais. <br> À medida que as tecnologias evoluem e se tornam mais seguras, espera-se que a telemedicina e os serviços digitais transformem ainda mais o cenário da saúde no futuro. <br><br></p>
         </div>
     </section>
 
@@ -41,28 +50,68 @@
 
         <h2>Planos de Saúde Digitais</h2>
 
-        <div class="caixas">
+        <div class="caixas" id="caixas">
             <div class="caixa01">
+                <i class="fa-solid fa-receipt"></i>
                 <h3>Acesso facilitado</h3>
-                <p></p>
+                <p>Os planos de saúde digitais oferecem acesso direto a médicos e especialistas por meio de videoconferências, chats ou consultas agendadas por aplicativos.</p>
             </div>
             <div class="caixa01">
+                <i class="fa-solid fa-comments-dollar"></i>
                 <h3>Redução de custos</h3>
-                <p></p>
+                <p>Como há menos necessidade de estrutura física e administrativa, os custos operacionais podem ser reduzidos, resultando em planos mais acessíveis ou com mais serviços inclusos.</p>
             </div>
             <div class="caixa01">
+                <i class="fa-solid fa-pager"></i>
                 <h3>Facilidade de gestão</h3>
-                <p></p>
+                <p>Os usuários podem gerenciar sua saúde, histórico médico, exames e consultas diretamente pelo aplicativo ou portal online, sem burocracia.</p>
             </div>
             <div class="caixa01">
+                <i class="fa-solid fa-bolt"></i>
                 <h3>Agilidade no atendimento</h3>
-                <p></p>
+                <p>Em emergências ou em casos de sintomas simples, a resposta e orientação médicas podem ser muito mais rápidas.</p>
             </div>
-            <div class="caixa01">
+            <div class="caixa01"> 
+                <i class="fa-solid fa-mobile-screen-button"></i>
                 <h3>Consultas online</h3>
-                <p></p>
+                <p>Agendamento de exames e procedimentos por meio de aplicativos.
+                    Monitoramento remoto de condições crônicas com dispositivos conectados.
+                    Programas de bem-estar e prevenção.</p>
             </div>
         </div>
     </section>
+
+    <section class="section03">
+
+        <div class="carrossel">
+
+            <div class="card">
+                <h3>Plano Mensal</h3>
+            </div>
+
+            <div class="card">
+                <h3>Plano Semanal</h3>
+            </div>
+
+            <div class="card">
+                <h3>Plano Anual</h3>
+            </div>
+            
+            <div class="card">
+                <h3>Avulsos</h3>
+            </div>
+
+            
+        </div>
+
+
+    <!-- Inclui JQuery (biblioteca de JavaScript que simplifica o código) -->
+    <!-- JQuery é necessário para o Slick Carousel funcionar, por isso deve ser adicionado antes  -->
+    <!-- Aqui usamos o link CDN para obter o JQuery diretamente da web -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Inclui o JavaScript do Slick Carousel, que controla a funcionalidade do carrossel -->
+    <!-- Link CDN do JavaScript do Slick, essencial para inicializar e configurar o carrossel -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
