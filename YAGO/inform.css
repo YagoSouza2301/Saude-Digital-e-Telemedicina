@@ -173,6 +173,10 @@ html {
     border-color: #427a68;
     font-size: 15px;
 }
+#oculta {
+    display: none;
+}
+
 .img3 {
     background-image: url(img/grupo\ qualificado.jpg);
     background-position: center;
@@ -189,7 +193,40 @@ html {
     background-size: cover;
 }
 
-
+/* ===========================================SESSÃO3====================================== */
+.plano {
+    width: 100%;
+    padding: 12rem;
+    background: linear-gradient(360deg, #f7f4e894 8.33%, #daf3ea 100%), url(img/sessão3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+#plano-saude {
+    height: 2rem;
+    margin: 5rem;
+}
+.plano h2 {
+    text-align: center;
+    font-size: 50px;
+}
+.div-plano {
+    padding: 5rem;
+}
+.div-plano p {
+    font-size: 23px;
+}
+.div-plano button {
+    margin: 20px;
+    width: 10vw;
+    height: 4vh;
+    border-radius: 20px;
+    background-color: #85e6c0;
+    border-color: #427a68;
+    font-size: 22px;
+    font-weight: 700;
+}
 
 
 
