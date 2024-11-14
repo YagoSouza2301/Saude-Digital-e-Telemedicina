@@ -1,9 +1,23 @@
+// -------------------------------------------ANIMAÇÃO DO ROBO - (SESSÃO1)-----------------------------------------------
 // Animação de entrada do robô
 ScrollReveal().reveal('.robo', {
     duration: 1000,
     origin: 'right',
     distance: '50px',
 });
+
+ScrollReveal().reveal('#direita', {
+    duration: 2000,
+    origin: 'left',
+    distance: '100px',
+});
+ScrollReveal().reveal('#esquerda', {
+    duration: 2500,
+    origin: 'rigth',
+    distance: '100px',
+});
+    // -------------------------------------------BOTÃO PARA APARECER - (SESSÃO2)-----------------------------------------------
+    // Todas as Div que estão oculta, ao clicar no botão vão aparecer
 
     // Função do botão de VER MAIS
     function aparecer(){
@@ -19,6 +33,8 @@ ScrollReveal().reveal('.robo', {
         };
     };
 
+    // -------------------------------------------BOTÃO PARA OCULTAR - (SESSÃO2)-----------------------------------------------
+    // Todas as Div que estão aparecendo, ao clicar no botão vão de ocultar novamente
     // Função do botão VOLTAR
     function voltar(){
         // Se a Div estiver aparecendo
@@ -35,7 +51,6 @@ ScrollReveal().reveal('.robo', {
             document.getElementById('oculta-botao').style.display='block'
         
         };
-        
     };
 
     const typed = new Typed ('#plano-saude', {
@@ -48,7 +63,7 @@ ScrollReveal().reveal('.robo', {
     });
 
     ScrollReveal().reveal('.div-plano', {
-        duration: 2000,
+        duration: 3000,
         origin: 'bottom',
         distance: '100px',
     });

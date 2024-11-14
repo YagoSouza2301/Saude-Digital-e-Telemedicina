@@ -110,9 +110,12 @@ html {
     align-items: center;
     justify-content: space-evenly;
     gap: 7rem;
-    margin-top: 15rem;
+    margin-top: 25rem;
 }
 
+.segurança {
+    margin-top: 8rem;
+}
 /* ARRUAMNDO O TEXTO DENTRO DAS DIV (FILHOS) */
 .box-inform {
     border-radius: 20px;
@@ -172,6 +175,7 @@ html {
     background-color: #85e6c0;
     border-color: #427a68;
     font-size: 15px;
+    cursor: pointer;
 }
 #oculta {
     display: none;
@@ -226,6 +230,7 @@ html {
     border-color: #427a68;
     font-size: 22px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 

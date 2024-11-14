@@ -62,7 +62,8 @@
 
             <!-- =======================================SESSÃO2======================================= -->
             <section class="topicos">
-                <div class="segurança">
+                <!-- =======================================SEGURANÇA======================================= -->
+                <div class="segurança" id="direita">
                     <div class="box-inform">
                         <h2>Segurança em Primeiro Lugar</h2>
                         <p>A segurança dos dados dos nossos usuários é nossa
@@ -81,7 +82,8 @@
                     </div>
                 </div>
 
-                <div class="acesso">
+                <!-- =======================================ACESSO======================================= -->
+                <div class="acesso" id="esquerda">
                     <div class="box-img img2">
                         <!-- IMAGEM DE ACESSO -->
                     </div>
@@ -99,13 +101,17 @@
                     </div>
                 </div>
 
+                <!-- =======================================BOTÃO PARA VER MAIS INFORMAÇÕES======================================= -->
                 <div class="botao">
                     <button onclick="aparecer()" id="oculta-botao">Ver
                         Mais</button>
                 </div>
 
+                <!-- =======================================OCULTA======================================= -->
+                <!-- Está parte vai ficar ocultada até o cliente apertar o botão acima -->
                 <div id="oculta">
 
+                    <!-- =======================================QUALIFICADO======================================= -->
                     <div class="qualificado">
                         <div class="box-inform">
                             <h2>Profissionais Qualificados</h2>
@@ -122,6 +128,7 @@
                         </div>
                     </div>
 
+                    <!-- =======================================CONSULTA======================================= -->
                     <div class="consulta">
                         <div class="box-img img4">
                             <!-- IMAGEM DE CONSULTA -->
@@ -138,6 +145,8 @@
                             </p>
                         </div>
                     </div>
+
+                    <!-- =======================================COMPROMISSO======================================= -->
                     <div class="compromisso">
                         <div class="box-inform">
                             <h2>Compromisso com a Saúde</h2>
@@ -154,11 +163,14 @@
                             <!-- IMAGEM DE COMPROMISSO -->
                         </div>
                     </div>
+                    <!-- =======================================BOTÃO PARA OCULTAR======================================= -->
+                    <!-- Ao clicar nele, o botão e as Div que estão na "class=oculta" vão se esconder -->
                     <div class="botao">
                         <button onclick="voltar()"
                             id="aparecer-botao">Voltar</button>
                     </div>
                 </div>
+
             </section>
 
             <!-- =======================================SESSÃO3======================================= -->
@@ -167,7 +179,8 @@
                 <div class="div-plano">
                     <p>Sabemos que a sua saúde é o bem mais precioso, e por isso
                         oferecemos planos de saúde completos, pensados para
-                        atender às suas necessidades com qualidade e confiança. <br>
+                        atender às suas necessidades com qualidade e confiança.
+                        <br>
 
                         Escolha um dos nossos planos e tenha acesso a uma rede
                         de médicos, hospitais e clínicas de excelência, com
@@ -178,21 +191,57 @@
                             Não espere mais para garantir a sua saúde!
                         </strong>
                     </p>
-                    
-                    <a href="">
+
+                    <a href>
                         <button>
                             Planos
                         </button>
                     </a>
                 </div>
             </section>
+
+            <!-- =======================================SESSÃO4======================================= -->
+            <section class="endereço">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7488894.743412376
+                    !2d-56.40033187500002!3d-23.57968649999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f
+                    13.1!3m3!1m2!1s0x94ce5991c92d185d%3A0xc86f1cca0aee5be5!2sHospital%20S%C3%A3o%2
+                    0Rafael!5e0!3m2!1spt-BR!2sbr!4v1731614313899!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>A Web Doctor, uma empresa inovadora no setor de saúde
+                    digital, também conta com uma presença física para melhor
+                    atender seus clientes. Além de sua plataforma online, que
+                    oferece consultas médicas e serviços de saúde a distância, a
+                    Web Doctor possui uma sede física, onde seus profissionais
+                    especializados podem proporcionar um atendimento mais
+                    personalizado e direto. Com essa combinação de presença
+                    digital e física, a Web Doctor garante flexibilidade,
+                    conveniência e a confiança de que seus pacientes têm acesso
+                    a uma saúde de qualidade, seja remotamente ou
+                    presencialmente.</p>
+            </section>
         </main>
         <footer>
             <!-- RODAPÉ -->
         </footer>
 
+        <!-- LIBRAS -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script
+            src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     </body>
 </html>
