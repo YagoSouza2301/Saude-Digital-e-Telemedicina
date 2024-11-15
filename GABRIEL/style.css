@@ -42,7 +42,7 @@ ul li {
     position: relative;
     padding: 10px 0;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
   }
   
   /* Linha oculta inicialmente */
@@ -56,7 +56,7 @@ ul li {
     background-color: black; /* Cor da linha */
     transform: scaleX(0); /* Oculta a linha inicialmente */
     transform-origin: bottom right; /* Origem da animação */
-    transition: transform 0.3s; /* Animação suave */
+    transition: transform 0.3s ease ; /* Animação suave */
   }
   
   /* Define a animação ao passar o mouse */
@@ -69,7 +69,7 @@ ul li {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
     border-radius: 10px;
     width: 9vw;
     height: 5vh;
@@ -84,7 +84,7 @@ ul li {
     background-color: white; 
     transform: scaleX(0); 
     transform-origin: bottom right; 
-    transition: transform 0.8s; 
+    transition: transform 0.8s ease; 
   }
   header button:hover::after{
     transform: scaleX(1); 
