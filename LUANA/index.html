@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página que aparecerá na aba do navegador -->
+    <title>Cadastre-se</title>
+    <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para o arquivo de script JS  -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Seção principal do formulário de cadastro -->
+    <section class="form-container">
+        <!-- Seção com uma classe 'form-container', utilizada para identificar a seção e aplicar a estilização -->
+
+        <div class="container">
+            <!-- Início do formulário -->
+            <form action="processar_cadastro.php" method="get" id="cadastro-form">
+
+                <!-- Título da página de cadastro -->
+                <h1>Cadastre-se para acessar nossos serviços</h1>
+
+                <!-- descrição sobre os benefícios de se cadastrar -->
+                <p> Preencha o formulário abaixo para criar sua conta e comece sua jornada
+                    rumo
+                    a um atendimento mais eficiente e acessível.</p>
+
+                <!-- campo para inserir o nome completo do usuário -->
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                <!-- required: obriga o preenchimento desse campo. -->
+                <!-- type="text": Define o campo como uma entrada de texto simples. -->
+                <!-- id: Identifica o campo de entrada. -->
+                <!-- name: Define o nome do campo de entrada. -->
+                <!-- placeholder: Texto de exemplo que aparece dentro do campo enquanto ele está vazio. -->
+
+
+                <!-- campo para inserir o e-mail do usuário -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+                <!-- required: obriga o preenchimento desse campo. -->
+                <!-- type="email": Valida que o valor inserido seja um e-mail válido. -->
+                <!-- id: Identifica o campo de entrada. -->
+                <!-- name: Define o nome do campo de entrada. -->
+                <!-- placeholder: Texto de exemplo que aparece dentro do campo enquanto ele está vazio. -->
+
+
+                <!-- Campo para inserir a senha -->
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+                <!-- required: obriga o preenchimento desse campo. -->
+                <!-- type="password": Oculta o texto digitado para proteger a senha. -->
+                <!-- id: Identifica o campo de entrada. -->
+                <!-- name: Define o nome do campo de entrada. -->
+                <!-- placeholder: Texto de exemplo que aparece dentro do campo enquanto ele está vazio. -->
+
+                <!-- Campo para inserir a confirmação de senha -->
+                <label for="confirmar-senha">Confirmação de Senha:</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha"
+                    required>
+                <!-- required: obriga o preenchimento desse campo. -->
+                <!-- type="password": Oculta o texto digitado para proteger a senha. -->
+                <!-- id: Identifica o campo de entrada. -->
+                <!-- name: Define o nome do campo de entrada. -->
+                <!-- placeholder: Texto de exemplo que aparece dentro do campo enquanto ele está vazio. -->
+
+                <!-- Campo para inserir o telefone do usuário -->
+                <label for="telefone">Número de Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+                <!-- required: obriga o preenchimento desse campo. -->
+                <!-- id: Identifica o campo de entrada. -->
+                <!-- name: Define o nome do campo de entrada. -->
+                <!-- placeholder: Texto de exemplo que aparece dentro do campo enquanto ele está vazio. -->
+
+                <!-- Campo para inserir a data de nascimento do usuário -->
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+                <!-- required: obriga o preenchimento desse campo. -->
+                <!-- id: Identifica o campo de entrada. -->
+                <!-- name: Define o nome do campo de entrada. -->
+                <!-- placeholder: Texto de exemplo que aparece dentro do campo enquanto ele está vazio. -->
+
+                <!-- Campo de seleção para o gênero do usuário -->
+                <label for="genero">Gênero</label>
+                <select name="genero" id="genero">
+                    <!-- A primeira opção é em branco, obrigando o usuário a escolher uma opção -->
+                    <option value="">Selecione uma opção</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                    <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+                </select>
+
+                <!-- Campo de seleção para o usuário indicar se possui alguma deficiência -->
+                <label for="deficiencia">Possui alguma deficiência:</label>
+                <select name="deficiencia" id="deficiencia">
+                    <!-- A primeira opção é em branco, obrigando o usuário a escolher uma opção -->
+                    <option value="">Selecione uma opção</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+                <!-- clc o ngc da msg p escreverem a deficiência!!! -->
+
+                <!-- Botão para o envio do formulário -->
+                <button type="submit">Cadastrar</button>
+
+                <!-- Link que leva o usuário para a página de login caso já tenha uma conta -->
+                <p>Já tem uma conta? <a href="#login">Faça login aqui</a>.</p>
+
+                <div class="div-checkbox">
+                    <input type="checkbox"> 
+
+                    <p>Concordo com os termos de uso</p>
+                </div>
+
+                <!-- fim do formulário -->
+            </form>
+            <!-- fim da div container -->
+        </div>
+        <!-- fim da seção form-container -->
+    </section>
+
+</body>
+
+</html>

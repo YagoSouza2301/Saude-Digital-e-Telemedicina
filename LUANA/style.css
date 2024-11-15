@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* fonte diretamente do Google Fonts. */
+
+
+/* https://paletadecores.com/paleta/f7f4e8/daf3ea/85e6c0/6bb39b/0b0b0d/ */
+/* paleta de cores */
+
+/* estiização geral, aplica para todos os elementos da página */
+* {
+    margin: 0;
+    /* remove a margem padrão */
+    padding: 0;
+    /* remove o preenchimento padrão dos elementos */
+    box-sizing: border-box;
+    /* define o tamanho elemento, evitando que o conteúdo ultrapasse os limites de um elemento */
+    font-family: "Raleway", sans-serif;
+    /* define a fonte padrão do site */
+}
+
+ body {
+    font-family: "Raleway", sans-serif;
+    /* define a fonte */
+    background-color: #f4f4f9;
+    /* define a cor de fundo */
+    color: #333;
+    /* define  cor do texto */
+    padding: 20px;
+    /* adiciona um espaçamento interno em torno do conteúdo da página */
+    display: flex;
+    /* facilita o alinhamento dos elementos */
+    justify-content: center;
+    /* alinha os elementos horizontalmente ao centro */
+    align-items: center;
+    /* alinha os elementos verticalmente ao centro */
+    height: 100vh;
+    /* define que a altura do corpo da página ocupará 100% da janela de vizualização */
+}
+
+
+.form-container {
+    margin: 0 auto;
+    /* centraliza o contêiner do formulário horizontalmente */
+    max-width: 600px;
+    /*define uma larura máxima para o formulário */
+    padding: 20px;
+    /* adiciona um espaçamento interno em todos os lados do contêiner */
+}
+
+.container{
+    border-color: black;
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+
+.form-container h1 {
+    font-size: 22px;
+    /* define o tamanho da fonte do título */
+    color: black;
+    /* define a cor do texto */
+    text-align: center;
+    /* alinha o ítulo ao centro */
+    margin-bottom: 15px;
+    /* adiciona um espaço abaixo do título */
+}
+
+.form-container p {
+    font-size: 16px;
+    /* define o tamanho da fonte do parágrafo */
+    margin-bottom: 15px;
+    /* adiciona um espaço abaixo do parágafo */
+    color: gray;
+    /* define a cor do texto */
+    text-align: center;
+    /* alinha o conteúdo do parágrafo ao centro */
+}
+
+label {
+    color: #333;
+    /* define a cor do texto */
+    display: block;
+    /* faz com que o rótulo seja exibido como um bloco, o que força a quebra de linha antes e depois do texto do rótulo. */
+    font-size: 14px;
+    /* define o taamnho da fonte */
+    margin-bottom: 6px;
+    /* adiciona um espaçamento */
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    /* define que os elementos ocupem toda a largura disponível */
+    padding: 12px;
+    /* adiciona um preenchimento */
+    margin-bottom: 18px;
+    /* adiciona um espaçaento abaixo de cada elemento do formulário */
+    border: 1px solid #ccc;
+    /* define uma borda fina ao redor dos elementos */
+    border-radius: 4px;
+    /* aplica bordas arredondadas aos elementos */
+    font-size: 14px;
+    /* define o tamanho da fonte para o texto desntro ddesses elementos */
+    color: #333;
+    /* define a cor do texto */
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #2980b9;
+    /* quando o ampo está em foco, a borda muda para uma cor azul */
+    outline: none;
+    /* remove a borda de destaque padrão do navegador */
+    background-color: #fff;
+    /* muda o fundo do campo quando ele estiver em foco */
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    background-color: #f9f9f9;
+    /* define a cor de fundo de todos esse elementos */
+}
+
+button {
+    width: 100%;
+    /* faz com que o botão ocupe toda a largura disponível */
+    padding: 12px;
+    /* adiciona um preenchimento dentro do botão */
+    background-color: rgb(71, 132, 219);
+    /* define uma cor de fundo para o botão */
+    color: white;
+    /* define a cor do texto */
+    border: none;
+    /* remove qualquer borda padrão do botão */
+    border-radius: 4px;
+    /* aplica bordas arredondadas ao botão */
+    font-size: 16px;
+    /* define o tamanaho da fonte dentro do botão */
+    cursor: pointer;
+    /* muda o cursor para uma mãozinha quando o mouse passa sobre o botão */
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #005bb5;
+    /* quando passa o mouser por cima do botão, a cor defundo é alterda */
+    transition: 0.3s;
+    /* aplica uma transição para a mudança de cor */
+}
+
+.div-checkbox {
+    display: flex;
+    margin-top: px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div-checkbox p {
+    font-size: 15px;
+    color: gray;
+}
+
+
+@media (max-width: 600px) {
+    /* aplica estilos específicos quando a largura da tela é 600px ou menor */
+    .form-container {
+        padding: 15px;
+        margin: 10px;
+    }
+    /* reduz o padding e a margem do formulário para se ajustar melhor às telas pequenas. */
+
+    h1 {
+        font-size: 20px;
+    }
+    /* reduz o tamanho da fonte do título e do parágrafo para melhorar a legibilidade em telas pequenas. */
+    p {
+        font-size: 14px;
+    }
+    /* reduz o tamanho da fonte do título e do parágrafo para melhorar a legibilidade em telas pequenas */
+
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    /* reduz o tamanho da fonte e o padding dos campos de formulário e do botão para melhorar a experiência de usuário em dispositivos móveis. */
+}
