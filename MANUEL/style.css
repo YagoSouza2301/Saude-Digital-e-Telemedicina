@@ -24,6 +24,17 @@ html {
     /**/
 }
 
+.section-ouvidoria-top {
+    width: 100%;
+    padding: 50px;
+}
+.section-ouvidoria-top h2 {
+    font-size: 2.5em;
+}
+.section-ouvidoria-top p {
+    font-size: 1.2em;
+    align-items: center;
+}
 
 .div-container {
 /**/
@@ -37,7 +48,7 @@ html {
     /**/
     border-radius: 8px;
     /**/
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.63);
     /**/
 }
 
@@ -96,6 +107,10 @@ button {
     /**/
     font-size: 16px;
     /**/
+}
+#contato {
+    padding: 50px;
+    font-size: 1.2em;
 }
 
 

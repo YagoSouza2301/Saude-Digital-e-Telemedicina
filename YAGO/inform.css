@@ -234,8 +234,18 @@ html {
 }
 
 /* ===========================================SESSÃO4====================================== */
-
-
+.endereço {
+    padding: 10rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(360deg, #f7f4e8 8.33%, #daf3ea 100%);
+}
+.endereço div {
+    margin: 3rem;
+}
 
 
 
