@@ -36,3 +36,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+// Função para validar o formulário antes do envio
+function validarFormulario() {
+    const termos = document.getElementById("termos");
+    
+    // Verifica se o checkbox foi marcado
+    if (!termos.checked) {
+        alert("Você precisa concordar com os termos de uso antes de continuar.");
+        return false;  // Impede o envio do formulário
+    }
+
+    // Caso contrário, o formulário pode ser enviado
+    return true;
+}
+
+// Adiciona o evento de validação ao formulário
+document.getElementById("cadastro-form").onsubmit = validarFormulario;
