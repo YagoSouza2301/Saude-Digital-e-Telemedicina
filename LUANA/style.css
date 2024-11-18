@@ -126,6 +126,10 @@ textarea {
     /* define a cor de fundo de todos esse elementos */
 }
 
+.deficiencia-descricao{
+    display: none
+}
+
 button {
     width: 100%;
     /* faz com que o botão ocupe toda a largura disponível */

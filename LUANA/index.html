@@ -106,6 +106,12 @@
                 </select>
                 <!-- clc o ngc da msg p escreverem a deficiência!!! -->
 
+                <!-- Campo de texto para a descrição da deficiência, inicialmente oculto -->
+                <div id="deficiencia-descricao" style="display:none;">
+                    <label for="descricao-deficiencia">Se sim, qual deficiência?</label>
+                    <textarea id="descricao-deficiencia" name="descricao-deficiencia" placeholder="Descreva sua deficiência, se aplicável."></textarea>
+                </div>
+
                 <!-- Botão para o envio do formulário -->
                 <button type="submit">Cadastrar</button>
 
@@ -113,8 +119,14 @@
                 <p>Já tem uma conta? <a href="#login">Faça login aqui</a>.</p>
 
                 <div class="div-checkbox">
+                    <!-- div para o checkbox -->
                     <input type="checkbox" id="termos" name="termos" required>
+                     <!-- type="checkbox" faz o campo ser uma caixa de seleção. -->
+                    <!-- id="termos" dá um identificador único para o campo, útil para acessar com JavaScript e para a etiqueta 'label' associada. -->
+                    <!-- name="termos" define o nome do campo, que será usado ao enviar o formulário para o servidor. -->
+                    <!-- required significa que o usuário precisa marcar o checkbox para poder enviar o formulário. -->
                     <label for="termos">Concordo com os termos de uso</label>
+                    <!-- for="termos" faz com que o clique no texto "Concordo com os termos de uso" também marque/desmarque o checkbox. -->
                 </div>
 
                 <!-- fim do formulário -->

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const senhaInput = document.getElementById('senha');
     const confirmarSenhaInput = document.getElementById('confirmar-senha');
     const form = document.getElementById('cadastro-form');
-    
+
     deficienciaSelect.addEventListener('change', function () {
         if (deficienciaSelect.value === 'sim') {
             descricaoDeficiencia.style.display = 'block';
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Função para validar o formulário antes do envio
 function validarFormulario() {
     const termos = document.getElementById("termos");
-    
+
     // Verifica se o checkbox foi marcado
     if (!termos.checked) {
         alert("Você precisa concordar com os termos de uso antes de continuar.");
@@ -54,3 +54,19 @@ function validarFormulario() {
 
 // Adiciona o evento de validação ao formulário
 document.getElementById("cadastro-form").onsubmit = validarFormulario;
+
+
+// Função para mostrar ou ocultar o campo de descrição da deficiência
+function toggleDeficienciaField() {
+    var deficienciaSelect = document.getElementById('deficiencia');
+    var descricaoDeficienciaDiv = document.getElementById('deficiencia-descricao');
+    
+    // verifica a seleção do campo de deficiência
+    if (deficienciaSelect.value === 'sim') {
+    // se a opção "Sim" for escolhida, o campo de descrição é mostrado
+        descricaoDeficienciaDiv.style.display = 'block';  // Mostrar campo de descrição
+    } else {
+        // se a opção "não" for escolhida, o campo de descrição é escondido
+        descricaoDeficienciaDiv.style.display = 'none';  // Ocultar campo de descrição
+    }
+}
