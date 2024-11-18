@@ -219,7 +219,7 @@ html {
     padding: 5rem;
 }
 .div-plano p {
-    font-size: 23px;
+    font-size: 25px;
 }
 .div-plano button {
     margin: 20px;
@@ -245,6 +245,12 @@ html {
 }
 .endereço div {
     margin: 3rem;
+}
+.endereço p {
+    font-size: 25px;
+}
+.endereço h3 {
+    font-size: 30px;
 }
 
 
