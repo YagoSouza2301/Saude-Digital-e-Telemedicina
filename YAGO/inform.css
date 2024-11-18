@@ -106,7 +106,7 @@ html {
 .consulta,
 .compromisso {
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     gap: 7rem;
@@ -201,7 +201,7 @@ html {
 .plano {
     width: 100%;
     padding: 12rem;
-    background: linear-gradient(360deg, #f7f4e894 8.33%, #daf3ea 100%), url(img/sessão3.jpg);
+    background: linear-gradient(360deg, #f7f4e894 8.33%, #daf3ea 100%), url(img/sessão3.jpg);        
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
