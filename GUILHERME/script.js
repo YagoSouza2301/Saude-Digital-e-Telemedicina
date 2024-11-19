@@ -6,9 +6,17 @@ const plano = new Typed('#plano', {
     fadeOut: true,
 });
 
+const plano2 = new Typed('#plano2', {
+    strings: ["Planos Telemedicinais?"],
+    typeSpeed: 100, 
+    backSpeed: 100, 
+    showCursor: false,  
+    fadeOut: true,
+});
+
 
 ScrollReveal().reveal('#caixas', {
-    duration: 2000, // Duração do efeito (em milissegundos), define a velocidade da transição  
+    duration: 3000, // Duração do efeito (em milissegundos), define a velocidade da transição  
     origin: 'bottom', // Origem do efeito, o conteúdo virá de baixo para cima
     distance: '100px', // Distância que o elemento "viaja antes de aparecer"
 });

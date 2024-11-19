@@ -105,14 +105,13 @@ header button:hover::after{
 
 }
 .content {
-  
   width: 80vw;
   height: 80vh;
   flex-wrap: wrap;
   padding: 20px;
 }
 .content h1 {
-  padding: 4rem;
+  padding: 2.5rem;
   font-size: 4rem;
 }
 
@@ -136,7 +135,7 @@ header button:hover::after{
   background:linear-gradient(180deg, #f7f4e8b6, #85e6bfb7);
 }
 
-.section02 h2 {
+h2 {
   display: flex;
   justify-content: center;
   padding: 2rem;
@@ -224,4 +223,38 @@ header button:hover::after{
   font-size: 2rem;
   color:  rgba(255, 230, 0, 0.877);
   padding: 15px;
+}
+
+
+.section04 {
+  background: linear-gradient(180deg, #f7f4e8b6,#85e6bfb7);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.content2 {
+  width: 80vw;
+  height: 80vh;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.content2 h1 {
+  padding: 2.5rem;
+  font-size: 4rem;
+}
+
+/*Estilizando o parágrafo*/
+.content2 p {
+  font-size: 1.8rem; /*Tamanho da fonte*/
+  font-weight: 400; /*Peso da fonte*/
+}
+
+.content2 span {
+  font-weight: 800;
+  color:  rgb(0, 94, 122);
+}
+
+.section05 {
+    background: linear-gradient(180deg, #85e6bfb7, #f7f4e8b6);
 }
