@@ -58,8 +58,8 @@ document.getElementById("cadastro-form").onsubmit = validarFormulario;
 
 // Função para mostrar ou ocultar o campo de descrição da deficiência
 function toggleDeficienciaField() {
-    var deficienciaSelect = document.getElementById('deficiencia');
-    var descricaoDeficienciaDiv = document.getElementById('deficiencia-descricao');
+    let deficienciaSelect = document.getElementById('#deficiencia');
+    let descricaoDeficienciaDiv = document.getElementById ('#deficiencia-descricao');
     
     // verifica a seleção do campo de deficiência
     if (deficienciaSelect.value === 'sim') {
@@ -69,4 +69,4 @@ function toggleDeficienciaField() {
         // se a opção "não" for escolhida, o campo de descrição é escondido
         descricaoDeficienciaDiv.style.display = 'none';  // Ocultar campo de descrição
     }
-}
+};

@@ -10,7 +10,7 @@
     <!-- Link para o arquivo de estilo CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Link para o arquivo de script JS  -->
-    <script src="script.js" defer></script>
+    
 </head>
 
 <body>
@@ -20,15 +20,16 @@
 
         <div class="container">
             <!-- Início do formulário -->
-            <form action="processar_cadastro.php" method="get" id="cadastro-form">
-
-                <!-- Título da página de cadastro -->
-                <h1>Cadastre-se para acessar nossos serviços</h1>
-
-                <!-- descrição sobre os benefícios de se cadastrar -->
-                <p> Preencha o formulário abaixo para criar sua conta e comece sua jornada
-                    rumo
-                    a um atendimento mais eficiente e acessível.</p>
+            
+            <!-- Título da página de cadastro -->
+            <h1>Cadastre-se para acessar nossos serviços</h1>
+            
+            <!-- descrição sobre os benefícios de se cadastrar -->
+            <p> Preencha o formulário abaixo para criar sua conta e comece sua jornada
+                rumo
+                a um atendimento mais eficiente e acessível.</p>
+                
+                <form action="processar_cadastro.php" method="POST" id="cadastro-form">
 
                 <!-- campo para inserir o nome completo do usuário -->
                 <label for="nome">Nome Completo:</label>
@@ -104,19 +105,18 @@
                     <option value="sim">Sim</option>
                     <option value="nao">Não</option>
                 </select>
-                <!-- clc o ngc da msg p escreverem a deficiência!!! -->
 
                 <!-- Campo de texto para a descrição da deficiência, inicialmente oculto -->
-                <div id="deficiencia-descricao" style="display:none;">
+                <div id="deficiencia-descricao">
                     <label for="descricao-deficiencia">Se sim, qual deficiência?</label>
-                    <textarea id="descricao-deficiencia" name="descricao-deficiencia" placeholder="Descreva sua deficiência, se aplicável."></textarea>
+                    <textarea name="descricao-deficiencia" placeholder="Descreva sua deficiência"></textarea>
                 </div>
 
                 <!-- Botão para o envio do formulário -->
                 <button type="submit">Cadastrar</button>
 
                 <!-- Link que leva o usuário para a página de login caso já tenha uma conta -->
-                <p>Já tem uma conta? <a href="#login">Faça login aqui</a>.</p>
+                <p>Já tem uma conta? <a href="index2.html">Faça login aqui</a>.</p>
 
                 <div class="div-checkbox">
                     <!-- div para o checkbox -->
@@ -137,5 +137,5 @@
     </section>
 
 </body>
-
+<script src="script.js"></script>
 </html>
