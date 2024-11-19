@@ -10,12 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('login').style.display = 'block';
     }
 
-    // Alterna a exibição entre a página de login e a de cadastro
-    const linkLogin = document.querySelector('.login-link a');
-    if (linkLogin) {
-        linkLogin.addEventListener('click', mostrarCadastro);
-    }
-
     // Se o usuário clicar no link "Cadastre-se aqui" no formulário de login
     const linkCadastro = document.querySelector('.login-link a');
     if (linkCadastro) {

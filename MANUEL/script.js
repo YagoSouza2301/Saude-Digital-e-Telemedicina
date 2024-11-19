@@ -1,11 +1,15 @@
+
+
+
+// Biblioteca
 $(document).ready(function() {
 
     // Seleciona o contêiner .carousel e aplica a função slick()
     // que ativa o carrossel com as configurações abaixo
-    $('#div-container-ouvidoria').slick({
+    $('.div-container').slick({
 
         // slidesToSho: número de cards exibidos ao mesmo tempo no carrossel
-        slidesToShow: 1, // Exibe 3 cards ao mesmo tempo
+        slidesToShow: 1, // Exibe 1 cards ao mesmo tempo
 
         // slidesToScroll: define quantos cards serão deslizados ao mover o carrossel
         slidesToScroll: 1, // Move 1 card por vez ao deslizar

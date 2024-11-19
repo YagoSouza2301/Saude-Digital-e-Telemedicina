@@ -69,12 +69,13 @@
     /* adiciona um espaço abaixo do título */
 }
 
+
 .form-container p {
     font-size: 16px;
     /* define o tamanho da fonte do parágrafo */
     margin-bottom: 15px;
     /* adiciona um espaço abaixo do parágafo */
-    color: gray;
+    color: black;
     /* define a cor do texto */
     text-align: center;
     /* alinha o conteúdo do parágrafo ao centro */
@@ -112,7 +113,7 @@ textarea {
 
 input:focus, select:focus, textarea:focus {
     border-color: #2980b9;
-    /* quando o ampo está em foco, a borda muda para uma cor azul */
+    /* quando o campo está em foco, a borda muda para uma cor azul */
     outline: none;
     /* remove a borda de destaque padrão do navegador */
     background-color: #fff;
@@ -130,8 +131,8 @@ textarea {
     /* define a cor de fundo de todos esse elementos */
 }
 
-.deficiencia-descricao{
-    display: none
+#deficiencia-descricao{
+    display: none;
     /* o elemento será ocultado da página */
 }
 
@@ -168,22 +169,22 @@ button:hover {
 /* ESTILIZANDO O CHECKBOX "CONCORDO COM OS TERMOS DE USO" */
 .div-checkbox {
     display: flex; /* organiza os elementos em linha horizontalmente */
-    align-items: center; /* alinha o chekbox verticalmente ao  centro */
+    align-items: center; /* alinha o chekbox verticalmente ao centro */
     margin-top: 20px; /* adiciona um espaço de 20px na parte superior */
 }
 
-.div-checkbox input[type="checkbox"] {
+.div-checkbox input {
     margin-right: 10px; /* adiciona um espaço de 10px á direita do checkbox */
     width: 20px; /* largura do checkbox */
     height: 20px; /* altura do checkbox */
-    cursor: pointer; /* altera o cursos para uma mãozinha quando o usuário oassa o mouse sobre o checkbox */
+    cursor: pointer; /* altera o cursos para uma mãozinha quando o usuário passa o mouse sobre o checkbox */
 }
 
 .div-checkbox label {
     font-size: 16px; /* tamanho da fonte do texto */
     margin-bottom: auto; /* ajusta o posicionamento do texto em relação ao checkbox */
     color: #333; /* cor do texto */
-    cursor: pointer; /*  */
+    cursor: pointer; /* altera o cursos para uma mãozinha quando o usuário passa o mouse sobre o checkbox */
 }
 
 
