@@ -6,10 +6,10 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    box-sizing: border-box;
     font-weight: 600;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 
 /* RESPONSIVIDADE */
@@ -112,8 +112,7 @@ header button:hover::after{
 
 /* TITULO PRINCIPAL */
 .sobre h2 {
-    font-size: 50px;
-    margin: 30px;
+    font-size: 50px;;
     text-align: center;
 }
 
@@ -123,7 +122,7 @@ header button:hover::after{
 }
 .inform p {
     font-size: 30px;
-    padding: 3rem;
+    padding: 2rem;
     margin: 50px;
     gap: 35px;
     font-size: 30px;
@@ -179,7 +178,7 @@ header button:hover::after{
 /* ===========================================SESSÃO2====================================== */
 .topicos {
     width: 100%;
-    padding: 150px;
+    padding: 8rem;
     background: linear-gradient(180deg, #f7f4e8 8.33%, #daf3ea 100%);
     margin-top: -75px;
 }
@@ -381,12 +380,11 @@ header button:hover::after{
         flex-direction: column;
     }
     .inform {
-        display: flex;
-        justify-content: center;
         flex-wrap: wrap;
     }
     .inform p {
         font-size: 22px;
+        gap: 0px;
     }
     .robo {
         width:20rem;
@@ -447,7 +445,7 @@ header button:hover::after{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10vw;
+        padding: 10rem;
     }
     #plano-saude {
         height: 2rem;
@@ -459,7 +457,9 @@ header button:hover::after{
     }
     .div-plano {
         height: auto;
-        width: 100vw;
+        width: 90vw;
+        padding: 1rem;
+        margin-top: 80px;
     }
     .plano p{
         font-size: 25px;
@@ -470,7 +470,14 @@ header button:hover::after{
     }
     /* ===========================================SESSÃO4 MOBILE====================================== */
     .endereço {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .endereço iframe {
+        width: 80vw;
+        height: 40vh;
     }
 
 }

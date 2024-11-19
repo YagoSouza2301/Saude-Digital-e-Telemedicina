@@ -9,12 +9,12 @@ ScrollReveal().reveal('.robo', {
 ScrollReveal().reveal('#direita', {
     duration: 2000,
     origin: 'left',
-    distance: '100px',
+    distance: '50px',
 });
 ScrollReveal().reveal('#esquerda', {
     duration: 2500,
     origin: 'rigth',
-    distance: '100px',
+    distance: '50px',
 });
     // -------------------------------------------BOTÃO PARA APARECER - (SESSÃO2)-----------------------------------------------
     // Todas as Div que estão oculta, ao clicar no botão vão aparecer
@@ -63,7 +63,7 @@ ScrollReveal().reveal('#esquerda', {
     });
 
     ScrollReveal().reveal('.div-plano', {
-        duration: 3000,
+        duration: 2000,
         origin: 'bottom',
-        distance: '100px',
+        distance: '20px',
     });
