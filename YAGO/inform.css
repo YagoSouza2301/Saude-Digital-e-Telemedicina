@@ -285,7 +285,7 @@ header button:hover::after{
 /* ===========================================SESSÃO3====================================== */
 .plano {
     width: 100%;
-    padding: 10rem;
+    padding: 15rem;
     background: linear-gradient(360deg, #daf3ea 0%, #f7f4e894 35%, #daf3ea 100%), url(img/sessão3.jpg);        
     background-position: center;
     background-repeat: no-repeat;
@@ -336,9 +336,6 @@ header button:hover::after{
 .endereço div {
     margin: 3rem;
 }
-.endereço iframe {
-    margin-top: -10rem;
-} 
 .endereço p {
     font-size: 25px;
 }
@@ -370,6 +367,13 @@ header button:hover::after{
 
 /* ===========================================MOBILE====================================== */
 @media (max-width : 840px) {
+    /* ===========================================CABEÇALHO MOBILE====================================== */
+    header {
+        flex-direction: column;
+    }
+
+
+
     /* ===========================================SESSÃO1 MOBILE====================================== */
 
     .sobre {
@@ -443,5 +447,30 @@ header button:hover::after{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 10vw;
     }
+    #plano-saude {
+        height: 2rem;
+        margin: 5rem;
+
+    }
+    .plano h2 {
+        font-size: 35px;
+    }
+    .div-plano {
+        height: auto;
+        width: 100vw;
+    }
+    .plano p{
+        font-size: 25px;
+    }
+    .plano button{
+        width: 10rem;
+        font-size: 20px;
+    }
+    /* ===========================================SESSÃO4 MOBILE====================================== */
+    .endereço {
+        flex-direction: column;
+    }
+
 }
