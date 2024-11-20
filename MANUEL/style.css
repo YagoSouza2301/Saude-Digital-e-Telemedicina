@@ -87,59 +87,65 @@ main{
 /* chamei diretamente meu container da Section 2 */
 
     width: 80%;
-    /* largura em 80% da tela*/
+    /* largura em 80% da tela */
 
     margin: 20px auto;
-    /* defininso altura em 20px e largura automatico*/
+    /* defininso altura em 20px e largura automatico */
 
     padding: 20px;
-    /* Colocando um preenchimento de 20px*/
+    /* Colocando um preenchimento de 20px */
 
     background-color: white;
-    /* cor de fundo branco*/
+    /* cor de fundo branco */
 
     border-radius: 8px;
-    /*Arredondando a borda em 8px*/
+    /*Arredondando a borda em 8px */
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.63);
-    /* */
+    /* sombreamento da caixa */
 
 }
 
 
 .form-group {
-/**/
+/* div que esta guardando as label, input e textarea */
     margin-bottom: 15px;
-    /**/
+    /* Dando um espaçamento para baixo de cada label, input e textarea */
 }
 
 
 .form-group label {
-/**/
+/* especificando */
     font-weight: bold;
-    /**/
+    /* aumentando a intensidade da fonte */
 }
 
 
 input[type="text"], input[type="email"], textarea {
-/**/
+/* Chamando os input (text) e input (email) e as textarea para estilizar todas ao mesmo tempo */
+
     width: 100%;
-    /**/
+    /* largura em 100% */
+
     padding: 10px;
-    /**/
+    /* espaçamento em 10px */
+
     margin-top: 5px;
-    /**/
+    /* dando espaso em cima de 5px */
     border: 1px solid #ccc;
-    /**/
+    /* deixando a borda em 1px para ficar mais fino   solid = ("usei para deixar visivel") e o utimo a cor para ficar não muito chamativo */
+    
     border-radius: 4px;
-    /**/
+    /* colocando a borda mais arredondada */
 }
 
 
 textarea {
-/**/
+/* chamando especificamente a textarea*/
+
     resize: vertical;
     /**/
+
     height: 150px;
     /**/
 }
