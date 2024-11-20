@@ -170,7 +170,7 @@ ul li {
 /* ================================= COMEÇANDO A ESTILIZAÇÃO DA SEGUNDA SEÇÃO ==================================== */
 
 .section2 {
-  padding: min(11vh, 30rem);
+  padding: min(4vh, 30rem);
   width: 100%;
   background: linear-gradient(180deg, #6bb39b81 100%, #6bb39b6b 3.44%), url(section2/20240411_medicos_per_capita.jpg);
   background-position: center;
@@ -225,4 +225,40 @@ ul li {
    width: 4rem;
    height: 4rem;
 }
+/* ========================================= Terminando a estilização da segunda seção======================================= */
+/* ========================================= Começando a estilização da terceira seção======================================= */
+
+.section3{
+  padding: min(6vw, 30rem);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section3 h3{
+  font-size: 30px;
+
+}
+.section3 span{
+  color: gold;
+}
+.section3 img{
+  width: 19rem;
+}
+.section3 div{
+  border: 6px solid gray;
+  padding: 5px;
+  border-radius: 30px;
+  width: 20rem;
+}
+.section3 div h5{
+  font-size: 20px;
+}
+
+
+
+
+
+
 
