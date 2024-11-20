@@ -378,6 +378,7 @@ header button:hover::after{
     .sobre {
         display: flex;
         flex-direction: column;
+        padding: 1rem;
     }
     .inform {
         flex-wrap: wrap;
