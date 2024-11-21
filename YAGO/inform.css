@@ -20,9 +20,9 @@ html {
 
 /* ===========================================CABEÇALHO====================================== */
 header {
-    background-color: pink;
+    background-color: #0b0b0d;
     width: 100%;
-    padding: min(3vw, 7vw);
+    padding: min(2vw, 7vw);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -32,6 +32,7 @@ header img {
     width: 8rem;
 }
 header h1 {
+    color: white;
     font-size: 40px;
 }
 header ul {
@@ -39,7 +40,7 @@ header ul {
     gap: 30px;
 }
 header a {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 600;
 }
@@ -59,7 +60,7 @@ ul li a::after {
   right: 0;
   bottom: 0;
   height: 3px;
-  background-color: black; /* Cor da linha */
+  background-color: #6bb39b; /* Cor da linha */
   transform: scaleX(0); /* Oculta a linha inicialmente */
   transform-origin: bottom right; /* Origem da animação */
   transition: transform 0.3s; /* Animação suave */
@@ -72,6 +73,7 @@ ul li a:hover::after {
 }
 
 header button{
+    color: white;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
   border: none;
@@ -80,6 +82,7 @@ header button{
   border-radius: 10px;
   width: 9vw;
   height: 5vh;
+  margin-left: -45px;
 }
 
 header button::after{
@@ -103,7 +106,7 @@ header button:hover::after{
 /* ===========================================SESSÃO1====================================== */
 .sobre {
     width: 100%;
-    padding: 5rem;
+    padding: 10vw;
     background-color: #f7f4e8;
     display: flex;
     justify-content: space-around;
@@ -121,7 +124,7 @@ header button:hover::after{
     display: flex; 
 }
 .inform p {
-    font-size: 30px;
+    font-size: 35px;
     padding: 2rem;
     margin: 50px;
     gap: 35px;
@@ -198,7 +201,7 @@ header button:hover::after{
 }
 
 .segurança {
-    margin-top: -1rem;
+    margin-top: 8rem;
 }
 /* ARRUAMNDO O TEXTO DENTRO DAS DIV (FILHOS) */
 .box-inform {
@@ -284,7 +287,7 @@ header button:hover::after{
 /* ===========================================SESSÃO3====================================== */
 .plano {
     width: 100%;
-    padding: 15rem;
+    padding: 20vw;
     background: linear-gradient(360deg, #daf3ea 0%, #f7f4e894 35%, #daf3ea 100%), url(img/sessão3.jpg);        
     background-position: center;
     background-repeat: no-repeat;
@@ -324,7 +327,7 @@ header button:hover::after{
 
 /* ===========================================SESSÃO4====================================== */
 .endereço {
-    padding: 10rem;
+    padding: 10vw;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -375,25 +378,30 @@ header button:hover::after{
 
     /* ===========================================SESSÃO1 MOBILE====================================== */
 
+    /* MODIFICANDO A SESSÃO PARA ENCAIXAR NO MOBILE */
     .sobre {
         display: flex;
         flex-direction: column;
-        padding: 1rem;
     }
     .inform {
         flex-wrap: wrap;
     }
     .inform p {
         font-size: 22px;
-        gap: 0px;
+        width: auto;
     }
+
+    /* AJUSTANDO O ROBÔ PARA MOBILE */
     .robo {
-        width:20rem;
+        margin: 0px auto;
+        width:auto;
         height: 20rem;
     }
+    /* IMAGEM DO ROBO */
     .robo img {
         width: 20rem;
     }
+    /* CONTATO */
     .robo h3 {
         color: rgb(0, 0, 0);
         font-size: 30px;
@@ -402,8 +410,9 @@ header button:hover::after{
     .robo h4 {
         font-size: 20px;
     }
+    /* CONTATO DO ZAP (Ajustando o botão) */
     .robo .zap {
-        width: 2.2rem;
+        width: 2rem;
     }
     .robo button {
         width: 40vw;
@@ -414,6 +423,7 @@ header button:hover::after{
 
 
     /* ===========================================SESSÃO2 MOBILE====================================== */
+    /* MODIFICANDO A SESSÃO PARA ENCAIXAR NO MOBILE */
     .topicos {
         display: flex;
         flex-direction: column;
@@ -422,9 +432,12 @@ header button:hover::after{
     .box-inform {
         width: auto;
     }
+    /* SUBTITULO */
     .box-inform h2 {
         font-size: 30px;
     }
+
+    /* ESPAÇO DE CADA DO PAI */
     .segurança,
     .acesso,
     .qualificado,
@@ -432,9 +445,11 @@ header button:hover::after{
     .compromisso {
         margin-top: 11rem;
     }
+    /* TAMANHO DAS DIV COM IMAGEM */
     .box-img {
         width: 80vw;
     }
+    /* BOTÃO DE "VER MAIS" E "VOLTAR" */
     .botao button{
         width: 10rem;
         font-size: 20px;
@@ -442,43 +457,55 @@ header button:hover::after{
 
 
     /* ===========================================SESSÃO3 MOBILE====================================== */
+    /* MODIFICANDO A SESSÃO PARA ENCAIXAR NO MOBILE */
     .plano {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10rem;
     }
+    /* PARA A SESSÃO NÃO FICAR DIMINUINDO POR CONTA DO AUTO DIGITADO */
     #plano-saude {
         height: 2rem;
         margin: 5rem;
-
     }
+    /* SUBTITULO */
     .plano h2 {
         font-size: 35px;
     }
+    /* DIV PAI QUE ORGANIZA TUDO */
     .div-plano {
         height: auto;
         width: 90vw;
         padding: 1rem;
         margin-top: 80px;
     }
+    /* PARAGRÁFO */
     .plano p{
         font-size: 25px;
     }
+    /* MODIFICAÇÃO DO BOTÃO */
     .plano button{
         width: 10rem;
         font-size: 20px;
     }
+
+
     /* ===========================================SESSÃO4 MOBILE====================================== */
+    /* MODIFICANDO A SESSÃO PARA ENCAIXAR NO MOBILE */
     .endereço {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
     }
+    /* TAMANHO DO MAPA */
     .endereço iframe {
         width: 80vw;
         height: 40vh;
     }
+    /* SOBRE O ENDEREÇO DA EMPRESA */
+    .endereço p {
+        width: 50vw;
+        font-size: 22px;
+    }
 
-}
+};
