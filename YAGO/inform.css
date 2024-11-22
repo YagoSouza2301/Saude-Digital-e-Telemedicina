@@ -514,10 +514,18 @@ footer h3 {
 /* ===========================================MOBILE====================================== */
 @media (max-width : 840px) {
     /* ===========================================CABEÇALHO MOBILE====================================== */
+    
     header {
-        flex-direction: column;
+        flex-direction: row;
+        gap: 20px;
     }
-
+    header img{
+        width: 4rem;
+    }
+    header h1{
+        font-size: 30px;
+    }
+    
     .ocultar-mobile{ 
         display: none;
     }
