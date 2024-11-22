@@ -189,7 +189,41 @@ h2 {
 /* ======================================== Fim da Section 02 ==========================================*/
 
 /* ======================================== Início da Section 03 =======================================*/
+
 .section03 {
+  background: linear-gradient(180deg,#85e6bfb7,#f7f4e8b6);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.content2 {
+  width: 80vw;
+  height: 80vh;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.content2 h1 {
+  padding: 2.5rem;
+  font-size: 4rem;
+}
+
+/*Estilizando o parágrafo*/
+.content2 p {
+  font-size: 1.8rem; /*Tamanho da fonte*/
+  font-weight: 400; /*Peso da fonte*/
+}
+
+.content2 span {
+  font-weight: 800;
+  color:  rgb(0, 94, 122);
+}
+
+.section04 {
+    background: linear-gradient(180deg, #f7f4e8b6, #85e6bfb7);
+} 
+
+.section05 {
   background: linear-gradient(180deg,#85e6bfb7, #f7f4e8b6);
   padding: 20px;
 }
@@ -223,38 +257,4 @@ h2 {
   font-size: 2rem;
   color:  rgba(255, 230, 0, 0.877);
   padding: 15px;
-}
-
-
-.section04 {
-  background: linear-gradient(180deg, #f7f4e8b6,#85e6bfb7);
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.content2 {
-  width: 80vw;
-  height: 80vh;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-.content2 h1 {
-  padding: 2.5rem;
-  font-size: 4rem;
-}
-
-/*Estilizando o parágrafo*/
-.content2 p {
-  font-size: 1.8rem; /*Tamanho da fonte*/
-  font-weight: 400; /*Peso da fonte*/
-}
-
-.content2 span {
-  font-weight: 800;
-  color:  rgb(0, 94, 122);
-}
-
-.section05 {
-    background: linear-gradient(180deg, #85e6bfb7, #f7f4e8b6);
 }
