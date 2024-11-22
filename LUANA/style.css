@@ -92,7 +92,7 @@ label {
     font-size: 14px;
     /* define o taamnho da fonte */
     margin-bottom: 6px;
-    /* adiciona um espaçamento */
+    /* espaço de baixo */
 }
 
 input,
@@ -109,7 +109,7 @@ textarea {
     border-radius: 4px;
     /* aplica bordas arredondadas aos elementos */
     font-size: 14px;
-    /* define o tamanho da fonte para o texto desntro ddesses elementos */
+    /* define o tamanho da fonte para o texto  */
     color: #333;
     /* define a cor do texto */
 }
@@ -162,7 +162,7 @@ button {
 
 button:hover {
     background-color: #005bb5;
-    /* quando passa o mouser por cima do botão, a cor defundo é alterda */
+    /* quando passa o mouser por cima do botão, a cor defundo é alterada */
     transition: 0.3s;
     /* aplica uma transição para a mudança de cor */
 }
@@ -173,7 +173,8 @@ button:hover {
 .div-checkbox {
     display: flex; /* organiza os elementos em linha horizontalmente */
     align-items: center; /* alinha o chekbox verticalmente ao centro */
-    margin-top: 15px; /* adiciona um espaço de 20px na parte superior */
+    justify-content: center;
+    margin-top: 5px; /* adiciona um espaço de 20px na parte superior */
 }
 
 .div-checkbox input {
@@ -181,18 +182,34 @@ button:hover {
     width: 20px; /* largura do checkbox */
     height: 20px; /* altura do checkbox */
     cursor: pointer; /* altera o cursos para uma mãozinha quando o usuário passa o mouse sobre o checkbox */
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: 12px;
+    text-align: center;
 }
 
 .div-checkbox label {
     font-size: 16px; /* tamanho da fonte do texto */
     margin-bottom: auto; /* ajusta o posicionamento do texto em relação ao checkbox */
     color: #333; /* cor do texto */
-    cursor: pointer; /* altera o cursos para uma mãozinha quando o usuário passa o mouse sobre o checkbox */
+    cursor: pointer; /* altera o cursor para uma mãozinha quando o usuário passa o mouse sobre o checkbox */
     margin: -10px 20px;
 }
 
+.di
+
+.login-link {
+    text-align: center;
+    /*alinha ao centro*/
+    margin-top: 5px;
+    /*espaço de cima*/
+}
+
+.login-link a {
+    color: #007BFF;
+    /*cor do texto*/
+    text-decoration: none;
+    /*tira o sublinhado*/
+}
 
  /* APLICANDO A RESPONSIVIIDADE */
 @media (max-width: 600px) {

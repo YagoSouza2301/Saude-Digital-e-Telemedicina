@@ -35,9 +35,13 @@
 .container {
     max-width: 500px;
     margin: 0 auto;
-    padding: 20px;
+    /* centraliza o contêiner do formulário horizontalmente */
+    padding: 50px;
+    /* espaçamento interno em torno do conteúdo da página */
     background-color: #fff;
+    /* define a cor de fundo */
     border-radius: 8px;
+    /* aplica bordas arredondadas aos elementos */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,54 +52,81 @@
 
 .container p {
     text-align: center;
+    /* alinha o conteúdo do parágrafo ao centro */
     color: #555;
+    /* define a cor do texto */
     margin-bottom: 20px;
+    /* adiciona um espaço abaixo do parágafo */
 }
 
 label {
     display: block;
     margin-bottom: 8px;
+    /* espaço de baixo */
 }
 
 input, select {
     width: 100%;
+    /* define que os elementos ocupem toda a largura disponível */
     padding: 10px;
+    /* adiciona um preenchimento */
     margin: 10px 0;
     border-radius: 4px;
+    /* aplica bordas arredondadas aos elementos */
     border: 1px solid #ccc;
+    /* define uma borda fina ao redor dos elementos */
     font-size: 16px;
+    /* define o tamanho da fonte para o texto */
 }
 
 button {
     width: 100%;
+    /* faz com que o botão ocupe toda a largura disponível */
     padding: 12px;
-    background-color: #007BFF;
+    /* adiciona um preenchimento dentro do botão */
+    background-color: rgb(71, 132, 219);
+    /* define uma cor de fundo para o botão */
     color: white;
+    /* define a cor do texto */
     border: none;
+    /* remove qualquer borda padrão do botão */
     border-radius: 4px;
-    cursor: pointer;
+    /* aplica bordas arredondadas ao botão */
     font-size: 16px;
+    /* define o tamanaho da fonte dentro do botão */
+    cursor: pointer;
+    /* muda o cursor para uma mãozinha quando o mouse passa sobre o botão */
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #005bb5;
+    /* quando passa o mouser por cima do botão, a cor defundo é alterada */
+    transition: 0.3s;
+    /* aplica uma transição para a mudança de cor */
 }
 
 .form-container {
     padding: 20px;
+    /*adicona um preenchimento*/
     background-color: #fff;
+    /*define a cor de fundo*/
     border-radius: 8px;
+    /*adiciona uma borda arredondada*/
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .login-link {
     text-align: center;
-    margin-top: 10px;
+    /*alinha ao centro*/
+    margin-top: 20px;
+    /*espaço de cima*/
 }
 
 .login-link a {
     color: #007BFF;
+    /*cor do texto*/
     text-decoration: none;
+    /*tira o sublinhado*/
 }
 
 

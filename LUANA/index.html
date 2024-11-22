@@ -113,19 +113,26 @@
                 <button type="submit">Cadastrar</button>
 
                 <!-- Link que leva o usuário para a página de login caso já tenha uma conta -->
-                <p>Já tem uma conta? <a href="index2.html">Faça login aqui</a>.</p>
+                 <div class="login-link">
+                     <p>Já tem uma conta? <a href="index2.html">Faça login aqui</a>.</p>
+                    </div>
 
                 <div class="div-checkbox">
                     <!-- div para o checkbox -->
-                    <input type="checkbox" id="termos" name="termos" required>
+                     <div class="box">
+                         <input type="checkbox" id="termos" name="termos" required>
+                        </div>
                      <!-- type="checkbox" faz o campo ser uma caixa de seleção. -->
                     <!-- id="termos" dá um identificador único para o campo, útil para acessar com JavaScript e para a etiqueta 'label' associada. -->
                     <!-- name="termos" define o nome do campo, que será usado ao enviar o formulário para o servidor. -->
                     <!-- required significa que o usuário precisa marcar o checkbox para poder enviar o formulário. -->
-                    <label for="termos">Concordo com os termos de uso</label>
-                    <!-- for="termos" faz com que o clique no texto "Concordo com os termos de uso" também marque/desmarque o checkbox. -->
+                    
+                    <div class="check">
+                        <label for="termos">Concordo com os termos de uso</label>
+                        <!-- for="termos" faz com que o clique no texto "Concordo com os termos de uso" também marque/desmarque o checkbox. -->
+                    </div>
                 </div>
-
+                    
                 <!-- fim do formulário -->
             </form>
             <!-- fim da div container -->
