@@ -82,6 +82,9 @@ main{
 
 
 
+
+
+
 /*============================= Section 2 ======================*/
 .div-container {
 /* chamei diretamente meu container da Section 2 */
@@ -141,47 +144,82 @@ input[type="text"], input[type="email"], textarea {
 
 
 textarea {
-/* chamando especificamente a textarea*/
+/* chamando especificamente a textarea */
 
     resize: vertical;
-    /**/
+    /* redimensionando na direção vertical. */
 
     height: 150px;
-    /**/
+    /* aumentando a altura */
 }
 
 
 button {
-/**/
+/*chamando o botton*/
+
     background-color: #2e3d49;
-    /**/
+    /* cor de fundo do botton */
+
     color: white;
-    /**/
+    /* cor da letra ou texto */
+    
     padding: 10px 20px;
-    /**/
+    /* espaçamento altura e largura */
+
     border: none;
-    /**/
+    /* removendo o estilo da borda */
+
     border-radius: 4px;
-    /**/
+    /* arredondando a borda */
+
     cursor: pointer;
-    /**/
+    /* alterando o cursor do mouse */
+
     font-size: 16px;
-    /**/
+    /* tamanho da font*/
 }
+/*====================== fim da Section 2 ======================*/
+
+
+
+
+
+
+/*====================== section 3 ==========================*/
 .contato {
+/* chamando o contato para estilizar*/
+
     padding: 50px;
+    /* espasamento*/
+
     font-size: 1.2em;
+    /* engrosando a letra*/
+
 }
 .contato h2 {
+/* chamando o sub titulo do contato*/
+
     font-size: 3em;
+    /* engrosando a letra*/
+
     text-align: center;
+    /* alinhando o texto no centro*/
+
 }
 .contato p {
+/* chamando o p do contato para estilizar*/
+
     text-align: center;
+    /* alinhando o texto no centro*/
+
 }
 
 button:hover {
-/**/
+/* chamando o houver do botão*/
+
     background-color: #4c5c6e;
-    /**/
+    /* cor de fundo do botão*/
+
 }
+
+/*===================== fim da section 3 =====================*/
