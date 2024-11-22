@@ -80,14 +80,14 @@ ul li a:hover::after {
 
 /* Botão de Cadastre-se */
 header button{
-    color: white;
+  color: white;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   cursor: pointer;
   transition: color 0.3s;
   border-radius: 10px;
-  width: 9vw;
+  width: 6vw;
   height: 5vh;
   margin-left: 30px;
 }
@@ -123,7 +123,7 @@ header button:hover::after{
     right: 0; /*Direita em 0 fazendo a caixa encostar a direita*/
     width: 60%; /*Largura em porcentagem da caixa*/
     height: 100%; /*Altura de 100% da tela*/
-    background-color: rgb(0, 0, 0); /*Cor de fundo*/
+    background-color: #0b0b0d; /*Cor de fundo*/
     flex-direction: column; /*direção dos itens dentro da caixa */
     align-items: center; /*Alinhamento na vertical do itens*/
     font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
@@ -493,41 +493,42 @@ footer h3 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===========================================MOBILE====================================== */
-@media (max-width : 840px) {
-    /* ===========================================CABEÇALHO MOBILE====================================== */
+@media (max-width : 1100px) {
+    /* ===========================================SESSAÕ2====================================== */
+    .box-inform {
+        width: auto;
+        height: auto;
+    }
     
+    /* TAMANHO DAS DIV COM IMAGEM */
+    .box-img {
+        width: 80vw;
+    }
+}
+
+
+
+
+
+
+@media (max-width : 980px) {
+    /* ===========================================CABEÇALHO MOBILE====================================== */
     header {
         flex-direction: row;
-        gap: 20px;
     }
     header img{
-        width: 4rem;
+        width: 6rem;
+        margin: 0px auto;
     }
     header h1{
-        font-size: 30px;
+        font-size: 50px;
+        margin: 0px auto;
     }
     
+    /* ===========================================MOBILE MENU====================================== */
     .ocultar-mobile{ 
         display: none;
+        margin: 0px auto;
     }
 
     .nav-links {
@@ -556,13 +557,61 @@ footer h3 {
         color: #000000;
     }
     
-    
-    
     .cad-mobile button a {
         text-decoration: none;
         color: white;
     
     }
+
+}
+
+
+
+
+
+
+@media (max-width : 880px) {
+   
+
+    .box-inform {
+        width: auto;
+        height: auto;
+    }
+
+    /* TAMANHO DAS DIV COM IMAGEM */
+    .box-img {
+        width: 80vw;
+    }
+
+    .botao button{
+        width: 15rem;
+        font-size: 20px;
+    }
+
+    /* MODIFICAÇÃO DO BOTÃO */
+    .plano button{
+        width: 15rem;
+        font-size: 20px;
+    }
+
+
+    
+}
+
+/* ===========================================MOBILE====================================== */
+@media (max-width : 840px) {
+    /* ===========================================CABEÇALHO MOBILE====================================== */
+    
+   
+    header img{
+        width: 4rem;
+        margin: 0px auto;
+    }
+    header h1{
+        font-size: 33px;
+        margin: 0px auto;
+    }
+
 
 
     /* ===========================================SESSÃO1 MOBILE====================================== */
@@ -618,9 +667,6 @@ footer h3 {
         flex-direction: column;
         align-items: center;
     }
-    .box-inform {
-        width: auto;
-    }
     /* SUBTITULO */
     .box-inform h2 {
         font-size: 30px;
@@ -633,10 +679,6 @@ footer h3 {
     .consulta,
     .compromisso {
         margin-top: 11rem;
-    }
-    /* TAMANHO DAS DIV COM IMAGEM */
-    .box-img {
-        width: 80vw;
     }
     /* BOTÃO DE "VER MAIS" E "VOLTAR" */
     .botao button{
@@ -713,8 +755,7 @@ footer h3 {
         flex-wrap: wrap;
     }
     .rodape-pai h2 {
-        color: white;
-        font-size: 20px;
+        font-size: 25px;
         margin-top: 20px;
     }
    
