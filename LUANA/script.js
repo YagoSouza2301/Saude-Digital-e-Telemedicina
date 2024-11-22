@@ -58,15 +58,23 @@ document.getElementById("cadastro-form").onsubmit = validarFormulario;
 
 // Função para mostrar ou ocultar o campo de descrição da deficiência
 function toggleDeficienciaField() {
-    let deficienciaSelect = document.getElementById('#deficiencia');
-    let descricaoDeficienciaDiv = document.getElementById ('#deficiencia-descricao');
+    let deficienciaSelect = document.getElementById('deficiencia');
+    let descricaoDeficienciaDiv = document.getElementById('deficiencia-descricao');
     
-    // verifica a seleção do campo de deficiência
+    // Verifica a seleção do campo de deficiência
     if (deficienciaSelect.value === 'sim') {
-    // se a opção "Sim" for escolhida, o campo de descrição é mostrado
+        // Se a opção "Sim" for escolhida, o campo de descrição é mostrado
         descricaoDeficienciaDiv.style.display = 'block';  // Mostrar campo de descrição
     } else {
-        // se a opção "não" for escolhida, o campo de descrição é escondido
+        // Se a opção "Não" for escolhida, o campo de descrição é escondido
         descricaoDeficienciaDiv.style.display = 'none';  // Ocultar campo de descrição
     }
+}
+
+// Adicionando o evento para disparar a função sempre que o valor for alterado
+document.getElementById('deficiencia').addEventListener('change', toggleDeficienciaField);
+
+// Inicializa a exibição do campo de descrição, caso o valor já seja 'sim'
+window.onload = function() {
+    toggleDeficienciaField();
 };
