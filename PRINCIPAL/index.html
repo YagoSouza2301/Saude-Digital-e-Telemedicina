@@ -4,43 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b61a4ed80b.js"
+            crossorigin="anonymous"></script>
     <title>PRINCIPAL</title>
 </head>
 <body>
     <header>
         <img src="../YAGO/img/doutor IA.webp" alt="hfba">
         <h1>DOCTOR WEB</h1>
-        <nav>
-            <ul>
+
+
+        <div class="ocultar-mobile">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="..//PRINCIPAL/index.html">Inicial</a>
+                    </li>
+                    <li>
+                        <a href="..//GABRIEL/index.html">Notícias</a>
+                    </li>
+                    <li>
+                        <a href="..//GUILHERME/index.html">Planos</a>
+                    </li>
+                    <li>
+                        <a href="..//MANUEL/index.html">FeedBack</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <a href="..//LUANA/index.html">
+                    <button>
+                        <i class="fa-solid fa-user"></i>
+                        Cadastre-se
+                    </button>
+                </a>
+            </div>
+        </div>
+            
+
+
+        <!-- CAIXA MOBILE -->
+           <div class="mobile-menu" id="mobileMenu">
+            
+            <!-- Botão para ser utilizado para fechamento da lista -->
+            <button id="closeButton" class="close">
+                <i class="fas fa-times"></i>
+            </button>
+  
+            <!-- Essa lista é do Menu Hamburguer quando estiver aberto. -->
+            <ul class="nav-links-mobile">
                 <li>
-                    <a href="">Informações</a>
+                    <a href="">Sobre</a>
                 </li>
                 <li>
-                    <a href="">Notícias</a>
+                    <a href="">Serviços</a>
                 </li>
                 <li>
-                    <a href="">Planos</a>
+                    <a href="">Como funciona</a>
+                </li>
+                <li>
+                    <a href="">Fornecedores</a>
                 </li>
             </ul>
-        </nav>
-        <button>
-            Cadastre-se
-        </button>
+  
+  
+            <div id="btn-mobile" class="">
+                <a href="..//LUANA/index.html">
+                    <i class="fa-solid fa-user"></i>
+                    <button>
+                        Cadastre-se
+                    </button>
+                </a>
+              </button>
+            </div>
+            <!-- Fim da caixa do Menu Hamburguer (Quando estiver aberto) -->
+        </div>
+  
+        <!-- Botão de Hamburguer, ele está fora da Div justamente por ser um elemento singular -->
+      <button class="hamburger" id="hamburgerButton">
+          <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- FINAL -->
+
+
     </header>
 </body>
 
-<section>
+<section class="s1">
     <!-- BOAS VINDAS -->
-     <h2></h2>
-     <P></P>
+     <h2>Seja Bem-Vindo</h2>
+     <P>A Doctor Web que está transformando o mundo digital com soluções inovadoras e seguras para todos os nossos clientes. Estamos felizes em tê-lo conosco e acreditamos que, juntos, podemos alcançar grandes resultados. Aqui, nossa missão é proporcionar tecnologia de ponta com a confiabilidade que você precisa, e contamos com a sua colaboração para continuar crescendo e oferecendo o melhor.</P>
 </section>
 
 
 <section>
     <!-- FUNCIONALIDADES -->
-     <img src="" alt="">
-     <p></p>
-     <img src="" alt="">
+     <img src="img/img2.jpg" alt="telescobio" id="dir">
+     <p id="bot">Na Doctor Web, oferecemos uma ampla gama de serviços inovadores voltados para a saúde digital e a telemedicina, com o objetivo de transformar a forma como as pessoas acessam cuidados médicos. Nosso portfólio inclui soluções que conectam pacientes e profissionais de saúde de maneira rápida, eficiente e segura, proporcionando consultas virtuais, acompanhamento remoto e gestão digital de saúde.</p>
+     <img src="" alt="logo" id="esq">
 </section>
 
 
@@ -48,29 +110,23 @@
     <!-- PROJETOS -->
     <div>
 
-        <div>
-            <!-- IMG de fundo -->
-            <div>
-                <!-- sobre -->
-            </div>
+    <div>
+        <div class="projeto1">
         </div>
+        <h2>Saúde Tecnológica</h2>
+    </div>
 
+    <div>
+    <div class="projeto2">
+    </div>
+         <h2>Empresas Novas</h2>
+    </div>
 
-        <div>
-            <!-- IMG de fundo -->
-            <div>
-                <!-- sobre -->
-            </div>
+    <div>
+        <div class="projeto3">
         </div>
-
-
-        <div>
-            <!-- IMG de fundo -->
-            <div>
-                <!-- sobre -->
-            </div>
-        </div>
-
+        <h2>Ajudar os Necessitados</h2>
+    </div>
 
 
     </div>
@@ -78,8 +134,9 @@
 
 
 <section>
-    <!-- BENEFICIOS DOS PLANOS -->
-    <!-- Colocar um video dando explicação sobre os beneficios -->
+    <!-- VIDEO QUE VOU FAZER (YAGO) -->
+     <button type="button">Clique para mais</button>
+     <!-- centralizar o botão abaixo do video -->
 </section>
 
 
@@ -87,5 +144,63 @@
     <!-- COMENTARIOS - CARROSSEL AUTOMATICO-->
 </section>
 
+
+
+<footer>
+    <div class="rodape-pai">
+
+        <!-- IMPORTANTES -->
+        <div>
+            <h2>Importantes</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href>
+                            Politíca de Privacidade
+                        </a>
+                    </li>
+                    <li>
+                        <a href>
+                            FeedBack
+                        </a>
+                    </li>
+                    <li>
+                        <a href>
+                            Meus planos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- ENDEREÇO -->
+        <div>
+            <h2>Endereço</h2>
+            <p>Rua das Estrelas, 500 <br>
+                Bairro Encanto da Lua <br>
+                Cidade Sonhópolis, Estado do Arco-Íris <br>
+                CEP: 12345-678 <br>
+                Brasil <br>
+            </p>
+        </div>
+
+        <!-- REDES SOCIAS -->
+        <div>
+            <h2>Siga-nos</h2>
+            <div>
+                <i class="fa-brands fa-square-whatsapp"
+                    id="whatsapp"></i>
+                <i class="fa-brands fa-square-instagram"
+                    id="instagram"></i>
+                <i class="fa-brands fa-telegram" id="telegram"></i>
+                <i class="fa-brands fa-facebook" id="facebook"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <h3> Cuidando de você onde quer que esteja, com a tecnologia ao
+        seu lado.</h3>
+</footer>
 
 </html>
