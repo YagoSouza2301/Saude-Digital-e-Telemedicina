@@ -15,26 +15,111 @@
     /* define o tamanho elemento, evitando que o conteúdo ultrapasse os limites de um elemento */
     font-family: "Raleway", sans-serif;
     /* define a fonte padrão do site */
+    text-decoration: none;
 }
 
- body {
-    font-family: "Raleway", sans-serif;
-    /* define a fonte */
-    background-color: #f4f4f9;
-    /* define a cor de fundo */
-    color: #333;
-    /* define  cor do texto */
-    padding: 20px;
-    /* adiciona um espaçamento interno em torno do conteúdo da página */
-    display: flex;
-    /* facilita o alinhamento dos elementos */
-    justify-content: center;
-    /* alinha os elementos horizontalmente ao centro */
-    align-items: center;
-    /* alinha os elementos verticalmente ao centro */
+html {
+    width: 100%;
     height: 100vh;
-    /* define que a altura do corpo da página ocupará 100% da janela de vizualização */
 }
+
+
+
+/* ===========================================CABEÇALHO====================================== */
+header {
+    background-color: #0b0b0d;
+    width: 100%;
+    padding: min(2vw, 7vw);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+  
+}
+header img {
+    width: 8rem;
+}
+header h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.ocultar-mobile {
+    display: flex;
+}
+header ul {
+    display: flex;
+    gap: 30px;
+}
+header a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* ===========================================FUNCIONA TANTO NO CABEÇALHO COMO NO RODAPÉ =========================================== */
+ul li {
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+  
+/* Linha oculta inicialmente */
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: #6bb39b; /* Cor da linha */
+  transform: scaleX(0); /* Oculta a linha inicialmente */
+  transform-origin: bottom right; /* Origem da animação */
+  transition: transform 0.3s; /* Animação suave */
+}
+  
+/* Define a animação ao passar o mouse */
+ul li a:hover::after {
+  transform: scaleX(1); /* Expande a linha da direita para a esquerda */
+  transform-origin: bottom left;
+}
+
+
+/* Botão de Cadastre-se */
+header button{
+  color: white;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  border-radius: 10px;
+  width: 7vw;
+  height: 5vh;
+  margin-left: 30px;
+}
+
+header button::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: white; 
+  transform: scaleX(0); 
+  transform-origin: bottom right; 
+  transition: transform 0.8s; 
+}
+
+header button:hover::after{
+  transform: scaleX(1); 
+  transform-origin: bottom left;
+}
+/* final do botão */
+
 
 
 .form-container {
@@ -44,6 +129,9 @@
     /*define uma larura máxima para o formulário */
     padding: 20px;
     /* adiciona um espaçamento interno em todos os lados do contêiner */
+    box-shadow: 0px 0px 15px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -210,6 +298,66 @@ button:hover {
     text-decoration: none;
     /*tira o sublinhado*/
 }
+
+
+
+/* ===========================================RODAPÉ====================================== */
+footer {
+    background-color: #0b0b0d;
+    padding: 3vw;
+    text-align: center;
+}
+.rodape-pai {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
+}
+.rodape-pai h2 {
+    color: #85e6c0;
+    font-size: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+}
+.rodape-pai a {
+    color: white;
+}
+.rodape-pai p {
+    color: white;
+}
+
+#whatsapp,
+#instagram,
+#telegram,
+#facebook {
+    font-size: 2rem;
+    margin: 0px 3px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+#whatsapp {
+    color: greenyellow;
+}
+#instagram {
+    background: linear-gradient(150deg, rgb(141, 2, 255),rgb(213, 2, 255), rgb(255, 238, 2));
+    background-clip: text;
+    color: transparent;
+}
+#telegram {
+    color: rgb(0, 204, 255);
+}
+#facebook {
+    color: rgb(0, 81, 255);
+}
+
+footer h3 {
+    color: yellow;
+    font-size: 25px;
+    margin-top: 2vh;
+}
+
+
+
 
  /* APLICANDO A RESPONSIVIIDADE */
 @media (max-width: 600px) {
