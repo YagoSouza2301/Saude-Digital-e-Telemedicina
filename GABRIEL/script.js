@@ -19,6 +19,11 @@ ScrollReveal().reveal('.carousel-container',{
     origin: 'bottom', // origem do efeito: o conteudo virá da direita para a esquerda
     distance : '50px', // distancia que o elemento "viaja" antes de aparecer
 })
+ScrollReveal().reveal('.section3',{
+    duration: 2000, // duração do efeito (em milisegundos), define a velocidade da transição
+    origin: 'bottom', // origem do efeito: o conteudo virá da direita para a esquerda
+    distance : '50px', // distancia que o elemento "viaja" antes de aparecer
+})
 
 
 
