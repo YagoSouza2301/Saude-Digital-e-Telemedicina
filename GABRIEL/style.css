@@ -95,6 +95,10 @@ ul li {
   .section1{
     padding: min(10vh, 30rem);
     text-align:  center;
+    background-image: url(img/medicine-257349_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .div-pai{
     display: flex;
@@ -110,8 +114,10 @@ ul li {
     margin-top: 20px;
     padding: 20px;
     text-align: center;
+    background-color: whitesmoke;
   }
   .div-dad2{
+    background-color: whitesmoke;
     width: 30rem;
     height: 13rem;
     border-color: black;
@@ -135,6 +141,7 @@ ul li {
     text-align: center;
     margin-top: 64px;
     margin-left: -20px;
+    background-color: whitesmoke;
   }
   .div-dad1 .div1{
     display: flex;
@@ -170,7 +177,7 @@ ul li {
 /* ================================= COMEÇANDO A ESTILIZAÇÃO DA SEGUNDA SEÇÃO ==================================== */
 
 .section2 {
-  padding: min(4vh, 30rem);
+  padding: min(0.3vh, 10rem);
   width: 100%;
   background: linear-gradient(180deg, #6bb39b81 100%, #6bb39b6b 3.44%), url(section2/20240411_medicos_per_capita.jpg);
   background-position: center;
@@ -230,6 +237,7 @@ ul li {
 
 .section3{
   padding: min(6vw, 30rem);
+  background: linear-gradient(180deg, #6bb39b81 20.44%, rgb(255, 255, 255) 100%);
   align-items: center;
   text-align: center;
   display: flex;
