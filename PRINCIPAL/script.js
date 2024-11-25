@@ -9,3 +9,20 @@ hamburgerButton.addEventListener("click", function () {
 closeButton.addEventListener("click", function () {
     mobileMenu.classList.remove("flex");
 });
+
+
+ScrollReveal().reveal('#bottom', {
+    duration: 1500,
+    origin: 'bottom',
+    distance: '200px',
+});
+
+
+
+
+
+
+
+
+
+

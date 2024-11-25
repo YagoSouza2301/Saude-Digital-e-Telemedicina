@@ -167,16 +167,53 @@ header button:hover::after{
 
 /* FINAL */
 
+/* ======================================================SESSÃO1================================================================== */
+.s1 {
+    padding: 20vw;
+    text-align: center;
+    background: linear-gradient(180deg, #f7f4e894 8.33%, #daf3eaf8 100%), url(img/s1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s1 div {
+    background-color: #000000d3;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+.s1 h2 {
+    color: white;
+    margin-bottom: 10vh;
+    font-size: 60px;
+}
+.s1 p {
+    color: white;
+    text-align: left;
+    font-size: 30px;
+}
+
+/* ======================================================SESSÃO2================================================================== */
+.s2 {
+    padding: 15vw;
+    background: linear-gradient(360deg, #f7f4e8 8.33%, #daf3ea 100%);
+}
 
 
 
 
 
 
+/* ======================================================SESSÃO3================================================================== */
 
 
 
+/* ======================================================SESSÃO4================================================================== */
 
+
+
+/* ======================================================SESSÃO5================================================================== */
 
 
 
