@@ -14,16 +14,14 @@ ScrollReveal().reveal('.div3',{
     origin: 'right', // origem do efeito: o conteudo virá da direita para a esquerda
     distance : '50px', // distancia que o elemento "viaja" antes de aparecer
 })
-<<<<<<< HEAD
-ScrollReveal().reveal('.carousel',{
-=======
+
+
 ScrollReveal().reveal('.carousel-container',{
     duration: 3000, // duração do efeito (em milisegundos), define a velocidade da transição
     origin: 'bottom', // origem do efeito: o conteudo virá da direita para a esquerda
     distance : '50px', // distancia que o elemento "viaja" antes de aparecer
 })
 ScrollReveal().reveal('.section3',{
->>>>>>> 1acd5fc2dcbbe994400f136b4f61a1a84d551286
     duration: 2000, // duração do efeito (em milisegundos), define a velocidade da transição
     origin: 'bottom', // origem do efeito: o conteudo virá da direita para a esquerda
     distance : '50px', // distancia que o elemento "viaja" antes de aparecer
