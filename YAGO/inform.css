@@ -6,8 +6,10 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    box-sizing: border-box;
     font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 /* RESPONSIVIDADE */
@@ -16,10 +18,161 @@ html {
     height: 100vh;
 }
 
+/* ===========================================CABEÇALHO====================================== */
+header {
+    background-color: #0b0b0d;
+    width: 100%;
+    padding: min(2vw, 7vw);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+header img {
+    width: 8rem;
+}
+header h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.ocultar-mobile {
+    display: flex;
+}
+header ul {
+    display: flex;
+    gap: 30px;
+}
+header a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ===========================================FUNCIONA TANTO NO CABEÇALHO COMO NO RODAPÉ =========================================== */
+ul li {
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+  
+/* Linha oculta inicialmente */
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: #6bb39b; /* Cor da linha */
+  transform: scaleX(0); /* Oculta a linha inicialmente */
+  transform-origin: bottom right; /* Origem da animação */
+  transition: transform 0.3s; /* Animação suave */
+}
+  
+/* Define a animação ao passar o mouse */
+ul li a:hover::after {
+  transform: scaleX(1); /* Expande a linha da direita para a esquerda */
+  transform-origin: bottom left;
+}
+
+
+/* Botão de Cadastre-se */
+header button{
+  color: white;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  border-radius: 10px;
+  width: 7vw;
+  height: 5vh;
+  margin-left: 30px;
+}
+
+header button::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: white; 
+  transform: scaleX(0); 
+  transform-origin: bottom right; 
+  transition: transform 0.8s; 
+}
+
+header button:hover::after{
+  transform: scaleX(1); 
+  transform-origin: bottom left;
+}
+/* final do botão */
+
+
+
+
+/* HAMBURGER DO MOBILE */
+/* =====================================CAIXA MOBILE===================================== */
+.mobile-menu { /*Estilização da caixa Mobile quando aberta*/
+    display: none; /*Display: Nenhum*/
+    position: fixed; /*Posição fixa na parte direita da página*/
+    top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
+    right: 0; /*Direita em 0 fazendo a caixa encostar a direita*/
+    width: 60%; /*Largura em porcentagem da caixa*/
+    height: 100%; /*Altura de 100% da tela*/
+    background-color: #0b0b0d; /*Cor de fundo*/
+    flex-direction: column; /*direção dos itens dentro da caixa */
+    align-items: center; /*Alinhamento na vertical do itens*/
+    font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
+}
+
+.nav-links-mobile { /*Lista não ordenada da versão mobile*/
+    display: flex; /*Tornando os itens (LISTAS) flexíveis*/
+    flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
+    text-align: center; /*Alinhando o texto ao centro*/
+    gap: 1.2rem; /*Espaço entre as listas */
+    list-style: none; /*Estilo de lista desabilitado*/
+}
+
+.nav-links-mobile li { /*listas da versão Mobile*/
+    border-bottom: 1px solid #787272; /*Bordar inferior de cada lista*/
+    padding-bottom: 1.2rem; /*Tamanho da borda*/
+}
+
+
+.hamburger,
+.close {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+.close {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: block;
+    align-self: end;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+/* FINAL */
+
 /* ===========================================SESSÃO1====================================== */
 .sobre {
     width: 100%;
-    padding: 5rem;
+    padding: 10vw;
     background-color: #f7f4e8;
     display: flex;
     justify-content: space-around;
@@ -28,22 +181,19 @@ html {
 
 /* TITULO PRINCIPAL */
 .sobre h2 {
-    font-size: 50px;
-    margin: 30px;
+    font-size: 50px;;
     text-align: center;
 }
 
 /* AJUSTANDO REFERENTE AO QUE SE TRATA */
 .inform {
-    display: flex;  
+    display: flex; 
 }
 .inform p {
-    font-size: 30px;
-    padding: 3rem;
+    font-size: 35px;
+    padding: 2rem;
     margin: 50px;
     gap: 35px;
-    display: flex;
-    flex-wrap: nowrap;
     font-size: 30px;
     text-align: center;
 }
@@ -56,7 +206,9 @@ html {
     box-shadow: 2px 2px 15px #0b0b0d;
     height: 25rem;
 }
-
+.robo img {
+    width: 25rem;
+}
 /* NOME DO ROBO */
 .robo h3 {
     color: rgb(0, 0, 0);
@@ -73,14 +225,15 @@ html {
 .contato button {
     margin: 10px;
     background-color: greenyellow;
-    border-color: #000000b6;
+    border-color: rgb(201, 255, 119);
+    box-shadow: 2px 2px 8px rgb(0, 0, 0);
     border-radius: 20px;
-    width: 12rem;
+    width: 15vw;
     transition: 0.6s;
 }
 .contato button:hover {
-    border-color: white;
-    box-shadow: 2px 2px 10px black;
+    border-color: rgb(114, 114, 114);
+    box-shadow: 2px 2px 15px green;
 }
 .contato button a {
     display: flex;
@@ -94,7 +247,7 @@ html {
 /* ===========================================SESSÃO2====================================== */
 .topicos {
     width: 100%;
-    padding: 150px;
+    padding: 8rem;
     background: linear-gradient(180deg, #f7f4e8 8.33%, #daf3ea 100%);
     margin-top: -75px;
 }
@@ -106,18 +259,21 @@ html {
 .consulta,
 .compromisso {
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     gap: 7rem;
-    margin-top: 15rem;
+    margin-top: 20rem;
 }
 
+.segurança {
+    margin-top: 8rem;
+}
 /* ARRUAMNDO O TEXTO DENTRO DAS DIV (FILHOS) */
 .box-inform {
     border-radius: 20px;
     background-color: #85e6c0;
-    opacity: 0.2;
+    opacity: 0.5;
     text-align: center;
     width: 25vw;
     height: auto;
@@ -169,10 +325,21 @@ html {
     width: 10vw;
     height: 4vh;
     border-radius: 20px;
-    background-color: #85e6c0;
+    background-color: #85e6bfc9;
     border-color: #427a68;
     font-size: 15px;
+    cursor: pointer;
+    transition: 0.6s;
 }
+.botao button:hover {
+    background-color: #85e6c0;
+    border-color: black;
+    box-shadow: 5px 5px 15px rgb(202, 202, 202);
+}
+#oculta {
+    display: none;
+}
+
 .img3 {
     background-image: url(img/grupo\ qualificado.jpg);
     background-position: center;
@@ -189,6 +356,125 @@ html {
     background-size: cover;
 }
 
+/* ===========================================SESSÃO3====================================== */
+.plano {
+    width: 100%;
+    padding: 18vw;
+    background: linear-gradient(360deg, #daf3ea 0%, #f7f4e894 35%, #daf3ea 100%), url(img/sessão3.jpg);        
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+#plano-saude {
+    height: 2rem;
+    margin: 5rem;
+}
+.plano h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: -3rem;
+}
+.div-plano {
+    padding: 5rem;
+}
+.div-plano p {
+    font-size: 25px;
+}
+.div-plano p strong{
+    font-size: 28px;
+    font-weight: bold;
+}
+.div-plano button {
+    margin: 20px;
+    width: 10vw;
+    height: 4vh;
+    border-radius: 20px;
+    background-color: #85e6bfc9;
+    border-color: #427a68;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.div-plano button:hover {
+    background-color: #85e6c0;
+    border-color: black;
+    box-shadow: 5px 5px 15px white;
+}
+
+/* ===========================================SESSÃO4====================================== */
+.endereço {
+    padding: 10vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(360deg, #f7f4e8 8.33%, #daf3ea 100%);
+}
+.endereço div {
+    margin: 3rem;
+}
+.endereço p {
+    font-size: 25px;
+}
+
+
+/* ===========================================RODAPÉ====================================== */
+footer {
+    background-color: #0b0b0d;
+    padding: 3vw;
+    text-align: center;
+}
+.rodape-pai {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
+}
+.rodape-pai h2 {
+    color: #85e6c0;
+    font-size: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+}
+.rodape-pai a {
+    color: white;
+}
+.rodape-pai p {
+    color: white;
+}
+
+#whatsapp,
+#instagram,
+#telegram,
+#facebook {
+    font-size: 2rem;
+    margin: 0px 3px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+#whatsapp {
+    color: greenyellow;
+}
+#instagram {
+    background: linear-gradient(150deg, rgb(141, 2, 255),rgb(213, 2, 255), rgb(255, 238, 2));
+    background-clip: text;
+    color: transparent;
+}
+#telegram {
+    color: rgb(0, 204, 255);
+}
+#facebook {
+    color: rgb(0, 81, 255);
+}
+
+footer h3 {
+    color: yellow;
+    font-size: 25px;
+    margin-top: 2vh;
+}
 
 
 
@@ -207,17 +493,275 @@ html {
 
 
 
+@media (max-width : 1100px) {
+    /* ===========================================SESSAÕ2====================================== */
+    .box-inform {
+        width: auto;
+        height: auto;
+    }
+    
+    /* TAMANHO DAS DIV COM IMAGEM */
+    .box-img {
+        width: 80vw;
+    }
+}
 
 
 
 
 
 
+@media (max-width : 980px) {
+    /* ===========================================CABEÇALHO MOBILE====================================== */
+    header {
+        flex-direction: row;
+    }
+    header img{
+        width: 6rem;
+        margin: 0px auto;
+    }
+    header h1{
+        font-size: 50px;
+        margin: 0px auto;
+    }
+    
+    /* ===========================================MOBILE MENU====================================== */
+    .ocultar-mobile{ 
+        display: none;
+        margin: 0px auto;
+    }
 
-
-
-
-/* ===========================================MOBILE====================================== */
-@media (max-width = 840px) {
+    .nav-links {
+        display: none;
+    }
+    
+      .hamburger {
+        display: block;
+        margin: 0px auto;
+    }
+    
+    .mobile-menu {
+        z-index: 999;
+    }
+    
+    #btn-header {
+       display: none;
+    }
+    
+    
+    .cad-mobile button {
+        width: 14rem;
+        height: 4rem;
+        border-radius: 5px;
+        background-color: #f8f4f46c;
+        color: #000000;
+    }
+    
+    .cad-mobile button a {
+        text-decoration: none;
+        color: white;
+    
+    }
 
 }
+
+
+
+
+
+
+@media (max-width : 880px) {
+   
+
+    .box-inform {
+        width: auto;
+        height: auto;
+    }
+
+    /* TAMANHO DAS DIV COM IMAGEM */
+    .box-img {
+        width: 80vw;
+    }
+
+    .botao button{
+        width: 15rem;
+        font-size: 20px;
+    }
+
+    /* MODIFICAÇÃO DO BOTÃO */
+    .plano button{
+        width: 15rem;
+        font-size: 20px;
+    }
+
+
+    
+}
+
+/* ===========================================MOBILE====================================== */
+@media (max-width : 840px) {
+    /* ===========================================CABEÇALHO MOBILE====================================== */
+    
+   
+    header img{
+        width: 4rem;
+        margin: 0px auto;
+    }
+    header h1{
+        font-size: 33px;
+        margin: 0px auto;
+    }
+
+
+
+    /* ===========================================SESSÃO1 MOBILE====================================== */
+
+    /* MODIFICANDO A SESSÃO PARA ENCAIXAR NO MOBILE */
+    .sobre {
+        display: flex;
+        flex-direction: column;
+    }
+    .inform {
+        flex-wrap: wrap;
+    }
+    .inform p {
+        font-size: 22px;
+        width: auto;
+    }
+
+    /* AJUSTANDO O ROBÔ PARA MOBILE */
+    .robo {
+        margin: 0px auto;
+        width:auto;
+        height: 20rem;
+    }
+    /* IMAGEM DO ROBO */
+    .robo img {
+        width: 20rem;
+    }
+    /* CONTATO */
+    .robo h3 {
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .robo h4 {
+        font-size: 20px;
+    }
+    /* CONTATO DO ZAP (Ajustando o botão) */
+    .robo .zap {
+        width: 2rem;
+    }
+    .robo button {
+        width: 40vw;
+    }
+    .robo button a {
+        font-size: 20px;
+    }
+
+
+    /* ===========================================SESSÃO2 MOBILE====================================== */
+    /* MODIFICANDO A SESSÃO PARA ENCAIXAR NO MOBILE */
+    .topicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* SUBTITULO */
+    .box-inform h2 {
+        font-size: 30px;
+    }
+
+    /* ESPAÇO DE CADA DO PAI */
+    .segurança,
+    .acesso,
+    .qualificado,
+    .consulta,
+    .compromisso {
+        margin-top: 11rem;
+    }
+    /* BOTÃO DE "VER MAIS" E "VOLTAR" */
+    .botao button{
+        width: 10rem;
+        font-size: 20px;
+    }
+
+
+    /* ===========================================SESSÃO3 MOBILE====================================== */
+    /* MODIFICANDO A SESSÃO PARA ENCAIXAR NO MOBILE */
+    .plano {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* PARA A SESSÃO NÃO FICAR DIMINUINDO POR CONTA DO AUTO DIGITADO */
+    #plano-saude {
+        height: 2rem;
+        margin: 5rem;
+    }
+    /* SUBTITULO */
+    .plano h2 {
+        font-size: 35px;
+    }
+    /* DIV PAI QUE ORGANIZA TUDO */
+    .div-plano {
+        height: auto;
+        width: 90vw;
+        padding: 1rem;
+        margin-top: 80px;
+    }
+    /* PARAGRÁFO */
+    .plano p{
+        font-size: 25px;
+    }
+    /* MODIFICAÇÃO DO BOTÃO */
+    .plano button{
+        width: 10rem;
+        font-size: 20px;
+    }
+
+
+    /* ===========================================SESSÃO4 MOBILE====================================== */
+    /* MODIFICANDO A SESSÃO PARA ENCAIXAR NO MOBILE */
+    .endereço {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* TAMANHO DO MAPA */
+    .endereço iframe {
+        width: 80vw;
+        height: 40vh;
+    }
+    /* SOBRE O ENDEREÇO DA EMPRESA */
+    .endereço p {
+        width: 50vw;
+        font-size: 22px;
+    }
+
+
+
+
+
+
+
+
+    /* ===========================================RODAPÉ MOBILE====================================== */
+    footer {
+        padding: 2vw;
+        text-align: center;
+    }
+    .rodape-pai {
+        flex-wrap: wrap;
+    }
+    .rodape-pai h2 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+   
+
+    footer h3 {
+        color: yellow;
+        font-size: 20px;
+    }
+};

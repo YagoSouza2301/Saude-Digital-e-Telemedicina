@@ -1,4 +1,4 @@
-ScrollReveal().reveal('.div-dad1',{
+      ScrollReveal().reveal('.div-dad1',{
     duration: 1000, // duração do efeito (em milisegundos), define a velocidade da transição
     origin: 'left', // origem do efeito: o conteudo virá da direita para a esquerda
     distance : '50px', // distancia que o elemento "viaja" antes de aparecer
@@ -8,37 +8,72 @@ ScrollReveal().reveal('.div-dad2',{
     origin: 'right', // origem do efeito: o conteudo virá da direita para a esquerda
     distance : '50px', // distancia que o elemento "viaja" antes de aparecer
 })
+
 ScrollReveal().reveal('.div3',{
     duration: 2000, // duração do efeito (em milisegundos), define a velocidade da transição
     origin: 'right', // origem do efeito: o conteudo virá da direita para a esquerda
     distance : '50px', // distancia que o elemento "viaja" antes de aparecer
 })
+<<<<<<< HEAD
 ScrollReveal().reveal('.carousel',{
+=======
+ScrollReveal().reveal('.carousel-container',{
+    duration: 3000, // duração do efeito (em milisegundos), define a velocidade da transição
+    origin: 'bottom', // origem do efeito: o conteudo virá da direita para a esquerda
+    distance : '50px', // distancia que o elemento "viaja" antes de aparecer
+})
+ScrollReveal().reveal('.section3',{
+>>>>>>> 1acd5fc2dcbbe994400f136b4f61a1a84d551286
     duration: 2000, // duração do efeito (em milisegundos), define a velocidade da transição
     origin: 'bottom', // origem do efeito: o conteudo virá da direita para a esquerda
     distance : '50px', // distancia que o elemento "viaja" antes de aparecer
 })
 
 
-$(document).ready(function() {
 
-    // Seleciona o conteiner . carousel e aplica a funçao slick()
-    // que ativa o carrossel com as configurações abaixo
-    $('.carousel').slick({
 
-        //slidesToShow: numero de cards exibidos ao mesmo tempo no carrossel
-        slidesToShow: 1, // exibe 3 cards ao mesmo tempo
+// seleciona o elemento que contem todas as imagens do carrossel
+const track = document.getElementById('carouselTrack');
 
-        //slidesToScroll: define quantos cards serao deslizados ao mover o carrossel
-        slidesToScroll: 1, // Move 1 car por vez ao deslizar
+//obtem o numero de imagens no carrossel
+const items = document.querySelectorAll('.carousel-item');
+let index = 0; // indice que rastreia a imagem atual
 
-        // infinite: quando true, o carrossel retona ao inicio automaticamente
-        Infinite: true, //mantem o carrossel em rotação continua
+//função que move o carrossel para a proxima imagem
+function moveCarousel() {
+    //incrementa o indice para avançar uma imagem
+    index++;
 
-        //dots: quando true, ativa os pontos de navegação abaixo do carrossel
-        dots: true, // adiciona pontos de navegação para os usuarios
+    // verifica se o indice chegou a ultima imagem clonada 
+    if (index >= items.length - 1) {
+        // pequeno atraso para permitir que a transição termine
+        setTimeout(() => {
+            track.style.transition = 'none';// Remove a animação
+            index = 0; //volta ao inicio (primeira imagem)
+            track.style.transform = `translateX(0)`; // Move para a primeira imagem
 
-        // arrows: exibe setas de navegação nas laterais do carrossel
-        arrows: true, // ativa as setas para navegar entre os cards
-    })
-})
+        }, 500);//tempo suficiente para completar a transição visivel
+        
+    } else {
+        //move o carrossel para a proxima imagem
+        track.style.transition = 'transform 0.5s ease' // adiciona a animação
+        track.style.transform = `translateX(-${index * 100}%)`; //desloca o carrossel
+    }
+};
+
+//define um intervalo para mover o carrossel automaticamente a cada 3 segundos
+setInterval(moveCarousel, 10000);
+
+// VERSÃO MOBILE
+//Aqui  adicionamos um evento de escutar o click do Mouse sobre o ícone de Hamburger.
+hamburgerButton.addEventListener("click", function () {
+    mobileMenu.classList.add("flex");
+    // Criamos uma função que a ouvir o click do Mouse, ele adicione uma Class, que está fazendo mossa caixa (DIV) aparecer, ou seja, ficar visivel
+});
+
+//Criamos uma função que a o ouvir o click do mouse, ele REMOVA uma Class, que está fazendo mossa caixa (Div) desaparecer, ou seja, ficar invisivel.
+closeButton.addEventListener("click", function () {
+    mobileMenu.classList.remove("flex");
+});
+
+

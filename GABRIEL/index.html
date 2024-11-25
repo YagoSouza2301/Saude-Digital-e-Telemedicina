@@ -2,8 +2,11 @@
 <html lang="pt-br">
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="../YAGO/img/DoctorWeb.jpg" type="image/x-icon">
         <meta charset="UTF-8">
         <script src="script.js" defer></script>
+        <script src="https://kit.fontawesome.com/b61a4ed80b.js"
+            crossorigin="anonymous"></script>
         <!-- script para o scrollRevel -->
         <script src="https://unpkg.com/scrollreveal"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
@@ -13,32 +16,89 @@
     </head>
     <body>
         <header>
-            <img src="../YAGO/img/doutor IA.webp" alt="hfba">
+            <img src="../YAGO/img/DoctorWeb.jpg" alt="hfba">
             <h1>DOCTOR WEB</h1>
-            <nav>
-                <ul id="listas">
+    
+    
+            <div class="ocultar-mobile">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="..//PRINCIPAL/index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="..//GABRIEL/index.html">Notícias</a>
+                        </li>
+                        <li>
+                            <a href="..//GUILHERME/index.html">Planos</a>
+                        </li>
+                        <li>
+                            <a href="..//MANUEL/index.html">FeedBack</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <a href="..//LUANA/index.html">
+                        <button>
+                            <i class="fa-solid fa-user"></i>
+                            Cadastre-se
+                        </button>
+                    </a>
+                </div>
+            </div>
+                
+    
+    
+            <!-- CAIXA MOBILE -->
+               <div class="mobile-menu" id="mobileMenu">
+                
+                <!-- Botão para ser utilizado para fechamento da lista -->
+                <button id="closeButton" class="close">
+                    <i class="fas fa-times"></i>
+                </button>
+      
+                <!-- Essa lista é do Menu Hamburguer quando estiver aberto. -->
+                <ul class="nav-links-mobile">
                     <li>
-                        <a href>Informações</a>
-
+                        <a href="">Sobre</a>
                     </li>
                     <li>
-                        <a href>Notícias</a>
-
+                        <a href="">Serviços</a>
                     </li>
                     <li>
-                        <a href>Planos</a>
-
+                        <a href="">Como funciona</a>
+                    </li>
+                    <li>
+                        <a href="">Fornecedores</a>
                     </li>
                 </ul>
-            </nav>
-            <button>
-                <a href>Cadastre-se</a>
-            </button>
+      
+      
+                <div id="btn-mobile" class="">
+                    <a href="..//LUANA/index.html">
+                        <i class="fa-solid fa-user"></i>
+                        <button>
+                            Cadastre-se
+                        </button>
+                    </a>
+                  </button>
+                </div>
+                <!-- Fim da caixa do Menu Hamburguer (Quando estiver aberto) -->
+            </div>
+      
+            <!-- Botão de Hamburguer, ele está fora da Div justamente por ser um elemento singular -->
+          <button class="hamburger" id="hamburgerButton">
+              <i class="fas fa-bars"></i>
+          </button>
+    
+          <!-- FINAL -->
+    
+    
         </header>
 
         <main>
             <section class="section1">
-                <h2>NOTICIAS GERAIS</h2>
+                <h2>NOTÍCIAS GERAIS</h2>
                 <div class="div-pai">
 
                     <div class="div-dad1">
@@ -84,31 +144,142 @@
             </section>
 
             <section class="section2">
-                <div class="carousel">
-                    <div class="card">
-                        <h3>PROMOÇÃO</h3>
-                        <p>Faça sua primeira inscrição e ganhe um consulta gratis</p>
+                <h3>AJUDE-NÓS</h3>
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                
+                        <!-- Itens do carrossel -->
+                        <div class="carousel-item">
+
+                            <div>
+
+                                <h2>Veja nosso Descontos & Planos</h2>
+                            </div>
+                            <div>
+                                <a href="">Clique Aqui</a>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                           
+                            <div>
+
+                                <h2>Cadastre-se em nosso site</h2>
+                            </div>
+                            <div>
+                                <a href="">Clique Aqui</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            
+                            <div>
+
+                                <h2>Fale como foi sua experiencia nos mandando seu Feedback</h2>
+                            </div>
+                            <div>
+                                <a href="">Clique Aqui</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+
+                            <div>
+
+                                <h2>Veja nosso Descontos & Planos</h2>
+                            </div>
+                            <div>
+                                <a href="">Clique Aqui</a>
+                            </div>
+                        </div>
+                
                     </div>
-                    <div class="card">
-                        <h3>Card 2</h3>
-                        <p>Descrição do card 2.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Card 3</h3>
-                        <p>Descrição do card 3.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Card 4</h3>
-                        <p>Descrição do card 4.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Card 5</h3>
-                        <p>Descrição do card 5.</p>
-                    </div>
+                    
+
+            </section>
+
+
+            <section class="section3">
+                <h3> <span>Novos</span> Patrocinadores</h3>
+                 <div>
+                    <img src="section2/Lovepik_com-401691049-medical-medicine-logo.png" alt="Patrocinador">
+                    <h5>MEDICAL CARE</h5>
+                 </div>
 
             </section>
 
         </main>
+        <footer>
+            <div class="rodape-pai">
+
+                <!-- IMPORTANTES -->
+                <div>
+                    <h2>Importantes</h2>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href>
+                                    Politíca de Privacidade
+                                </a>
+                            </li>
+                            <li>
+                                <a href>
+                                    FeedBack
+                                </a>
+                            </li>
+                            <li>
+                                <a href>
+                                    Meus planos
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- ENDEREÇO -->
+                <div>
+                    <h2>Endereço</h2>
+                    <p>Rua das Estrelas, 500 <br>
+                        Bairro Encanto da Lua <br>
+                        Cidade Sonhópolis, Estado do Arco-Íris <br>
+                        CEP: 12345-678 <br>
+                        Brasil <br>
+                    </p>
+                </div>
+
+                <!-- REDES SOCIAS -->
+                <div>
+                    <h2>Siga-nos</h2>
+                    <div>
+                        <i class="fa-brands fa-square-whatsapp"
+                            id="whatsapp"></i>
+                        <i class="fa-brands fa-square-instagram"
+                            id="instagram"></i>
+                        <i class="fa-brands fa-telegram" id="telegram"></i>
+                        <i class="fa-brands fa-facebook" id="facebook"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3> Cuidando de você onde quer que esteja, com a tecnologia ao
+                seu lado.</h3>
+        </footer>
+
+        <!-- LIBRAS -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+        <!-- BIBLIOTECA DO JAVASCRIPT -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script
+            src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
 
 

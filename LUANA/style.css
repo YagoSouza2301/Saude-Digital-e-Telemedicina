@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* fonte diretamente do Google Fonts. */
+
+
+/* https://paletadecores.com/paleta/f7f4e8/daf3ea/85e6c0/6bb39b/0b0b0d/ */
+/* paleta de cores */
+
+/* estiização geral, aplica para todos os elementos da página */
+* {
+    margin: 0;
+    /* remove a margem padrão */
+    padding: 0;
+    /* remove o preenchimento padrão dos elementos */
+    box-sizing: border-box;
+    /* define o tamanho elemento, evitando que o conteúdo ultrapasse os limites de um elemento */
+    font-family: "Raleway", sans-serif;
+    /* define a fonte padrão do site */
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* ===========================================CABEÇALHO====================================== */
+header {
+    background-color: #0b0b0d;
+    width: 100%;
+    padding: min(2vw, 7vw);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+  
+}
+header img {
+    width: 8rem;
+}
+header h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.ocultar-mobile {
+    display: flex;
+}
+header ul {
+    display: flex;
+    gap: 30px;
+}
+header a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* ===========================================FUNCIONA TANTO NO CABEÇALHO COMO NO RODAPÉ =========================================== */
+ul li {
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+  
+/* Linha oculta inicialmente */
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: #6bb39b; /* Cor da linha */
+  transform: scaleX(0); /* Oculta a linha inicialmente */
+  transform-origin: bottom right; /* Origem da animação */
+  transition: transform 0.3s; /* Animação suave */
+}
+  
+/* Define a animação ao passar o mouse */
+ul li a:hover::after {
+  transform: scaleX(1); /* Expande a linha da direita para a esquerda */
+  transform-origin: bottom left;
+}
+
+
+/* Botão de Cadastre-se */
+header button{
+  color: white;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  border-radius: 10px;
+  width: 7vw;
+  height: 5vh;
+  margin-left: 30px;
+}
+
+header button::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: white; 
+  transform: scaleX(0); 
+  transform-origin: bottom right; 
+  transition: transform 0.8s; 
+}
+
+header button:hover::after{
+  transform: scaleX(1); 
+  transform-origin: bottom left;
+}
+/* final do botão */
+
+
+
+.form-container {
+    margin: 0 auto;
+    /* centraliza o contêiner do formulário horizontalmente */
+    max-width: 600px;
+    /*define uma larura máxima para o formulário */
+    padding: 20px;
+    /* adiciona um espaçamento interno em todos os lados do contêiner */
+    box-shadow: 0px 0px 15px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    /* centraliza o contêiner do formulário horizontalmente */
+    padding: 50px;
+    /* espaçamento interno em torno do conteúdo da página */
+    background-color: #fff;
+    /* define a cor de fundo */
+    border-radius: 8px;
+    /* aplica bordas arredondadas aos elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-container h1 {
+    font-size: 22px;
+    /* define o tamanho da fonte do título */
+    color: black;
+    /* define a cor do texto */
+    text-align: center;
+    /* alinha o ítulo ao centro */
+    margin-bottom: 15px;
+    /* adiciona um espaço abaixo do título */
+}
+
+
+.form-container p {
+    font-size: 16px;
+    /* define o tamanho da fonte do parágrafo */
+    margin-bottom: 15px;
+    /* adiciona um espaço abaixo do parágafo */
+    color: black;
+    /* define a cor do texto */
+    text-align: center;
+    /* alinha o conteúdo do parágrafo ao centro */
+}
+
+label {
+    color: #333;
+    /* define a cor do texto */
+    display: block;
+    /* faz com que o rótulo seja exibido como um bloco, o que força a quebra de linha antes e depois do texto do rótulo. */
+    font-size: 14px;
+    /* define o taamnho da fonte */
+    margin-bottom: 6px;
+    /* espaço de baixo */
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    /* define que os elementos ocupem toda a largura disponível */
+    padding: 12px;
+    /* adiciona um preenchimento */
+    margin-bottom: 18px;
+    /* adiciona um espaçaento abaixo de cada elemento do formulário */
+    border: 1px solid #ccc;
+    /* define uma borda fina ao redor dos elementos */
+    border-radius: 4px;
+    /* aplica bordas arredondadas aos elementos */
+    font-size: 14px;
+    /* define o tamanho da fonte para o texto  */
+    color: #333;
+    /* define a cor do texto */
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #2980b9;
+    /* quando o campo está em foco, a borda muda para uma cor azul */
+    outline: none;
+    /* remove a borda de destaque padrão do navegador */
+    background-color: #fff;
+    /* muda o fundo do campo quando ele estiver em foco */
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    background-color: #f9f9f9;
+    /* define a cor de fundo de todos esse elementos */
+}
+
+#deficiencia-descricao{
+    display: none;
+    /* o elemento será ocultado da página */
+}
+
+/* ESTILIZANDO O BOTÃO */
+button {
+    width: 100%;
+    /* faz com que o botão ocupe toda a largura disponível */
+    padding: 12px;
+    /* adiciona um preenchimento dentro do botão */
+    background-color: rgb(71, 132, 219);
+    /* define uma cor de fundo para o botão */
+    color: white;
+    /* define a cor do texto */
+    border: none;
+    /* remove qualquer borda padrão do botão */
+    border-radius: 4px;
+    /* aplica bordas arredondadas ao botão */
+    font-size: 16px;
+    /* define o tamanaho da fonte dentro do botão */
+    cursor: pointer;
+    /* muda o cursor para uma mãozinha quando o mouse passa sobre o botão */
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #005bb5;
+    /* quando passa o mouser por cima do botão, a cor defundo é alterada */
+    transition: 0.3s;
+    /* aplica uma transição para a mudança de cor */
+}
+
+
+
+/* ESTILIZANDO O CHECKBOX "CONCORDO COM OS TERMOS DE USO" */
+.div-checkbox {
+    display: flex; /* organiza os elementos em linha horizontalmente */
+    align-items: center; /* alinha o chekbox verticalmente ao centro */
+    justify-content: center;
+    margin-top: 5px; /* adiciona um espaço de 20px na parte superior */
+}
+
+.div-checkbox input {
+    margin-right: 5px; /* adiciona um espaço de 10px á direita do checkbox */
+    width: 20px; /* largura do checkbox */
+    height: 20px; /* altura do checkbox */
+    cursor: pointer; /* altera o cursos para uma mãozinha quando o usuário passa o mouse sobre o checkbox */
+    margin-left: 60px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.div-checkbox label {
+    font-size: 16px; /* tamanho da fonte do texto */
+    margin-bottom: auto; /* ajusta o posicionamento do texto em relação ao checkbox */
+    color: #333; /* cor do texto */
+    cursor: pointer; /* altera o cursor para uma mãozinha quando o usuário passa o mouse sobre o checkbox */
+    margin: -10px 20px;
+}
+
+.di
+
+.login-link {
+    text-align: center;
+    /*alinha ao centro*/
+    margin-top: 5px;
+    /*espaço de cima*/
+}
+
+.login-link a {
+    color: #007BFF;
+    /*cor do texto*/
+    text-decoration: none;
+    /*tira o sublinhado*/
+}
+
+
+
+/* ===========================================RODAPÉ====================================== */
+footer {
+    background-color: #0b0b0d;
+    padding: 3vw;
+    text-align: center;
+}
+.rodape-pai {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
+}
+.rodape-pai h2 {
+    color: #85e6c0;
+    font-size: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+}
+.rodape-pai a {
+    color: white;
+}
+.rodape-pai p {
+    color: white;
+}
+
+#whatsapp,
+#instagram,
+#telegram,
+#facebook {
+    font-size: 2rem;
+    margin: 0px 3px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+#whatsapp {
+    color: greenyellow;
+}
+#instagram {
+    background: linear-gradient(150deg, rgb(141, 2, 255),rgb(213, 2, 255), rgb(255, 238, 2));
+    background-clip: text;
+    color: transparent;
+}
+#telegram {
+    color: rgb(0, 204, 255);
+}
+#facebook {
+    color: rgb(0, 81, 255);
+}
+
+footer h3 {
+    color: yellow;
+    font-size: 25px;
+    margin-top: 2vh;
+}
+
+
+
+
+ /* APLICANDO A RESPONSIVIIDADE */
+@media (max-width: 600px) {
+    /* aplica estilos específicos quando a largura da tela é 600px ou menor */
+    .form-container {
+        padding: 15px;
+        margin: 10px;
+    }
+    /* reduz o padding e a margem do formulário para se ajustar melhor às telas pequenas. */
+
+    h1 {
+        font-size: 20px;
+    }
+    /* reduz o tamanho da fonte do título */
+    p {
+        font-size: 14px;
+    }
+    /* reduz o tamanho da fonte do parágrafo */
+
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    /* reduz o tamanho da fonte e o padding dos campos de formulário */
+}
