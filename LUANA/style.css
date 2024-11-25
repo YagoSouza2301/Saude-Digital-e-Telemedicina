@@ -16,6 +16,7 @@
     font-family: "Raleway", sans-serif;
     /* define a fonte padrão do site */
     text-decoration: none;
+    list-style: none;
 }
 
 html {
