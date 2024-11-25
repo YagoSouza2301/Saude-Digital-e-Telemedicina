@@ -19,7 +19,7 @@
 
 
     <header>
-        <img src="../YAGO/img/DoctorWeb.jpg" alt="hfba">
+        <img src="../YAGO/img/DoctorWeb.jpg">
         <h1>DOCTOR WEB</h1>
 
 
@@ -49,6 +49,54 @@
                 </a>
             </div>
         </div>
+            
+
+
+        <!-- CAIXA MOBILE -->
+           <div class="mobile-menu" id="mobileMenu">
+            
+            <!-- Botão para ser utilizado para fechamento da lista -->
+            <button id="closeButton" class="close">
+                <i class="fas fa-times"></i>
+            </button>
+  
+            <!-- Essa lista é do Menu Hamburguer quando estiver aberto. -->
+            <ul class="nav-links-mobile">
+                <li>
+                    <a href="..//PRINCIPAL/index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="..//GABRIEL/index.html">Notícias</a>
+                </li>
+                <li>
+                    <a href="..//GUILHERME/index.html">Planos</a>
+                </li>
+                <li>
+                    <a href="..//MANUEL/index.html">FeedBack</a>
+                </li>
+            </ul>
+  
+  
+            <div id="btn-mobile" class="">
+                <a href="..//LUANA/index.html">
+                    <i class="fa-solid fa-user"></i>
+                    <button>
+                        Cadastre-se
+                    </button>
+                </a>
+              </button>
+            </div>
+            <!-- Fim da caixa do Menu Hamburguer (Quando estiver aberto) -->
+        </div>
+  
+        <!-- Botão de Hamburguer, ele está fora da Div justamente por ser um elemento singular -->
+      <button class="hamburger" id="hamburgerButton">
+          <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- FINAL -->
+
+
     </header>
 
 
@@ -252,17 +300,16 @@
 
 
      <!-- LIBRAS -->
-     <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
-
 
 </body>
 </html>
