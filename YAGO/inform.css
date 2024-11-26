@@ -6,14 +6,98 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    box-sizing: border-box;
     font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 /* RESPONSIVIDADE */
 html {
     width: 100%;
     height: 100vh;
+}
+
+/* ===========================================CABEÇALHO====================================== */
+header {
+    background-color: pink;
+    width: 100%;
+    padding: min(3vw, 7vw);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+header img {
+    width: 8rem;
+}
+header h1 {
+    font-size: 40px;
+}
+header ul {
+    display: flex;
+    gap: 30px;
+}
+header a {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ul li {
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+  
+/* Linha oculta inicialmente */
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: black; /* Cor da linha */
+  transform: scaleX(0); /* Oculta a linha inicialmente */
+  transform-origin: bottom right; /* Origem da animação */
+  transition: transform 0.3s; /* Animação suave */
+}
+  
+/* Define a animação ao passar o mouse */
+ul li a:hover::after {
+  transform: scaleX(1); /* Expande a linha da direita para a esquerda */
+  transform-origin: bottom left;
+}
+
+header button{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  border-radius: 10px;
+  width: 9vw;
+  height: 5vh;
+}
+
+header button::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: white; 
+  transform: scaleX(0); 
+  transform-origin: bottom right; 
+  transition: transform 0.8s; 
+}
+
+header button:hover::after{
+  transform: scaleX(1); 
+  transform-origin: bottom left;
 }
 
 /* ===========================================SESSÃO1====================================== */
@@ -28,22 +112,19 @@ html {
 
 /* TITULO PRINCIPAL */
 .sobre h2 {
-    font-size: 50px;
-    margin: 30px;
+    font-size: 50px;;
     text-align: center;
 }
 
 /* AJUSTANDO REFERENTE AO QUE SE TRATA */
 .inform {
-    display: flex;  
+    display: flex; 
 }
 .inform p {
     font-size: 30px;
-    padding: 3rem;
+    padding: 2rem;
     margin: 50px;
     gap: 35px;
-    display: flex;
-    flex-wrap: nowrap;
     font-size: 30px;
     text-align: center;
 }
@@ -56,7 +137,9 @@ html {
     box-shadow: 2px 2px 15px #0b0b0d;
     height: 25rem;
 }
-
+.robo img {
+    width: 25rem;
+}
 /* NOME DO ROBO */
 .robo h3 {
     color: rgb(0, 0, 0);
@@ -73,14 +156,15 @@ html {
 .contato button {
     margin: 10px;
     background-color: greenyellow;
-    border-color: #000000b6;
+    border-color: rgb(201, 255, 119);
+    box-shadow: 2px 2px 8px rgb(0, 0, 0);
     border-radius: 20px;
-    width: 12rem;
+    width: 15vw;
     transition: 0.6s;
 }
 .contato button:hover {
-    border-color: white;
-    box-shadow: 2px 2px 10px black;
+    border-color: rgb(114, 114, 114);
+    box-shadow: 2px 2px 15px green;
 }
 .contato button a {
     display: flex;
@@ -94,7 +178,7 @@ html {
 /* ===========================================SESSÃO2====================================== */
 .topicos {
     width: 100%;
-    padding: 150px;
+    padding: 8rem;
     background: linear-gradient(180deg, #f7f4e8 8.33%, #daf3ea 100%);
     margin-top: -75px;
 }
@@ -106,21 +190,21 @@ html {
 .consulta,
 .compromisso {
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     gap: 7rem;
-    margin-top: 25rem;
+    margin-top: 20rem;
 }
 
 .segurança {
-    margin-top: 8rem;
+    margin-top: -1rem;
 }
 /* ARRUAMNDO O TEXTO DENTRO DAS DIV (FILHOS) */
 .box-inform {
     border-radius: 20px;
     background-color: #85e6c0;
-    opacity: 0.2;
+    opacity: 0.5;
     text-align: center;
     width: 25vw;
     height: auto;
@@ -200,8 +284,8 @@ html {
 /* ===========================================SESSÃO3====================================== */
 .plano {
     width: 100%;
-    padding: 12rem;
-    background: linear-gradient(360deg, #f7f4e894 8.33%, #daf3ea 100%), url(img/sessão3.jpg);
+    padding: 15rem;
+    background: linear-gradient(360deg, #daf3ea 0%, #f7f4e894 35%, #daf3ea 100%), url(img/sessão3.jpg);        
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -214,12 +298,17 @@ html {
 .plano h2 {
     text-align: center;
     font-size: 50px;
+    margin-top: -3rem;
 }
 .div-plano {
     padding: 5rem;
 }
 .div-plano p {
-    font-size: 23px;
+    font-size: 25px;
+}
+.div-plano p strong{
+    font-size: 28px;
+    font-weight: bold;
 }
 .div-plano button {
     margin: 20px;
@@ -246,6 +335,12 @@ html {
 .endereço div {
     margin: 3rem;
 }
+.endereço p {
+    font-size: 25px;
+}
+.endereço h3 {
+    font-size: 30px;
+}
 
 
 
@@ -270,6 +365,120 @@ html {
 
 
 /* ===========================================MOBILE====================================== */
-@media (max-width = 840px) {
+@media (max-width : 840px) {
+    /* ===========================================CABEÇALHO MOBILE====================================== */
+    header {
+        flex-direction: column;
+    }
+
+
+
+    /* ===========================================SESSÃO1 MOBILE====================================== */
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .inform {
+        flex-wrap: wrap;
+    }
+    .inform p {
+        font-size: 22px;
+        gap: 0px;
+    }
+    .robo {
+        width:20rem;
+        height: 20rem;
+    }
+    .robo img {
+        width: 20rem;
+    }
+    .robo h3 {
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .robo h4 {
+        font-size: 20px;
+    }
+    .robo .zap {
+        width: 2.2rem;
+    }
+    .robo button {
+        width: 40vw;
+    }
+    .robo button a {
+        font-size: 20px;
+    }
+
+
+    /* ===========================================SESSÃO2 MOBILE====================================== */
+    .topicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-inform {
+        width: auto;
+    }
+    .box-inform h2 {
+        font-size: 30px;
+    }
+    .segurança,
+    .acesso,
+    .qualificado,
+    .consulta,
+    .compromisso {
+        margin-top: 11rem;
+    }
+    .box-img {
+        width: 80vw;
+    }
+    .botao button{
+        width: 10rem;
+        font-size: 20px;
+    }
+
+
+    /* ===========================================SESSÃO3 MOBILE====================================== */
+    .plano {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10rem;
+    }
+    #plano-saude {
+        height: 2rem;
+        margin: 5rem;
+
+    }
+    .plano h2 {
+        font-size: 35px;
+    }
+    .div-plano {
+        height: auto;
+        width: 90vw;
+        padding: 1rem;
+        margin-top: 80px;
+    }
+    .plano p{
+        font-size: 25px;
+    }
+    .plano button{
+        width: 10rem;
+        font-size: 20px;
+    }
+    /* ===========================================SESSÃO4 MOBILE====================================== */
+    .endereço {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .endereço iframe {
+        width: 80vw;
+        height: 40vh;
+    }
 
 }

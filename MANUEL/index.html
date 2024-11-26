@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 
+
+    <!-- Esse link está usando a CDN do Slick Carousel, uma forma rápida de acessar a biblioteca diretamente da web-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+
+
 </head>
 <body>
             <!-- Header Aqui -->
@@ -20,34 +25,43 @@
     <!--Conteudo Principal-->
 
 
+<!--===================================== Section 1 =======================================-->
         <section class="section-ouvidoria-top">
+        <!--section-->
+
             <h1>Bem-vindo à Doctor Web</h1>
                     <!-- Sub titulo -->
 
                     <p>Estamos aqui para ouvir você! Se você tem alguma denúncia, 
-                        sugestão ou reclamação sobre os serviços de saúde digital, 
+                        sugestão ou reclamação sobre <br> os serviços de saúde digital, 
                         nossa equipe está pronta para ajudar.</p>
                     <!-- Paragrafo -->
 
                     
         </section>
+<!--=============================== fim da Section 1 =======================================-->
 
 
 
 
 
+
+
+<!--====================================== Section 2 =======================================-->
         <section class="section-ouvidoria">
+        <!-- section = (Denuncia) -->
 
-            <div class="div-container" id="div-container-ouvidoria">
-            <!-- DIV Container para guardar as DIV filhos -->
+            <div class="div-container" >
+            <!-- DIV Container para guardar as DIV pai -->
             
-                <div class="content" id="denuncia">
-                <!-- DIV Filho denuncia -->
+                <!--==================== div denuncia ============-->
+                <div class="denuncia">
+                <!-- DIV pai denuncia -->
 
                     <h2>Denúncia</h2>
                     <!-- Sub titolo -->
 
-                    <form>
+                    <form action="#" method="POST">
                     <!-- Formulario -->
 
                         <div class="form-group">
@@ -65,168 +79,189 @@
                         <!-- Div filho guardando o e-mail (Todas têm a mesma classe.) -->
 
                             <label for="email">Seu e-mail:</label>
-                            <!---->
+                            <!-- label = (Perguntando qual é o e-mail do cliente?) -->
 
                             <input type="email" id="email" name="email" required>
-                            <!---->
+                            <!-- input = (Para o cliente digitar o e-mail dele) -->
 
                         </div>
 
                         <div class="form-group">
-                        <!-- Div filho guardando o 3º Grupo (Todas têm a mesma classe.) -->
+                        <!-- Div filho guardando o conteudo (Label e textarea) -->
 
                             <label for="descricao">Descrição da denúncia:</label>
-                            <!---->
+                            <!-- label = (Perguntando qual é a descrição da Denúncia) -->
 
                             <textarea id="descricao" name="descricao" required></textarea>
-                            <!---->
+                            <!-- textarea = (Local para o Cliente digitar sua Denúncia) -->
 
                         </div>
 
                         <button type="submit">Enviar Denúncia</button>
-                        <!---->
+                        <!-- Botão para enviar a Denúncia -->
 
                     </form>
 
                 </div>
+                <!--==================== fim da denuncia ============-->
             
             
-            
-
-                <div class="content" id="sugestao">
-                <!---->
+                <!--=================== div da Sugestão =============-->
+                <div class="Sugestão">
+                <!-- div pai Abrasando o conteudo Sugestão -->
 
                     <h2>Sugestão</h2>
-                    <!---->
+                    <!-- Sub titulo -->
 
                     <form action="#" method="POST">
-                    <!---->
+                    <!-- formulario -->
 
                         <div class="form-group">
-                        <!-- Div filho guardando o nome (Todas têm a mesma classe.) -->
+                        <!-- Div filho guardando o conteudo (Label e input) -->
 
                             <label for="nome_sugestao">Seu nome:</label>
-                            <!---->
+                            <!-- label = (Perguntando qual é o nome do cliente?) -->
 
                             <input type="text" id="nome_sugestao" name="nome_sugestao" required>
-                            <!---->
+                            <!-- input = (Local onde o cliente vai digitar nome) -->
 
                         </div>
 
                         <div class="form-group">
-                        <!-- Div filho guardando o e-mail (Todas têm a mesma classe.) -->
+                        <!-- Div filho guardando o conteudo (Label e input) -->
                             
                             <label for="email_sugestao">Seu e-mail:</label>
-                            <!---->
+                            <!-- label = (Perguntando qual é o e-mail do cliente?) -->
 
                             <input type="email" id="email_sugestao" name="email_sugestao" required>
-                            <!---->
+                            <!-- input = (aonde o cliente vai digitar o e-mail) -->
 
                         </div>
 
                         <div class="form-group">
-                        <!-- Div filho guardando sugestão (Todas têm a mesma classe.) -->
+                        <!-- Div filho guardando o conteudo (Label e textarea) -->
 
                             <label for="sugestao_texto">Sua sugestão:</label>
-                            <!---->
+                            <!-- label = (Perguntando qual é o nome do cliente?) -->
 
                             <textarea id="sugestao_texto" name="sugestao_texto" required></textarea>
-                            <!---->
+                            <!-- textarea = (aonde o cliente vai digitar sua sugestão) -->
 
                         </div>
 
                         <button type="submit">Enviar Sugestão</button>
-                        <!---->
+                        <!-- button = (para enviar a Sugestão) -->
 
                     </form>
 
                 </div>
-                
+                <!--================= fim da div Sugestão =============-->
 
             
            
-
-                <div id="reclamacao" class="content">
-                <!---->
+                <!--================= inicio da Reclamação ============-->
+                <div class="reclamação">
+                <!-- div pai Abrasando o conteudo Reclamação -->
 
                     <h2>Reclamação</h2>
-                    <!---->
+                    <!-- Sub titulo -->
 
                     <form action="#" method="POST">
-                    <!---->
+                    <!-- Formulario -->
 
                         <div class="form-group">
-                        <!-- Div filho guardando o 7º Grupo (Todas têm a mesma classe.) -->
+                        <!-- Div filho guardando o conteudo (Label e input) -->
 
                             <label for="nome_reclamacao">Seu nome:</label>
-                            <!---->
+                            <!-- label = (Perguntando qual é o nome do cliente?) -->
 
                             <input type="text" id="nome_reclamacao" name="nome_reclamacao" required>
-                            <!---->
+                            <!-- input = ( onde o cliente vai digitar seu nome) -->
 
                         </div>
 
                         <div class="form-group">
-                        <!-- Div filho guardando o 8º Grupo (Todas têm a mesma classe.) -->
+                        <!-- Div filho guardando o conteudo (Label e input) -->
 
                             <label for="email_reclamacao">Seu e-mail:</label>
-                            <!---->
+                            <!-- label = (Perguntando qual é o e-mail do cliente?) -->
 
                             <input type="email" id="email_reclamacao" name="email_reclamacao" required>
-                            <!---->
+                            <!-- input = (onde o cliente vai digitar seu e-mail) -->
 
                         </div>
 
                         <div class="form-group">
-                        <!-- Div filho guardando o 9º Grupo (Todas têm a mesma classe.) -->
+                        <!-- Div filho guardando o conteudo (Label e textarea) -->
 
                             <label for="reclamacao_texto">Sua reclamação:</label>
-                            <!---->
+                            <!-- label = (Perguntando qual é o nome do cliente?) -->
 
                             <textarea id="reclamacao_texto" name="reclamacao_texto" required></textarea>
-                            <!---->
+                            <!-- textarea = (onde ele vai digitar sua reclamação) -->
 
                         </div>
 
                         <button type="submit">Enviar Reclamação</button>
-                        <!---->
+                        <!-- botão para enviar o conteudo da reclamação -->
 
                     </form>
 
                 </div>
+                <!--================= fim da Reclamação ============-->
 
             </div>
 
-                <div id="contato" class="content">
-                <!---->
+        </section>
+        <!--====================================== FIM da sessão 2 ============================-->
+
+
+        <!--================================== Section 3 ====================-->
+        <section class="section-ouvidoria-contato">
+        <!-- sessão contato -->
+                <div class="contato">
+                <!-- div filho (Contato) -->
 
                     <h2>Contato</h2>
-                    <!---->
+                    <!-- Sub titulo-->
 
                     <p>Se preferir, entre em contato diretamente com nossa equipe pelo e-mail ou telefone abaixo:</p>
-                    <!---->
+                    <!-- paragrafo -->
 
                     <p>Email: <a href="#">Ouvidoria@DoctorWeb.com.br</a></p>
-                    <!---->
+                    <!-- paragrafo -->
 
                     <p>Telefone: +xx xx xxxx-xxxx</p>
-                    <!---->
+                    <!-- paragrafo -->
 
                 </div>
-
             
-
         </section>
-<!--========================================================= FIM da sessão 2 ========================================-->
+<!--============================ fim da Section 3 ======================================-->
 
 
 
     </main>
 
+<!--======================================= Libras =====================================-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+<!--================================ fim da Libras =====================================-->
 
+
+
+    <!-- Aqui, usamos o link CDN para obter o jQuery diretamente da web-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    
+    <!-- Link CDN do JavaScript do Slick, essencial para inicializar e configurar o carrosel -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

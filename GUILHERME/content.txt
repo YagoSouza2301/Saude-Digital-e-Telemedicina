@@ -17,6 +17,7 @@ Redução de custos: Como há menos necessidade de estrutura física e administr
 Facilidade de gestão: Os usuários podem gerenciar sua saúde, histórico médico, exames e consultas diretamente pelo aplicativo ou portal online, sem burocracia.
 
 Agilidade no atendimento: Em emergências ou em casos de sintomas simples, a resposta e orientação médicas podem ser muito mais rápidas.
+
 Exemplos de serviços:
 
 Consultas online com médicos de diferentes especialidades (pediatria, dermatologia, ginecologia, etc.).
@@ -36,12 +37,15 @@ Redução de filas e sobrecarga nos serviços tradicionais: Com a telemedicina, 
 Facilidade no acompanhamento contínuo: Pacientes com doenças crônicas ou em reabilitação podem ser monitorados de forma regular por seus médicos sem a necessidade de consultas presenciais frequentes.
 
 Rastreamento e diagnósticos precoces: A telemedicina facilita a detecção precoce de problemas de saúde, promovendo o tratamento de forma mais eficaz.
+
 Principais serviços oferecidos:
 
 Consultas virtuais com médicos: Através de plataformas digitais, o paciente conversa com médicos especialistas em tempo real para receber diagnósticos ou orientações.
+
 Monitoramento remoto de saúde: Acompanhamento de pacientes com doenças crônicas por meio de dispositivos médicos conectados, como medidores de pressão arterial, monitores de glicose, entre outros.
 
 Receitas digitais: Médicos podem prescrever medicamentos via sistemas de telemedicina, que podem ser enviados para farmácias digitais ou físicas.
+
 Segunda opinião médica: Pacientes podem buscar avaliações de diferentes médicos ou especialistas sem precisar sair de casa.
 
 Regulamentação e Considerações Legais
