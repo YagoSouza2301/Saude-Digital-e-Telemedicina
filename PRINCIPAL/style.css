@@ -167,19 +167,181 @@ header button:hover::after{
 
 /* FINAL */
 
+/* ======================================================SESSÃO1================================================================== */
+.s1 {
+    width: 100%;
+    padding: 20vw;
+    text-align: center;
+    background: linear-gradient(180deg, #f7f4e894 8.33%, #daf3eaf8 100%), url(img/s1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s1 div {
+    background-color: #000000d3;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+.s1 h2 {
+    color: white;
+    margin-bottom: 10vh;
+    font-size: 60px;
+}
+.s1 p {
+    color: white;
+    text-align: left;
+    font-size: 30px;
+}
+
+/* ======================================================SESSÃO2================================================================== */
+.s2 {
+    width: 100%;
+    padding: 15vw;
+    background: linear-gradient(360deg, #f7f4e8 8.33%, #daf3ea 100%);
+}
+.f-pai {
+    display: flex;
+    justify-content: space-between;
+    align-items: safe;
+    margin-bottom: 12vh;
+}
+.box {
+    background-color: #6bb39b;
+    box-shadow: 3px 3px 15px black;
+    text-align: center;
+    width: 20vw;
+    height: 50vh;
+    padding: 30px;
+    border-radius: 20px;
+}
+.i {
+    transition: 0.6s;
+}
+.i:hover {
+    transform: scale(1.08, 1.08);
+}
+.i i {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.i p {
+    font-size: 22px;
+}
+.s2 .p p {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+}
 
 
+/* ======================================================SESSÃO3================================================================== */
+.s3 {
+    width: 100%;
+    margin-top: -20vh;
+    padding: 10vw;
+    background-color: #f7f4e8;
+    text-align: center;
+}
+.s3 .h2 {
+    font-size: 50px;
+}
+.box-projeto {
+    width: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projeto1 {
+    width: 20vw;
+    height: 50vh;
+    background-image: url(img/projeto1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px black; 
+}
+.projeto2 {
+    width: 20vw;
+    height: 50vh;
+    background-image: url(img/projeto2.avif);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px black;     
+}
+.projeto3 {
+    width: 20vw;
+    height: 50vh;
+    background-image: url(img/projeto3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px black; 
+}
+
+/* ======================================================SESSÃO4================================================================== */
+.s4 {
+    padding: 13vw;
+    text-align: center;
+    background: linear-gradient(360deg, #f7f4e8 0%, #daf3ea9d 35%, #f7f4e8 100%), url(img/s4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+#text{
+    color: black;
+    height: 30px;
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+.s4 button {
+    width: 13vw;
+    height: 5vh;
+    border-radius: 20px;
+    font-size: 17px;
+    background-color: #85e6bfbd;
+    transition: 0.6s;
+}
+.s4 button:hover {
+    background-color: #85e6c0;
+    box-shadow: 1px 2px 15px #000000;
+    cursor: pointer;
+}
 
 
+/* ======================================================SESSÃO5================================================================== */
+.s5 {
+    padding: 15vw;
+    background: linear-gradient(180deg, #f7f4e8c9 5.0%, #0b0b0d 100%);
+}
 
+.s5-div {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.767);
 
+}
 
-
-
-
-
-
-
+.box-comit {
+    padding: 25px;
+    color: white;
+    border-radius: 20px;
+}
+.box-comit div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    height: 10vh;
+    gap: 8px;
+}
+.box-comit p {
+    font-size: 20px;
+}
 
 
 
