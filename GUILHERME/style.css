@@ -322,6 +322,7 @@ h2 {
   width: 60%;
   transition: 0.6s;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .div-filho1 button:hover {
@@ -390,6 +391,16 @@ footer h3 {
   font-size: 25px;
   margin-top: 2vh;
 }
+
+
+/* ============================================BOTÃO DO CABEÇALHO================================ */
+@media (max-width: 1312px) {
+  /* Botão de Cadastre-se */
+header button{
+  width: 8vw;
+}
+}
+
 
 
 /* ========================================= Responsividade ============================================*/
@@ -554,27 +565,28 @@ footer h3 {
   }
 
   .section01 {
-    padding: 2rem;
+    flex-direction: column;
+    padding: 2vw;
   }
-  
-  .content h1 {
-    font-size: 3rem;
+  .section01 .content h1 {
+    font-size: 40px;
+    height: 45vh;
   }
-  
-  #plano {
-    font-size: 3rem;
+  .section01 .content h1 #plano {
+    font-size: 40px;
   }
 
   .content p {
-    font-size: 1rem;
+    font-size: 19px;
   }
 
 .section02 {
   padding: 1rem;
+  flex-direction: column;
 }
 
 .section02 h2 {
-  flex-direction: column;
+  
 
 }
 .caixas {

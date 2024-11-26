@@ -198,7 +198,7 @@ header button:hover::after{
 /* ======================================================SESSÃO2================================================================== */
 .s2 {
     width: 100%;
-    padding: 15vw;
+    padding: 10vw;
     background: linear-gradient(360deg, #f7f4e8 8.33%, #daf3ea 100%);
 }
 .f-pai {
@@ -211,7 +211,7 @@ header button:hover::after{
     background-color: #6bb39b;
     box-shadow: 3px 3px 15px black;
     text-align: center;
-    width: 20vw;
+    width: 25vw;
     height: 50vh;
     padding: 30px;
     border-radius: 20px;
@@ -240,7 +240,7 @@ header button:hover::after{
 /* ======================================================SESSÃO3================================================================== */
 .s3 {
     width: 100%;
-    margin-top: -20vh;
+    margin-top: -12vh;
     padding: 10vw;
     background-color: #f7f4e8;
     text-align: center;
@@ -249,14 +249,12 @@ header button:hover::after{
     font-size: 50px;
 }
 .box-projeto {
-    width: auto;
-    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .projeto1 {
-    width: 20vw;
+    width: 25vw;
     height: 50vh;
     background-image: url(img/projeto1.jpg);
     background-position: center;
@@ -265,7 +263,7 @@ header button:hover::after{
     box-shadow: 2px 2px 15px black; 
 }
 .projeto2 {
-    width: 20vw;
+    width: 25vw;
     height: 50vh;
     background-image: url(img/projeto2.avif);
     background-position: center;
@@ -274,7 +272,7 @@ header button:hover::after{
     box-shadow: 2px 2px 15px black;     
 }
 .projeto3 {
-    width: 20vw;
+    width: 25vw;
     height: 50vh;
     background-image: url(img/projeto3.jpg);
     background-position: center;
@@ -323,7 +321,7 @@ header button:hover::after{
     display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.767);
-
+    border-radius: 22px;
 }
 
 .box-comit {
@@ -339,15 +337,12 @@ header button:hover::after{
     height: 10vh;
     gap: 8px;
 }
+.box-comit div h3 {
+    color: #85e6c0;
+}
 .box-comit p {
     font-size: 20px;
 }
-
-
-
-
-
-
 
 
 
@@ -408,9 +403,42 @@ footer h3 {
 
 
 
+@media (max-width: 1312px) {
+    /* HEADER */
+    /* Botão de Cadastre-se */
+header button{
+    flex-direction: column;
+    width: 8vw;
+  }
 
+  /* ===============================SESSÃO2============================= */
+  .s2 .f-pai{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+  }
+  .box {
+    height: 60vh;
+  }
+  
 
-
+    /* ===============================SESSÃO3============================= */
+  .box-projeto {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+  }
+  
+  .projeto1 {
+    height: 40vw;
+  }
+  .projeto2 {
+    height: 40vw;
+  }
+  .projeto3 {
+    height: 40vw;
+  }
+}
 
 
 
@@ -469,6 +497,38 @@ footer h3 {
 }
 
 
+    @media(max-width: 880px) {
+        /* ===============================SESSÃO2============================= */
+  .box {
+    width: auto;
+    height: 30vh;
+    margin: 20px;
+  }
+
+  /* ====================================SESSÃO3============================== */
+  .projeto1 {
+      width: 80vw;
+      height: 50vh;
+    }
+    .projeto2 {
+        width: 80vw;
+        height: 50vh;
+    }
+    .projeto3 {
+        width: 80vw;
+        height: 50vh;
+    }
+    .direita {
+        margin-bottom: 20px;
+    }
+    .chao {
+        margin-bottom: 20px;
+    }
+    .esquerda {
+        margin-bottom: 20px;
+    }
+}
+
 
     @media (max-width : 840px) {
         /* ===========================================CABEÇALHO MOBILE====================================== */
@@ -482,18 +542,7 @@ footer h3 {
             margin: 0px auto;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
         /* ===========================================RODAPÉ MOBILE====================================== */
     footer {
@@ -513,4 +562,62 @@ footer h3 {
         color: yellow;
         font-size: 20px;
     }
-};
+}
+
+
+@media (max-width: 650px) {
+    /* =============================SESSÃO1======================= */
+    .s1 {
+        padding: 12vw;
+        flex-direction: column;
+    }
+    .s1 h2 {
+        font-size: 42px;
+    }
+    .s1 p {
+        font-size: 23px;
+    }
+
+
+        /* =============================SESSÃO2======================= */
+    .s2 {
+        flex-direction: column;
+    }
+    .box {
+        height: auto;
+    }
+
+
+        /* =============================SESSÃO3======================= */
+    .s3 {
+        padding: 10vw;
+        flex-direction: column;
+    }
+    .s3 h2{
+        margin-top: 10vh;
+        margin-bottom: 20px;
+    }
+
+
+        /* =============================SESSÃO4======================= */
+    .s4 {
+        flex-direction: column;
+    }
+    .s4 #text {
+        font-size: 32px;
+    }
+    .s4 button {
+        width: 30vw;
+    }
+
+        /* =============================SESSÃO5======================= */
+    .s5 .box-comit{
+        height: 60vh;
+    }
+    .box-comit h3 {
+        font-size: 23px;
+    }
+    .box-comit p {
+        font-size: 15px;
+    }
+}
