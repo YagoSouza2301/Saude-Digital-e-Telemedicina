@@ -466,6 +466,38 @@ footer h3 {
   }
 
 }
+@media (max-width : 840px) {
+  /* ===========================================CABEÇALHO MOBILE====================================== */
+  
+ 
+  header img{
+      width: 4rem;
+      margin: 0px auto;
+  }
+  header h1{
+      font-size: 33px;
+      margin: 0px auto;
+  }
+
+  footer {
+    padding: 2vw;
+    text-align: center;
+}
+.rodape-pai {
+    flex-wrap: wrap;
+}
+.rodape-pai h2 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+
+footer h3 {
+    color: yellow;
+    font-size: 20px;
+}
+
+}
 
 @media (max-width: 840px) {
   /* ================================== CONFIGURAÇÃO GLOBAL ================================== */
@@ -542,7 +574,7 @@ footer h3 {
   }
 
   .carousel-item {
-    padding: 6rem; /* Remove excessos */
+    padding: 4.8rem; /* Remove excessos */
     width: 100%; /* Adapta à largura do container */
     text-align: center;
   }
