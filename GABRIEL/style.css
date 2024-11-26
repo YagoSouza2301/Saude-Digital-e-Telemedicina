@@ -469,66 +469,72 @@ footer h3 {
   /* ================================== SECTION 1 ================================== */
 
   .section1 {
-    padding: 2rem; /* Reduzi o padding para não causar problemas em telas pequenas */
+    padding: 4rem; /* Espaçamento interno ajustado */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Alinha os elementos em coluna */
     align-items: center;
-    text-align: center; /* Melhor para centralizar textos em telas menores */
+    text-align: center; /* Centraliza textos */
+    gap: 2rem; /* Espaçamento entre os elementos filhos */
   }
 
   .div-pai {
     display: flex;
-    flex-direction: column; /* Empilha os elementos verticalmente */
+    flex-direction: column; /* Empilha as caixas verticalmente */
     align-items: center;
-    gap: 1rem; /* Adiciona espaçamento entre os itens */
-    width: 100%; /* Garante que o container ocupe o espaço da tela */
-  }
-
-  .div-dad1 img,
-  .div1 img,
-  .div2 img {
-    width: 8rem; /* Reduz as imagens para caber melhor na tela */
-    margin: 0 auto; /* Centraliza as imagens */
+    gap: 1.5rem; /* Espaço entre as caixas */
+    width: 100%; /* Ocupa toda a largura da tela */
   }
 
   .div1, .div2 {
     display: flex;
-    flex-direction: column; /* Torna o conteúdo vertical */
+    flex-direction: column; /* Empilha o conteúdo internamente */
     align-items: center;
     padding: 1rem;
-    width: 100%; /* Adapta a largura ao container */
+    width: 90%; /* Adapta a largura ao container */
+    max-width: 20rem; /* Define um limite para as caixas */
+    background-color: #f9f9f9; /* Fundo claro para contraste */
+    border-radius: 0.5rem; /* Cantos arredondados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
   }
 
-  .div1 h3,
-  .div2 h3 {
-    margin: 0.5rem 0; /* Reduz as margens para evitar espaçamento excessivo */
-    text-align: center;
+  .div1 img, .div2 img {
+    width: 80%; /* Ajusta o tamanho da imagem */
+    max-width: 8rem; /* Limite máximo */
+    height: auto; /* Mantém a proporção */
+    margin: 0 auto; /* Centraliza a imagem */
   }
 
-  .div3 {
-    width: 90%; /* Adapta a largura em telas menores */
-    margin: 1rem auto;
-    text-align: center;
-  }
-
-  .div-dad2 {
-    width: 100%; /* Garante que o conteúdo ocupe a largura disponível */
-    text-align: center;
+  .div1 h3, .div2 h3 {
+    margin: 1rem 0; /* Adiciona espaçamento ao texto */
+    text-align: center; /* Centraliza os textos */
   }
 
   /* ================================== SECTION 2 ================================== */
 
+  .section2{
+    padding: 1rem;
+  }
+
   .carousel-item {
-    padding: 2rem; /* Reduzi o padding para evitar que o conteúdo fique muito espaçado */
-    text-align: center; /* Centraliza o conteúdo */
-    width: 100%; /* Adapta ao tamanho da tela */
+    padding: 7rem; /* Padding ajustado */
+    width: 100%; /* Garante que o carrossel ocupe toda a largura */
+    max-width: 100%; /* Remove limites fixos */
+    text-align: center;
   }
 
   .carousel-item img {
-    width: 100%; /* Garante que as imagens do carrossel se ajustem */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 90%; /* Imagens mais largas */
+    max-width: 20rem; /* Limite máximo para imagens */
+    height: auto; /* Mantém proporção */
+    margin: 0 auto;
+  }
+
+  .carousel {
+    width: 100%; /* Ocupa toda a largura */
+    margin: 0 auto; /* Centraliza o carrossel */
   }
 }
+
 
 
 
