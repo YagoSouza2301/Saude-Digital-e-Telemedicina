@@ -466,80 +466,106 @@ footer h3 {
 }
 
 @media (max-width: 840px) {
-  /* ================================== SECTION 1 ================================== */
-
-
-  *{
-
-    box-sizing: border-box;
+  /* ================================== CONFIGURAÇÃO GLOBAL ================================== */
+  * {
+    box-sizing: border-box; /* Garante que padding/margin não extrapolem a largura */
+    margin: 0;
+    padding: 0;
   }
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Garante que o body nunca ultrapasse a largura da tela */
+    overflow-x: hidden; /* Impede rolagem horizontal */
+  }
+
+  /* ================================== SECTION 1 ================================== */
   .section1 {
-    padding: 4rem; /* Espaçamento interno ajustado */
+    padding: 4rem 2rem; /* Reduzi o padding para telas menores */
     display: flex;
-    flex-direction: column; /* Alinha os elementos em coluna */
+    flex-direction: column; /* Coloca os elementos em coluna */
     align-items: center;
-    text-align: center; /* Centraliza textos */
-    gap: 2rem; /* Espaçamento entre os elementos filhos */
+    gap: 1.5rem; /* Espaçamento entre os elementos */
+    width: 100%; /* Garante que a seção ocupe toda a largura */
   }
 
   .div-pai {
     display: flex;
-    flex-direction: column; /* Empilha as caixas verticalmente */
+    flex-direction: column; /* Alinha elementos verticalmente */
     align-items: center;
-    gap: 1.5rem; /* Espaço entre as caixas */
-    width: 100%; /* Ocupa toda a largura da tela */
+    gap: 1rem; /* Espaçamento entre as caixas */
+    width: 100%; /* Adapta a largura ao container */
+    padding: 0 1rem; /* Adiciona margem interna */
   }
 
   .div1, .div2 {
     display: flex;
-    flex-direction: column; /* Empilha o conteúdo internamente */
+    flex-direction: column; /* Elementos dentro das caixas em coluna */
     align-items: center;
     padding: 1rem;
-    width: 90%; /* Adapta a largura ao container */
-    max-width: 20rem; /* Define um limite para as caixas */
-    background-color: #f9f9f9; /* Fundo claro para contraste */
+    width: 90%; /* Ocupa 90% da largura do container */
+    max-width: 22rem; /* Limite máximo da largura */
+    background-color: #f9f9f9; /* Fundo claro */
     border-radius: 0.5rem; /* Cantos arredondados */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 0 auto; /* Centraliza as caixas */
   }
 
   .div1 img, .div2 img {
-    width: 80%; /* Ajusta o tamanho da imagem */
-    max-width: 8rem; /* Limite máximo */
-    height: auto; /* Mantém a proporção */
-    margin: 0 auto; /* Centraliza a imagem */
+    width: 100%; /* Imagens ocupam toda a largura do container */
+    max-width: 10rem; /* Define um limite de tamanho */
+    height: auto; /* Mantém proporção */
+    margin: 0 auto; /* Centraliza no container */
   }
 
   .div1 h3, .div2 h3 {
-    margin: 1rem 0; /* Adiciona espaçamento ao texto */
-    text-align: center; /* Centraliza os textos */
+    margin-top: 1rem; /* Espaçamento superior */
+    font-size: 1rem; /* Tamanho de fonte ajustado para mobile */
+    text-align: center;
   }
 
   /* ================================== SECTION 2 ================================== */
+  .section2 {
+    padding: 3rem; /* Reduzido para mobile */
+    text-align: center; /* Centraliza textos */
+  }
 
-  .section2{
-    padding: 1rem;
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Garante que ocupe a largura */
+    margin: 0 auto;
   }
 
   .carousel-item {
-    padding: 7rem; /* Padding ajustado */
-    width: 100%; /* Garante que o carrossel ocupe toda a largura */
-    max-width: 100%; /* Remove limites fixos */
+    padding: 6rem; /* Remove excessos */
+    width: 100%; /* Adapta à largura do container */
     text-align: center;
   }
 
   .carousel-item img {
-    width: 90%; /* Imagens mais largas */
-    max-width: 20rem; /* Limite máximo para imagens */
+    width: 100%; /* Imagens ocupam toda a largura */
+    max-width: 20rem; /* Limite máximo para telas maiores */
     height: auto; /* Mantém proporção */
-    margin: 0 auto;
+    margin: 0 auto; /* Centraliza imagens */
   }
 
-  .carousel {
-    width: 100%; /* Ocupa toda a largura */
-    margin: 0 auto; /* Centraliza o carrossel */
+  /* ================================== ÍCONES E ELEMENTOS FORA ================================== */
+  i {
+    display: inline-block;
+    width: 2rem; /* Ajusta o tamanho dos ícones */
+    height: 2rem;
+    margin: 0.5rem; /* Adiciona espaçamento */
+    text-align: center; /* Centraliza ícones */
+  }
+
+   i {
+    width: 100%; /* Ícones responsivos */
+    height: auto;
   }
 }
-
 
 
 
