@@ -468,6 +468,11 @@ footer h3 {
 @media (max-width: 840px) {
   /* ================================== SECTION 1 ================================== */
 
+
+  *{
+
+    box-sizing: border-box;
+  }
   .section1 {
     padding: 4rem; /* Espaçamento interno ajustado */
     display: flex;
