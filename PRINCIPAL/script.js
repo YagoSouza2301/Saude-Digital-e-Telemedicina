@@ -35,6 +35,26 @@ ScrollReveal().reveal('#box3', {
     distance: '100px',
 });
 
+
+
+ScrollReveal().reveal('.direita', {
+    duration: 2000,
+    origin: 'left',
+    distance: '100px',
+});
+ScrollReveal().reveal('.chao', {
+    duration: 2500,
+    origin: 'bottom',
+    distance: '100px',
+});
+ScrollReveal().reveal('.esquerda', {
+    duration: 2000,
+    origin: 'rigth',
+    distance: '100px',
+});
+
+
+
 const plano = new Typed('#text', {
     strings: ["Faça agora sua consulta"],
     typeSpeed: 100, 

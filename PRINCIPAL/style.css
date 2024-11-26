@@ -208,13 +208,19 @@ header button:hover::after{
     margin-bottom: 12vh;
 }
 .box {
-    background-color: blueviolet;
+    background-color: #6bb39b;
     box-shadow: 3px 3px 15px black;
     text-align: center;
     width: 20vw;
     height: 50vh;
     padding: 30px;
     border-radius: 20px;
+}
+.i {
+    transition: 0.6s;
+}
+.i:hover {
+    transform: scale(1.08, 1.08);
 }
 .i i {
     color: white;
@@ -226,6 +232,8 @@ header button:hover::after{
 }
 .s2 .p p {
     font-size: 25px;
+    text-align: center;
+    font-weight: 700;
 }
 
 
@@ -314,13 +322,10 @@ header button:hover::after{
 .s5-div {
     display: flex;
     align-items: center;
-    background-color: black;
-    animation: mymove 5s infinite;
+    background-color: rgba(0, 0, 0, 0.767);
+
 }
-@keyframes mymove {
-    from {background-color: #232525;}
-    to {background-color: #0b0b0d;}
-  }
+
 .box-comit {
     padding: 25px;
     color: white;
