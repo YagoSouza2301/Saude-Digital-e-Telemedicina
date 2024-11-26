@@ -10,6 +10,7 @@ closeButton.addEventListener("click", function () {
     mobileMenu.classList.remove("flex");
 });
 
+// Texto Auto-Digitado
 const plano = new Typed('#plano', {
     strings: ["Planos de Saúde Digitais e Telemedicinas?"],
     typeSpeed: 100, 
@@ -19,19 +20,9 @@ const plano = new Typed('#plano', {
 });
 
 
+// Efeitos de imagens 
 ScrollReveal().reveal('#caixas', {
     duration: 3000, // Duração do efeito (em milissegundos), define a velocidade da transição  
     origin: 'bottom', // Origem do efeito, o conteúdo virá de baixo para cima
     distance: '100px', // Distância que o elemento "viaja antes de aparecer"
-});
-
-$(document).ready(function() {
-
-    $('.carrossel').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true, 
-        dots: true, 
-        arrows: true 
-    });
 });

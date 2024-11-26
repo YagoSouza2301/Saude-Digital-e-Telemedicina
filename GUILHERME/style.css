@@ -438,6 +438,7 @@ header button{
     font-size: 3rem; 
   }
 
+    /* ===========================================SESSAÕ3====================================== */
 .section03 {
   padding: 3rem;
 }
@@ -514,6 +515,8 @@ header button{
   
   }
 
+
+   /* ===========================================SESSAÕ2====================================== */
   .content {
     width: auto;
     height: auto;
@@ -564,6 +567,7 @@ header button{
       margin: 0px auto;
   }
 
+   /* ===========================================SESSAÕ1====================================== */
   .section01 {
     flex-direction: column;
     padding: 2vw;
@@ -580,15 +584,12 @@ header button{
     font-size: 19px;
   }
 
+   /* ===========================================SESSAÕ2====================================== */
 .section02 {
   padding: 1rem;
   flex-direction: column;
 }
 
-.section02 h2 {
-  
-
-}
 .caixas {
   flex-wrap: wrap;
 }
@@ -608,7 +609,7 @@ header button{
 }
 
 
-
+ /* ===========================================SESSAÕ3====================================== */
 .section03 {
 padding: 1rem;
 }
