@@ -463,68 +463,73 @@ footer h3 {
   }
 
   /* ===========================================FIM DO MOBILE MENU====================================== */
-
-  /* ===========================================SECTION 1====================================== */
-
-  .section1{
-    padding: 13rem;
-    align-items: center;
-
-  }
-
-
-  .div-pai{
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    align-items: center;
-
-  }
-  .div-dad1 img{
-    width: 10rem;
-    align-items: center;
-    
-  }
-
-
-
-
-  .div1{
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 1rem;
-    width: 16rem;
-  
-  }
-  .div1 img{
-    margin-left: 3rem;
-  }
-  .div1 h3{
-    margin-left: 2rem;
-  }
-  .div2{
-    flex-wrap: wrap;
-    padding: 1rem;
-    width: 16rem;
-    margin-left: 2rem;
-  }
-  .div2 h3{
-    margin-right: 2rem;
-  }
-  .div2 img{
-    margin-left: 1rem;
-  }
-  .div3{
-    margin-left: 0.5rem;
-  }
-  /* =======================SECTION 02========================================================== */
-
-  .carousel-item{
-    padding: 10rem;
-
-  }
-
 }
+
+@media (max-width: 840px) {
+  /* ================================== SECTION 1 ================================== */
+
+  .section1 {
+    padding: 2rem; /* Reduzi o padding para não causar problemas em telas pequenas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Melhor para centralizar textos em telas menores */
+  }
+
+  .div-pai {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center;
+    gap: 1rem; /* Adiciona espaçamento entre os itens */
+    width: 100%; /* Garante que o container ocupe o espaço da tela */
+  }
+
+  .div-dad1 img,
+  .div1 img,
+  .div2 img {
+    width: 8rem; /* Reduz as imagens para caber melhor na tela */
+    margin: 0 auto; /* Centraliza as imagens */
+  }
+
+  .div1, .div2 {
+    display: flex;
+    flex-direction: column; /* Torna o conteúdo vertical */
+    align-items: center;
+    padding: 1rem;
+    width: 100%; /* Adapta a largura ao container */
+  }
+
+  .div1 h3,
+  .div2 h3 {
+    margin: 0.5rem 0; /* Reduz as margens para evitar espaçamento excessivo */
+    text-align: center;
+  }
+
+  .div3 {
+    width: 90%; /* Adapta a largura em telas menores */
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .div-dad2 {
+    width: 100%; /* Garante que o conteúdo ocupe a largura disponível */
+    text-align: center;
+  }
+
+  /* ================================== SECTION 2 ================================== */
+
+  .carousel-item {
+    padding: 2rem; /* Reduzi o padding para evitar que o conteúdo fique muito espaçado */
+    text-align: center; /* Centraliza o conteúdo */
+    width: 100%; /* Adapta ao tamanho da tela */
+  }
+
+  .carousel-item img {
+    width: 100%; /* Garante que as imagens do carrossel se ajustem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+}
+
 
 
 
