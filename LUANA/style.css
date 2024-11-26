@@ -85,7 +85,6 @@ ul li a:hover::after {
   transform-origin: bottom left;
 }
 
-
 /* Botão de Cadastre-se */
 header button{
   color: white;
@@ -107,7 +106,7 @@ header button::after{
   right: 0;
   bottom: 0;
   height: 3px;
-  background-color: white; 
+  background-color: #6bb39b; 
   transform: scaleX(0); 
   transform-origin: bottom right; 
   transition: transform 0.8s; 
