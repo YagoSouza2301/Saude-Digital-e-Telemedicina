@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/b61a4ed80b.js"
-    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b61a4ed80b.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="style2.css">
     <link rel="shortcut icon" href="../YAGO/img/DoctorWeb.jpg" type="image/x-icon">
     <script src="script2.js" defer></script>
 </head>
+
 <body>
 
     <header>
@@ -43,17 +44,17 @@
                 </a>
             </div>
         </div>
-            
+
 
 
         <!-- CAIXA MOBILE -->
-           <div class="mobile-menu" id="mobileMenu">
-            
+        <div class="mobile-menu" id="mobileMenu">
+
             <!-- Botão para ser utilizado para fechamento da lista -->
             <button id="closeButton" class="close">
                 <i class="fas fa-times"></i>
             </button>
-  
+
             <!-- Essa lista é do Menu Hamburguer quando estiver aberto. -->
             <ul class="nav-links-mobile">
                 <li>
@@ -69,8 +70,8 @@
                     <a href="..//MANUEL/index.html">FeedBack</a>
                 </li>
             </ul>
-  
-  
+
+
             <div id="btn-mobile" class="">
                 <a href="..//LUANA/index.html">
                     <i class="fa-solid fa-user"></i>
@@ -78,91 +79,93 @@
                         Cadastre-se
                     </button>
                 </a>
-              </button>
+                </button>
             </div>
             <!-- Fim da caixa do Menu Hamburguer (Quando estiver aberto) -->
         </div>
-  
-        <!-- Botão de Hamburguer, ele está fora da Div justamente por ser um elemento singular -->
-      <button class="hamburger" id="hamburgerButton">
-          <i class="fas fa-bars"></i>
-      </button>
 
-      <!-- FINAL -->
+        <!-- Botão de Hamburguer, ele está fora da Div justamente por ser um elemento singular -->
+        <button class="hamburger" id="hamburgerButton">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- FINAL -->
 
 
     </header>
 
 
-<!-- Seção de login -->
-<section class="form-container" id="login">
-    <div class="container">
-        <h1>Login</h1>
-        <p>Faça o login abaixo.</p>
+    <!-- Seção de login -->
+    <section class="form-container" id="login">
+        <div class="container">
+            <h1>Login</h1>
+            <p>Faça o login abaixo.</p>
 
-        <form action="processar_login.php" method="POST">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email-login" name="email" placeholder="exemplo@gmail.com" required>
+            <form action="processar_login.php" method="POST">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email-login" name="email" placeholder="exemplo@gmail.com" required>
 
-            <label for="senha-login">Senha:</label>
-            <input type="password" id="senha-login" name="senha" placeholder="digite sua senha" required>
+                <label for="senha-login">Senha:</label>
+                <input type="password" id="senha-login" name="senha" placeholder="digite sua senha" required>
 
-            <button type="submit">Entrar</button>
-        </form>
+                <div class="botao">
+                    <button type="submit">Entrar</button>
+                </div>
+            </form>
 
-        <div class="login-link">
-            <p>Não tem uma conta? <a href="index.html">Cadastre-se aqui</a></p>
+            <div class="login-link">
+                <p>Não tem uma conta? <a href="index.html">Cadastre-se aqui</a></p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-  
-<footer>
-    <div class="rodape-pai">
-        
-        <!-- IMPORTANTES -->
-        <div>
-            <h2>Importantes</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">
-                            Politíca de Privacidade
-                        </a>
-                    </li>
-                    <li>
-                        <a href>
-                            FeedBack
-                        </a>
-                    </li>
-                    <li>
-                        <a href>
-                            Meus planos
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
 
-        <!-- ENDEREÇO -->
-        <div>
-            <h2>Endereço</h2>
-            <p>Rua das Estrelas, 500 <br>
-                Bairro Encanto da Lua <br>
-                Cidade Sonhópolis, Estado do Arco-Íris <br>
-                CEP: 12345-678 <br>
-                Brasil <br>
-            </p>
-        </div>
+    <footer>
+        <div class="rodape-pai">
 
-        <!-- REDES SOCIAS -->
-        <div>
-            <h2>Siga-nos</h2>
+            <!-- IMPORTANTES -->
             <div>
-                <a href="https://web.whatsapp.com/">
-                    <i class="fa-brands fa-square-whatsapp" id="whatsapp"></i>
-                </a>
+                <h2>Importantes</h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Politíca de Privacidade
+                            </a>
+                        </li>
+                        <li>
+                            <a href>
+                                FeedBack
+                            </a>
+                        </li>
+                        <li>
+                            <a href>
+                                Meus planos
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- ENDEREÇO -->
+            <div>
+                <h2>Endereço</h2>
+                <p>Rua das Estrelas, 500 <br>
+                    Bairro Encanto da Lua <br>
+                    Cidade Sonhópolis, Estado do Arco-Íris <br>
+                    CEP: 12345-678 <br>
+                    Brasil <br>
+                </p>
+            </div>
+
+            <!-- REDES SOCIAS -->
+            <div>
+                <h2>Siga-nos</h2>
+                <div>
+                    <a href="https://web.whatsapp.com/">
+                        <i class="fa-brands fa-square-whatsapp" id="whatsapp"></i>
+                    </a>
 
                     <a href="https://www.instagram.com/doctorwebofc/">
                         <i class="fa-brands fa-square-instagram" id="instagram"></i>
@@ -172,31 +175,32 @@
                         <i class="fa-brands fa-telegram" id="telegram"></i>
                     </a>
 
-                        <a href="https://www.facebook.com/?locale2=pt_BR&_rdr">
-                    <i class="fa-brands fa-facebook" id="facebook"></i>
-                </a>
+                    <a href="https://www.facebook.com/?locale2=pt_BR&_rdr">
+                        <i class="fa-brands fa-facebook" id="facebook"></i>
+                    </a>
 
+                </div>
             </div>
+
         </div>
 
+        <h3> Cuidando de você onde quer que esteja, com a tecnologia ao
+            seu lado.</h3>
+    </footer>
+
+
+    <!-- LIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
-
-    <h3> Cuidando de você onde quer que esteja, com a tecnologia ao
-        seu lado.</h3>
-</footer>
-
-
-   <!-- LIBRAS -->
-   <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
 </body>
+
 </html>

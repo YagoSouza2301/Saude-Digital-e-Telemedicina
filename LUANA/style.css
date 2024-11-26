@@ -283,7 +283,7 @@ textarea {
 }
 
 /* ESTILIZANDO O BOTÃO */
-button {
+.botao button {
     width: 100%;
     /* faz com que o botão ocupe toda a largura disponível */
     padding: 12px;
@@ -303,7 +303,7 @@ button {
     margin-bottom: 15px;
 }
 
-button:hover {
+.botao button:hover {
     background-color: #005bb5;
     /* quando passa o mouser por cima do botão, a cor defundo é alterada */
     transition: 0.3s;
