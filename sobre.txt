@@ -12,9 +12,9 @@
  2.2 - CHAMAR A FONTE - 
   font-family: "Raleway", sans-serif;
 
- 3 - LOGO GERAL - (Ainda não tem)
- 4 - CABEÇALHO - (Ainda não tem)
- 5 - RODAPÉ - (Ainda não tem)
+ 3 - LOGO GERAL - (Agora tem)
+ 4 - CABEÇALHO - (Agora tem)
+ 5 - RODAPÉ - (Agora tem)
 
 
                               *CUIDADOS*

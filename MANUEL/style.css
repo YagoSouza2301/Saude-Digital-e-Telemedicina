@@ -68,7 +68,6 @@ header a {
     font-weight: 600;
 }
 
-/* ===========================================FUNCIONA TANTO NO CABEÇALHO COMO NO RODAPÉ =========================================== */
 ul li {
   position: relative;
   padding: 10px 0;
@@ -202,7 +201,7 @@ main{
 
 
 
-/*============================= Section 1 ======================*/
+/*============================= Section 1 ==============================*/
 .section-ouvidoria-top {
 /* chamando a section top para estilizar*/
 
@@ -234,8 +233,6 @@ main{
 
 }
 /*=========================== Fim da Section 1 ======================*/
-
-
 
 
 
@@ -296,6 +293,7 @@ input[type="text"], input[type="email"], textarea {
 
     margin-top: 5px;
     /* dando espaso em cima de 5px */
+    
     border: 1px solid #ccc;
     /* deixando a borda em 1px para ficar mais fino   solid = ("usei para deixar visivel") e o utimo a cor para ficar não muito chamativo */
     
@@ -314,8 +312,7 @@ textarea {
     /* aumentando a altura */
 }
 
-
-button {
+.button-ouvidoria {
 /*chamando o botton*/
 
     background-color: #2e3d49;
@@ -342,6 +339,21 @@ button {
 /*====================== fim da Section 2 ======================*/
 
 
+
+
+
+/*===================================== Bilioteca ===============*/
+.slick-prev:before, .slick-next:before {
+    /* chamando as setas da biblioteca e mudando a cor e a visibilidade dela*/
+    
+        opacity: 1 !important;
+        /* visibilidade, Opacitade para ficar mais escuro*/
+    
+        color: rgba(0, 0, 0, 0.89) !important;
+        /* cor das setas */
+    
+     }
+/*================================== fim =====================*/
 
 
 
@@ -387,7 +399,7 @@ button:hover {
 
 
 
-/* ===========================================RODAPÉ====================================== */
+/* ====================== RODAPÉ ====================================== */
 footer {
     background-color: #0b0b0d;
     padding: 3vw;
