@@ -175,7 +175,7 @@ transform-origin: bottom left;
     padding: min(10vh, 30rem);
     text-align:  center;
     align-items: center;
-    background-image: url(img/medicine-257349_1280.jpg);
+    background: linear-gradient(360deg, #96d1c2e3 0%, #f7f4e894 35%, #000000a6 100%), url(img/medicine-257349_1280.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -262,7 +262,7 @@ transform-origin: bottom left;
 .section2 {
   padding: min(0.3vh, 10rem);
   width: 100%;
-  background: linear-gradient(180deg, #6bb39b81 100%, #6bb39b6b 3.44%), url(section2/20240411_medicos_per_capita.jpg);
+  background: linear-gradient(360deg, #95d6c6a6 0%, #f7f4e894 35%, #6fc4a5a6 100%), url(section2/20240411_medicos_per_capita.jpg);  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -320,7 +320,7 @@ transform-origin: bottom left;
 
 .section3{
   padding: min(6vw, 30rem);
-  background: linear-gradient(180deg, #6bb39ba6 20.44%, rgba(255, 255, 255, 0.548) 100%);
+  background: linear-gradient(180deg, #6bb39b9c 20.44%, rgba(255, 255, 255, 0.548) 100%);
   align-items: center;
   text-align: center;
   display: flex;
