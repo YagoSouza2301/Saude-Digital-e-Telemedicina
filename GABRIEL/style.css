@@ -2,112 +2,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    font-family: "Raleway", sans-serif;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    font-weight: 600;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 600;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 /* RESPONSIVIDADE */
 html {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 /* ===========================================CABEÇALHO====================================== */
 header {
-    background-color: #0b0b0d;
-    width: 100%;
-    padding: min(2vw, 7vw);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  
+  background-color: #0b0b0d;
+  width: 100%;
+  padding: min(2vw, 7vw);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
 }
 header img {
-    width: 8rem;
+  width: 8rem;
 }
 header h1 {
-    color: white;
-    font-size: 50px;
-    text-align: center;
+  color: white;
+  font-size: 50px;
+  text-align: center;
 }
 .ocultar-mobile {
-    display: flex;
+  display: flex;
 }
 header ul {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 header a {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* ===========================================FUNCIONA TANTO NO CABEÇALHO COMO NO RODAPÉ =========================================== */
 ul li {
-  position: relative;
-  padding: 10px 0;
-  cursor: pointer;
-  transition: color 0.3s;
+position: relative;
+padding: 10px 0;
+cursor: pointer;
+transition: color 0.3s;
 }
-  
+
 /* Linha oculta inicialmente */
 ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 3px;
-  background-color: #6bb39b; /* Cor da linha */
-  transform: scaleX(0); /* Oculta a linha inicialmente */
-  transform-origin: bottom right; /* Origem da animação */
-  transition: transform 0.3s; /* Animação suave */
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+height: 3px;
+background-color: #6bb39b; /* Cor da linha */
+transform: scaleX(0); /* Oculta a linha inicialmente */
+transform-origin: bottom right; /* Origem da animação */
+transition: transform 0.3s; /* Animação suave */
 }
-  
+
 /* Define a animação ao passar o mouse */
 ul li a:hover::after {
-  transform: scaleX(1); /* Expande a linha da direita para a esquerda */
-  transform-origin: bottom left;
+transform: scaleX(1); /* Expande a linha da direita para a esquerda */
+transform-origin: bottom left;
 }
 
 
 /* Botão de Cadastre-se */
 header button{
-  color: white;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  cursor: pointer;
-  transition: color 0.3s;
-  border-radius: 10px;
-  width: 7vw;
-  height: 5vh;
-  margin-left: 30px;
+color: white;
+position: relative;
+background-color: rgba(0, 0, 0, 0);
+border: none;
+cursor: pointer;
+transition: color 0.3s;
+border-radius: 10px;
+width: 7vw;
+height: 5vh;
+margin-left: 30px;
 }
 
 header button::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 3px;
-  background-color: white; 
-  transform: scaleX(0); 
-  transform-origin: bottom right; 
-  transition: transform 0.8s; 
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+height: 3px;
+background-color: white; 
+transform: scaleX(0); 
+transform-origin: bottom right; 
+transition: transform 0.8s; 
 }
 
 header button:hover::after{
-  transform: scaleX(1); 
-  transform-origin: bottom left;
+transform: scaleX(1); 
+transform-origin: bottom left;
 }
 /* final do botão */
 
@@ -116,8 +116,6 @@ header button:hover::after{
 
 /* HAMBURGER DO MOBILE */
 /* =====================================CAIXA MOBILE===================================== */
-/* ===================== MOBILE MENU ===================== */
-
 .mobile-menu { /*Estilização da caixa Mobile quando aberta*/
   display: none; /*Display: Nenhum*/
   position: fixed; /*Posição fixa na parte direita da página*/
@@ -168,8 +166,8 @@ header button:hover::after{
   display: flex;
 }
 
-
 /* FINAL */
+
 
 
   /* ================================== COMEÇANDO A ESTILIZAÇÃO DA PRIMEIRA SEÇÃO ================================= */
