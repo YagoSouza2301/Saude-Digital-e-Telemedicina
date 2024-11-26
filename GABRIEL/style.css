@@ -561,8 +561,9 @@ footer h3 {
 
   /* ================================== SECTION 2 ================================== */
   .section2 {
-    padding: 3rem; /* Reduzido para mobile */
+    padding: 1rem; /* Reduzido para mobile */
     text-align: center; /* Centraliza textos */
+    height: auto;
   }
 
   .carousel {
