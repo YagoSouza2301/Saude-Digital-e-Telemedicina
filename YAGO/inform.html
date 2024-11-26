@@ -3,36 +3,99 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/b61a4ed80b.js"
+            crossorigin="anonymous"></script>
         <link rel="stylesheet" href="inform.css">
         <script src="inform.js" defer></script>
-        <title>Document</title>
+        <link rel="shortcut icon" href="img/DoctorWeb.jpg" type="image/x-icon">
+        <title>Informações</title>
     </head>
     <body>
         <header>
-            <img src="../YAGO/img/doutor IA.webp" alt="hfba">
+            <img src="img/DoctorWeb.jpg">
             <h1>DOCTOR WEB</h1>
-            <nav>
-                <ul>
+
+
+            <div class="ocultar-mobile">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="..//PRINCIPAL/index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="..//GABRIEL/index.html">Notícias</a>
+                        </li>
+                        <li>
+                            <a href="..//GUILHERME/index.html">Planos</a>
+                        </li>
+                        <li>
+                            <a href="..//MANUEL/index.html">FeedBack</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <a href="..//LUANA/index.html">
+                        <button>
+                            <i class="fa-solid fa-user"></i>
+                            Cadastre-se
+                        </button>
+                    </a>
+                </div>
+            </div>
+                
+
+
+            <!-- CAIXA MOBILE -->
+               <div class="mobile-menu" id="mobileMenu">
+                
+                <!-- Botão para ser utilizado para fechamento da lista -->
+                <button id="closeButton" class="close">
+                    <i class="fas fa-times"></i>
+                </button>
+      
+                <!-- Essa lista é do Menu Hamburguer quando estiver aberto. -->
+                <ul class="nav-links-mobile">
                     <li>
-                        <a href="">Informações</a>
+                        <a href="..//PRINCIPAL/index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="">Notícias</a>
+                        <a href="..//GABRIEL/index.html">Notícias</a>
                     </li>
                     <li>
-                        <a href="">Planos</a>
+                        <a href="..//GUILHERME/index.html">Planos</a>
+                    </li>
+                    <li>
+                        <a href="..//MANUEL/index.html">FeedBack</a>
                     </li>
                 </ul>
-            </nav>
-            <button>
-                Cadastre-se
-            </button>
+      
+      
+                <div id="btn-mobile" class="">
+                    <a href="..//LUANA/index.html">
+                        <i class="fa-solid fa-user"></i>
+                        <button>
+                            Cadastre-se
+                        </button>
+                    </a>
+                  </button>
+                </div>
+                <!-- Fim da caixa do Menu Hamburguer (Quando estiver aberto) -->
+            </div>
+      
+            <!-- Botão de Hamburguer, ele está fora da Div justamente por ser um elemento singular -->
+          <button class="hamburger" id="hamburgerButton">
+              <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- FINAL -->
+
+
         </header>
         <main>
             <!-- =======================================SESSÃO1======================================= -->
             <section class="sobre">
                 <!-- Deixando a sessão inteira flexivel só que sem mexer -->
-                <div class="flex">
+                <div class="sessao1-pai">
                     <!-- Tipo da minha primeira sessão -->
                     <h2>INFORMAÇÕES</h2>
                     <div class="inform">
@@ -43,215 +106,291 @@
                             objetivo é oferecer uma experiência acessível,
                             segura e eficaz para pacientes e profissionais de
                             saúde.
-                            <br><br>
-                            O Doctor Web é um site projetado para facilitar o
-                            acesso a consultas médicas online, permitindo que os
-                            usuários se conectem com médicos de diversas
-                            especialidades no conforto de suas casas.
-                            Acreditamos que a tecnologia pode ser uma aliada
-                            poderosa na promoção da saúde, oferecendo soluções
-                            que vão além das consultas presenciais.</p>
 
-                        <!-- Contato com a I.A (inteligencia Artificial) -->
-                        <div class="robo">
-                            <img src="img/doutor IA.webp" alt="Doutor"
-                                loading="lazy">
-                            <h3>Doutor I.A</h3>
-                            <br>
-                            <!-- Acesso ao contato(ligar) ou whatsapp -->
-                            <h4>Contato para ligar: (11) 1234-56789 <br>
-                                OU</h4>
-                            <div class="contato">
-                                <button>
-                                    <a href>
-                                        <img src="img/WhatsApp.svg.webp"
-                                            alt="WhatsApp" class="zap">
-                                        clique aqui
-                                    </a>
-                                </button>
+                            <!-- Contato com a I.A (inteligencia Artificial) -->
+                            <div class="robo">
+                                <img src="img/doutor IA.webp" alt="Doutor"
+                                    loading="lazy">
+                                <h3>Doutor I.A</h3>
+                                <br>
+                                <!-- Acesso ao contato(ligar) ou whatsapp -->
+                                <h4>Contato para ligar: (11) 1234-56789 <br>
+                                    OU</h4>
+                                <div class="contato">
+                                    <button>
+                                        <a href>
+                                            <img src="img/WhatsApp.svg.webp"
+                                                alt="WhatsApp" class="zap">
+                                            clique aqui
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- =======================================SESSÃO2======================================= -->
+                <section class="topicos">
+                    <!-- =======================================SEGURANÇA======================================= -->
+                    <div class="segurança" id="direita">
+                        <div class="box-inform">
+                            <h2>Segurança em Primeiro Lugar</h2>
+                            <p>A segurança dos dados dos nossos usuários é nossa
+                                prioridade. Utilizamos criptografia avançada e
+                                seguimos
+                                rigorosos padrões de proteção de dados para
+                                garantir
+                                que
+                                todas as informações pessoais e médicas
+                                permaneçam
+                                confidenciais. Nossos usuários podem ter a
+                                certeza
+                                de
+                                que sua privacidade está em boas mãos.
+                            </p>
+                        </div>
+                        <div class="box-img img1">
+                            <!-- IMAGEM DE SEGURANÇA -->
+                        </div>
+                    </div>
+
+                    <!-- =======================================ACESSO======================================= -->
+                    <div class="acesso" id="esquerda">
+                        <div class="box-img img2">
+                            <!-- IMAGEM DE ACESSO -->
+                        </div>
+                        <div class="box-inform">
+                            <h2>Facilidade de Acesso</h2>
+                            <p>A plataforma é intuitiva e fácil de usar,
+                                permitindo
+                                que pacientes agendem consultas, acessem
+                                prontuários
+                                eletrônicos e recebam orientações de saúde de
+                                maneira rápida e eficiente. O Doctor Web foi
+                                desenvolvido para atender a todas as faixas
+                                etárias,
+                                garantindo que todos possam usufruir dos
+                                benefícios
+                                da telemedicina.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- =======================================BOTÃO PARA VER MAIS INFORMAÇÕES======================================= -->
+                    <div class="botao">
+                        <button onclick="aparecer()" id="oculta-botao">Ver
+                            Mais</button>
+                    </div>
+
+                    <!-- =======================================OCULTA======================================= -->
+                    <!-- Está parte vai ficar ocultada até o cliente apertar o botão acima -->
+                    <div id="oculta">
+
+                        <!-- =======================================QUALIFICADO======================================= -->
+                        <div class="qualificado">
+                            <div class="box-inform">
+                                <h2>Profissionais Qualificados</h2>
+                                <p>Contamos com uma rede de profissionais de
+                                    saúde
+                                    altamente capacitados, prontos para oferecer
+                                    um
+                                    atendimento de qualidade. Todos os médicos
+                                    disponíveis no Doctor Web passam por um
+                                    rigoroso
+                                    processo de seleção, garantindo que os
+                                    pacientes
+                                    recebam a melhor orientação possível.
+                                </p>
+                            </div>
+                            <div class="box-img img3">
+                                <!-- IMAGEM DE PESSOAS QUALIFICADAS -->
                             </div>
                         </div>
 
-                    </div>
-                </div>
+                        <!-- =======================================CONSULTA======================================= -->
+                        <div class="consulta">
+                            <div class="box-img img4">
+                                <!-- IMAGEM DE CONSULTA -->
+                            </div>
+                            <div class="box-inform">
+                                <h2>Consultas Online</h2>
+                                <p>As consultas são realizadas por meio de
+                                    videoconferência, permitindo que os
+                                    pacientes
+                                    interajam com os médicos em tempo real. Isso
+                                    facilita a comunicação e a troca de
+                                    informações,
+                                    garantindo um atendimento personalizado e
+                                    eficiente.
 
-            </section>
-
-            <!-- =======================================SESSÃO2======================================= -->
-            <section class="topicos">
-                <!-- =======================================SEGURANÇA======================================= -->
-                <div class="segurança" id="direita">
-                    <div class="box-inform">
-                        <h2>Segurança em Primeiro Lugar</h2>
-                        <p>A segurança dos dados dos nossos usuários é nossa
-                            prioridade. Utilizamos criptografia avançada e
-                            seguimos
-                            rigorosos padrões de proteção de dados para garantir
-                            que
-                            todas as informações pessoais e médicas permaneçam
-                            confidenciais. Nossos usuários podem ter a certeza
-                            de
-                            que sua privacidade está em boas mãos.
-                        </p>
-                    </div>
-                    <div class="box-img img1">
-                        <!-- IMAGEM DE SEGURANÇA -->
-                    </div>
-                </div>
-
-                <!-- =======================================ACESSO======================================= -->
-                <div class="acesso" id="esquerda">
-                    <div class="box-img img2">
-                        <!-- IMAGEM DE ACESSO -->
-                    </div>
-                    <div class="box-inform">
-                        <h2>Facilidade de Acesso</h2>
-                        <p>A plataforma é intuitiva e fácil de usar, permitindo
-                            que pacientes agendem consultas, acessem prontuários
-                            eletrônicos e recebam orientações de saúde de
-                            maneira rápida e eficiente. O Doctor Web foi
-                            desenvolvido para atender a todas as faixas etárias,
-                            garantindo que todos possam usufruir dos benefícios
-                            da telemedicina.
-
-                        </p>
-                    </div>
-                </div>
-
-                <!-- =======================================BOTÃO PARA VER MAIS INFORMAÇÕES======================================= -->
-                <div class="botao">
-                    <button onclick="aparecer()" id="oculta-botao">Ver
-                        Mais</button>
-                </div>
-
-                <!-- =======================================OCULTA======================================= -->
-                <!-- Está parte vai ficar ocultada até o cliente apertar o botão acima -->
-                <div id="oculta">
-
-                    <!-- =======================================QUALIFICADO======================================= -->
-                    <div class="qualificado">
-                        <div class="box-inform">
-                            <h2>Profissionais Qualificados</h2>
-                            <p>Contamos com uma rede de profissionais de saúde
-                                altamente capacitados, prontos para oferecer um
-                                atendimento de qualidade. Todos os médicos
-                                disponíveis no Doctor Web passam por um rigoroso
-                                processo de seleção, garantindo que os pacientes
-                                recebam a melhor orientação possível.
-                            </p>
+                                </p>
+                            </div>
                         </div>
-                        <div class="box-img img3">
-                            <!-- IMAGEM DE PESSOAS QUALIFICADAS -->
-                        </div>
-                    </div>
 
-                    <!-- =======================================CONSULTA======================================= -->
-                    <div class="consulta">
-                        <div class="box-img img4">
-                            <!-- IMAGEM DE CONSULTA -->
+                        <!-- =======================================COMPROMISSO======================================= -->
+                        <div class="compromisso">
+                            <div class="box-inform">
+                                <h2>Compromisso com a Saúde</h2>
+                                <p>No Doctor Web, estamos comprometidos em
+                                    promover
+                                    a
+                                    saúde e o bem-estar. Oferecemos conteúdos
+                                    informativos sobre saúde, prevenção de
+                                    doenças e
+                                    dicas para um estilo de vida saudável,
+                                    ajudando
+                                    nossos usuários a tomarem decisões
+                                    informadas
+                                    sobre
+                                    sua saúde.</p>
+                            </div>
+                            <div class="box-img img5">
+                                <!-- IMAGEM DE COMPROMISSO -->
+                            </div>
                         </div>
-                        <div class="box-inform">
-                            <h2>Consultas Online</h2>
-                            <p>As consultas são realizadas por meio de
-                                videoconferência, permitindo que os pacientes
-                                interajam com os médicos em tempo real. Isso
-                                facilita a comunicação e a troca de informações,
-                                garantindo um atendimento personalizado e
-                                eficiente.
-
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- =======================================COMPROMISSO======================================= -->
-                    <div class="compromisso">
-                        <div class="box-inform">
-                            <h2>Compromisso com a Saúde</h2>
-                            <p>No Doctor Web, estamos comprometidos em promover
-                                a
-                                saúde e o bem-estar. Oferecemos conteúdos
-                                informativos sobre saúde, prevenção de doenças e
-                                dicas para um estilo de vida saudável, ajudando
-                                nossos usuários a tomarem decisões informadas
-                                sobre
-                                sua saúde.</p>
-                        </div>
-                        <div class="box-img img5">
-                            <!-- IMAGEM DE COMPROMISSO -->
-                        </div>
-                    </div>
-                    <!-- =======================================BOTÃO PARA OCULTAR======================================= -->
-                    <!-- Ao clicar nele, o botão e as Div que estão na "class=oculta" vão se esconder -->
-                    <div class="botao">
+                        <!-- =======================================BOTÃO PARA OCULTAR======================================= -->
+                        <!-- Ao clicar nele, o botão e as Div que estão na "class=oculta" vão se esconder -->
+                        <div class="botao">
                             <button onclick="voltar()"
-                            id="aparecer-botao">Voltar</button>
+                                id="aparecer-botao">Voltar</button>
+                        </div>
                     </div>
-                </div>
 
-            </section>
+                </section>
 
-            <!-- =======================================SESSÃO3======================================= -->
-            <section class="plano">
-                <h2 id="plano-saude"></h2>
-                <div class="div-plano">
-                    <p>Sabemos que a sua saúde é o bem mais precioso, e por isso
-                        oferecemos planos de saúde completos, pensados para
-                        atender às suas necessidades com qualidade e confiança.
-                         <br>
+                <!-- =======================================SESSÃO3======================================= -->
+                <section class="plano">
+                    <h2 id="plano-saude"></h2>
+                    <div class="div-plano">
+                        <p>Sabemos que a sua saúde é o bem mais precioso, e por
+                            isso
+                            oferecemos planos de saúde completos, pensados para
+                            atender às suas necessidades com qualidade e
+                            confiança.
+                            <br>
 
-                        <strong>
-                            Não espere mais para garantir a sua saúde!
-                        </strong>
-                    </p>
+                            <strong>
+                                Não espere mais para garantir a sua saúde!
+                            </strong>
+                        </p>
 
-                    <a href="../GUILHERME/index.html">
-                        <button>
-                            Planos
-                        </button>
-                    </a>
-                </div>
-            </section>
+                        <a href="../GUILHERME/index.html">
+                            <button>
+                                Planos
+                            </button>
+                        </a>
+                    </div>
+                </section>
 
-            <!-- =======================================SESSÃO4======================================= -->
-            <section class="endereço">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7488894.743412376
+                <!-- =======================================SESSÃO4======================================= -->
+                <section class="endereço">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7488894.743412376
                     !2d-56.40033187500002!3d-23.57968649999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f
                     13.1!3m3!1m2!1s0x94ce5991c92d185d%3A0xc86f1cca0aee5be5!2sHospital%20S%C3%A3o%2
                     0Rafael!5e0!3m2!1spt-BR!2sbr!4v1731614313899!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        width="600" height="450" style="border:0;"
+                        allowfullscreen
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div>
-                        <p>A Web Doctor é uma empresa inovadora no setor de saúde digital, que oferece consultas e serviços médicos tanto online quanto presencialmente. Com uma plataforma digital e uma sede física, a empresa proporciona flexibilidade, conveniência e atendimento personalizado, garantindo acesso a uma saúde de qualidade em ambos os formatos.</p>
-                            <h3>
-                                <br>
-                                Endereço: Hospital São Rafael - SP 
-                                <br>
-                                Horário: 04:00 às 23:00
-                            </h3>
-                        </div>
-            </section>
-        </main>
-        <footer>
-            <!-- RODAPÉ -->
-        </footer>
+                        <p>A Web Doctor é uma empresa inovadora no setor de
+                            saúde digital, que oferece consultas e serviços
+                            médicos tanto online quanto presencialmente. Com uma
+                            plataforma digital e uma sede física, a empresa
+                            proporciona flexibilidade, conveniência e
+                            atendimento personalizado, garantindo acesso a uma
+                            saúde de qualidade em ambos os formatos.</p>
+                    </div>
+                </section>
+            </main>
 
-        <!-- LIBRAS -->
-        <div vw class="enabled">
-            <div vw-access-button class="active"></div>
-            <div vw-plugin-wrapper>
-                <div class="vw-plugin-top-wrapper"></div>
+            <footer>
+                <div class="rodape-pai">
+
+                    <!-- IMPORTANTES -->
+                    <div>
+                        <h2>Importantes</h2>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href>
+                                        Politíca de Privacidade
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href>
+                                        FeedBack
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href>
+                                        Meus planos
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- ENDEREÇO -->
+                    <div>
+                        <h2>Endereço</h2>
+                        <p>Rua das Estrelas, 500 <br>
+                            Bairro Encanto da Lua <br>
+                            Cidade Sonhópolis, Estado do Arco-Íris <br>
+                            CEP: 12345-678 <br>
+                            Brasil <br>
+                        </p>
+                    </div>
+
+                    <!-- REDES SOCIAS -->
+                    <div>
+                        <h2>Siga-nos</h2>
+                        <div>
+                            <a href="https://web.whatsapp.com/">
+                                <i class="fa-brands fa-square-whatsapp" id="whatsapp"></i>
+                            </a>
+            
+                                <a href="https://www.instagram.com/doctorwebofc/">
+                                    <i class="fa-brands fa-square-instagram" id="instagram"></i>
+                                </a>
+            
+                                <a href="https://web.telegram.org/">
+                                    <i class="fa-brands fa-telegram" id="telegram"></i>
+                                </a>
+            
+                                    <a href="https://www.facebook.com/?locale2=pt_BR&_rdr">
+                                <i class="fa-brands fa-facebook" id="facebook"></i>
+                            </a>
+            
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3> Cuidando de você onde quer que esteja, com a tecnologia ao
+                    seu lado.</h3>
+            </footer>
+
+            <!-- LIBRAS -->
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
             </div>
-        </div>
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-        <script>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
           </script>
 
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script
-            src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    </body>
-</html>
+            <!-- BIBLIOTECA DO JAVASCRIPT -->
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script
+                src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        </body>
+    </html>

@@ -1,131 +1,220 @@
+/* FONTE DO SITE */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 600;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
+
+/* RESPONSIVIDADE */
 html {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
+
+/* ===========================================CABEÇALHO====================================== */
 header {
-    background-color: pink;
-    width: 100%;
-    padding: min(3vw, 7vw);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  
+  background-color: #0b0b0d;
+  width: 100%;
+  padding: min(2vw, 7vw);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
 }
 header img {
-    width: 5rem;
+  width: 8rem;
 }
 header h1 {
-    font-size: 40px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+.ocultar-mobile {
+  display: flex;
 }
 header ul {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 header a {
-    color: black;
-    font-size: 20px;
-    font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ===========================================FUNCIONA TANTO NO CABEÇALHO COMO NO RODAPÉ =========================================== */
+ul li {
+position: relative;
+padding: 10px 0;
+cursor: pointer;
+transition: color 0.3s;
+}
+
+/* Linha oculta inicialmente */
+ul li a::after {
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+height: 3px;
+background-color: #6bb39b; /* Cor da linha */
+transform: scaleX(0); /* Oculta a linha inicialmente */
+transform-origin: bottom right; /* Origem da animação */
+transition: transform 0.3s; /* Animação suave */
+}
+
+/* Define a animação ao passar o mouse */
+ul li a:hover::after {
+transform: scaleX(1); /* Expande a linha da direita para a esquerda */
+transform-origin: bottom left;
 }
 
 
-ul li {
-    position: relative;
-    padding: 10px 0;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  /* Linha oculta inicialmente */
-  ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 3px;
-    background-color: black; /* Cor da linha */
-    transform: scaleX(0); /* Oculta a linha inicialmente */
-    transform-origin: bottom right; /* Origem da animação */
-    transition: transform 0.3s ease ; /* Animação suave */
-  }
-  
-  /* Define a animação ao passar o mouse */
-  ul li a:hover::after {
-    transform: scaleX(1); /* Expande a linha da direita para a esquerda */
-    transform-origin: bottom  left;
-  }
-  header button{
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    border-radius: 10px;
-    width: 9vw;
-    height: 5vh;
-  }
-  header button::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 3px;
-    background-color: white; 
-    transform: scaleX(0); 
-    transform-origin: bottom right; 
-    transition: transform 0.8s ease; 
-  }
-  header button:hover::after{
-    transform: scaleX(1); 
-    transform-origin: bottom left;
-  }
+/* Botão de Cadastre-se */
+header button{
+color: white;
+position: relative;
+background-color: rgba(0, 0, 0, 0);
+border: none;
+cursor: pointer;
+transition: color 0.3s;
+border-radius: 10px;
+width: 7vw;
+height: 5vh;
+margin-left: 30px;
+}
+
+header button::after{
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+height: 3px;
+background-color: white; 
+transform: scaleX(0); 
+transform-origin: bottom right; 
+transition: transform 0.8s; 
+}
+
+header button:hover::after{
+transform: scaleX(1); 
+transform-origin: bottom left;
+}
+/* final do botão */
+
+
+
+
+/* HAMBURGER DO MOBILE */
+/* =====================================CAIXA MOBILE===================================== */
+.mobile-menu { /*Estilização da caixa Mobile quando aberta*/
+  display: none; /*Display: Nenhum*/
+  position: fixed; /*Posição fixa na parte direita da página*/
+  top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
+  right: 0; /*Direita em 0 fazendo a caixa encostar a direita*/
+  width: 60%; /*Largura em porcentagem da caixa*/
+  height: 100%; /*Altura de 100% da tela*/
+  background-color: #0b0b0d; /*Cor de fundo*/
+  flex-direction: column; /*direção dos itens dentro da caixa */
+  align-items: center; /*Alinhamento na vertical do itens*/
+  font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
+}
+
+.nav-links-mobile { /*Lista não ordenada da versão mobile*/
+  display: flex; /*Tornando os itens (LISTAS) flexíveis*/
+  flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
+  text-align: center; /*Alinhando o texto ao centro*/
+  gap: 1.2rem; /*Espaço entre as listas */
+  list-style: none; /*Estilo de lista desabilitado*/
+}
+
+.nav-links-mobile li { /*listas da versão Mobile*/
+  border-bottom: 1px solid #787272; /*Bordar inferior de cada lista*/
+  padding-bottom: 1.2rem; /*Tamanho da borda*/
+}
+
+
+.hamburger,
+.close {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+
+.close {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: block;
+  align-self: end;
+}
+
+
+.flex {
+  display: flex;
+}
+
+/* FINAL */
+
+
 
   /* ================================== COMEÇANDO A ESTILIZAÇÃO DA PRIMEIRA SEÇÃO ================================= */
   .section1{
     padding: min(10vh, 30rem);
     text-align:  center;
+    align-items: center;
+    background: linear-gradient(360deg, #96d1c2e3 0%, #f7f4e894 35%, #000000a6 100%), url(img/medicine-257349_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .div-pai{
     display: flex;
+    
     gap: 30px;
+    align-items: center;
   }
   .div-dad1{
-    width: 900px;
     height: auto;
     border-color: black;
+  flex-wrap: wrap;
     border: black;
     box-shadow: 0px 0px 15px black;
     border-radius: 15px;
     margin-top: 20px;
-    padding: 20px;
+    padding: 3rem;
+    align-items: center;
     text-align: center;
+    background-color: whitesmoke;
   }
   .div-dad2{
-    width: 30rem;
+    background-color: whitesmoke;
     height: 13rem;
+    flex-wrap: wrap;
     border-color: black;
     border: black;
     box-shadow: 0px 0px 15px black;
     border-radius: 15px;
-    margin-top: 20px;
     padding: 20px;
     text-align: center;
+    margin-bottom: 12rem;
     
   }
   .div3{
-    width: 30rem;
-    height: 13rem;
+    flex-wrap: wrap;
+    height: auto;
     border-color: black;
     border: black;
     box-shadow: 0px 0px 15px black;
@@ -135,6 +224,7 @@ ul li {
     text-align: center;
     margin-top: 64px;
     margin-left: -20px;
+    background-color: whitesmoke;
   }
   .div-dad1 .div1{
     display: flex;
@@ -170,9 +260,9 @@ ul li {
 /* ================================= COMEÇANDO A ESTILIZAÇÃO DA SEGUNDA SEÇÃO ==================================== */
 
 .section2 {
-  padding: min(4vh, 30rem);
+  padding: min(0.3vh, 10rem);
   width: 100%;
-  background: linear-gradient(180deg, #6bb39b81 100%, #6bb39b6b 3.44%), url(section2/20240411_medicos_per_capita.jpg);
+  background: linear-gradient(360deg, #95d6c6a6 0%, #f7f4e894 35%, #6fc4a5a6 100%), url(section2/20240411_medicos_per_capita.jpg);  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -230,6 +320,7 @@ ul li {
 
 .section3{
   padding: min(6vw, 30rem);
+  background: linear-gradient(180deg, #6bb39b9c 20.44%, rgba(255, 255, 255, 0.548) 100%);
   align-items: center;
   text-align: center;
   display: flex;
@@ -254,6 +345,267 @@ ul li {
 }
 .section3 div h5{
   font-size: 20px;
+}
+footer {
+  background-color: #0b0b0d;
+  padding: 3vw;
+  text-align: center;
+}
+.rodape-pai {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 3vh;
+}
+.rodape-pai h2 {
+  color: #85e6c0;
+  font-size: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid white;
+}
+.rodape-pai a {
+  color: white;
+}
+.rodape-pai p {
+  color: white;
+}
+
+#whatsapp,
+#instagram,
+#telegram,
+#facebook {
+  font-size: 2rem;
+  margin: 0px 3px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+#whatsapp {
+  color: greenyellow;
+}
+#instagram {
+  background: linear-gradient(150deg, rgb(141, 2, 255),rgb(213, 2, 255), rgb(255, 238, 2));
+  background-clip: text;
+  color: transparent;
+}
+#telegram {
+  color: rgb(0, 204, 255);
+}
+#facebook {
+  color: rgb(0, 81, 255);
+}
+
+footer h3 {
+  color: yellow;
+  font-size: 25px;
+  margin-top: 2vh;
+}
+
+@media (max-width : 840px) {
+  /* ===========================================CABEÇALHO MOBILE====================================== */
+  
+ 
+  header img{
+      width: 4rem;
+      margin: 0px auto;
+  }
+  header h1{
+      font-size: 33px;
+      margin: 0px auto;
+  }
+}
+@media (max-width : 980px) {
+  /* ===========================================CABEÇALHO MOBILE====================================== */
+  header {
+      flex-direction: row;
+  }
+  header img{
+      width: 6rem;
+      margin: 0px auto;
+  }
+  header h1{
+      font-size: 50px;
+      margin: 0px auto;
+  }
+  
+  /* ===========================================MOBILE MENU====================================== */
+  .ocultar-mobile{ 
+      display: none;
+      margin: 0px auto;
+  }
+
+  .nav-links {
+      display: none;
+  }
+  
+    .hamburger {
+      display: block;
+      margin: 0px auto;
+  }
+  
+  .mobile-menu {
+      z-index: 999;
+  }
+  
+  #btn-header {
+     display: none;
+  }
+  
+  
+  .cad-mobile button {
+      width: 14rem;
+      height: 4rem;
+      border-radius: 5px;
+      background-color: #f8f4f46c;
+      color: #000000;
+  }
+  
+  .cad-mobile button a {
+      text-decoration: none;
+      color: white;
+  
+  }
+
+}
+@media (max-width : 840px) {
+  /* ===========================================CABEÇALHO MOBILE====================================== */
+  
+ 
+  header img{
+      width: 4rem;
+      margin: 0px auto;
+  }
+  header h1{
+      font-size: 33px;
+      margin: 0px auto;
+  }
+
+  footer {
+    padding: 2vw;
+    text-align: center;
+}
+.rodape-pai {
+    flex-wrap: wrap;
+}
+.rodape-pai h2 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+
+footer h3 {
+    color: yellow;
+    font-size: 20px;
+}
+
+}
+
+@media (max-width: 840px) {
+  /* ================================== CONFIGURAÇÃO GLOBAL ================================== */
+  * {
+    box-sizing: border-box; /* Garante que padding/margin não extrapolem a largura */
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Garante que o body nunca ultrapasse a largura da tela */
+    overflow-x: hidden; /* Impede rolagem horizontal */
+  }
+
+  /* ================================== SECTION 1 ================================== */
+  .section1 {
+    padding: 4rem 2rem; /* Reduzi o padding para telas menores */
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center;
+    gap: 1.5rem; /* Espaçamento entre os elementos */
+    width: 100%; /* Garante que a seção ocupe toda a largura */
+  }
+
+  .div-pai {
+    display: flex;
+    flex-direction: column; /* Alinha elementos verticalmente */
+    align-items: center;
+    gap: 1rem; /* Espaçamento entre as caixas */
+    width: 100%; /* Adapta a largura ao container */
+    padding: 0 1rem; /* Adiciona margem interna */
+  }
+
+  .div1, .div2 {
+    display: flex;
+    flex-direction: column; /* Elementos dentro das caixas em coluna */
+    align-items: center;
+    padding: 1rem;
+    width: 90%; /* Ocupa 90% da largura do container */
+    max-width: 22rem; /* Limite máximo da largura */
+    background-color: #f9f9f9; /* Fundo claro */
+    border-radius: 0.5rem; /* Cantos arredondados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 0 auto; /* Centraliza as caixas */
+  }
+
+  .div1 img, .div2 img {
+    width: 100%; /* Imagens ocupam toda a largura do container */
+    max-width: 10rem; /* Define um limite de tamanho */
+    height: auto; /* Mantém proporção */
+    margin: 0 auto; /* Centraliza no container */
+  }
+
+  .div1 h3, .div2 h3 {
+    margin-top: 1rem; /* Espaçamento superior */
+    font-size: 1rem; /* Tamanho de fonte ajustado para mobile */
+    text-align: center;
+  }
+
+  /* ================================== SECTION 2 ================================== */
+  .section2 {
+    padding: 1rem; /* Reduzido para mobile */
+    text-align: center; /* Centraliza textos */
+    height: auto;
+  }
+  .section2 h3{
+    font-size: 20px;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Garante que ocupe a largura */
+    margin: 0 auto;
+  }
+
+  .carousel-item {
+    padding: 4rem; /* Remove excessos */
+    width: 100%; /* Adapta à largura do container */
+    text-align: center;
+  }
+  .carousel-item h2{
+    font-size: 1.2rem;
+  }
+
+  .carousel-item img {
+    width: 100%; /* Imagens ocupam toda a largura */
+    max-width: 20rem; /* Limite máximo para telas maiores */
+    height: auto; /* Mantém proporção */
+    margin: 0 auto; /* Centraliza imagens */
+  }
+
+  /* ================================== ÍCONES E ELEMENTOS FORA ================================== */
+  i {
+    display: inline-block;
+    width: 2rem; /* Ajusta o tamanho dos ícones */
+    height: 2rem;
+    margin: 0.5rem; /* Adiciona espaçamento */
+    text-align: center; /* Centraliza ícones */
+  }
+
+   i {
+    width: 100%; /* Ícones responsivos */
+    height: auto;
+  }
 }
 
 

@@ -15,26 +15,166 @@
     /* define o tamanho elemento, evitando que o conteúdo ultrapasse os limites de um elemento */
     font-family: "Raleway", sans-serif;
     /* define a fonte padrão do site */
+    text-decoration: none;
+    list-style: none;
 }
 
- body {
-    font-family: "Raleway", sans-serif;
-    /* define a fonte */
-    background-color: #f4f4f9;
-    /* define a cor de fundo */
-    color: #333;
-    /* define  cor do texto */
-    padding: 20px;
-    /* adiciona um espaçamento interno em torno do conteúdo da página */
-    display: flex;
-    /* facilita o alinhamento dos elementos */
-    justify-content: center;
-    /* alinha os elementos horizontalmente ao centro */
-    align-items: center;
-    /* alinha os elementos verticalmente ao centro */
+html {
+    width: 100%;
     height: 100vh;
-    /* define que a altura do corpo da página ocupará 100% da janela de vizualização */
 }
+
+
+
+/* ===========================================CABEÇALHO====================================== */
+header {
+    background-color: #0b0b0d;
+    width: 100%;
+    padding: min(2vw, 7vw);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+header img {
+    width: 8rem;
+}
+header h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.ocultar-mobile {
+    display: flex;
+}
+header ul {
+    display: flex;
+    gap: 30px;
+}
+header a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ===========================================FUNCIONA TANTO NO CABEÇALHO COMO NO RODAPÉ =========================================== */
+ul li {
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+  
+/* Linha oculta inicialmente */
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: #6bb39b; /* Cor da linha */
+  transform: scaleX(0); /* Oculta a linha inicialmente */
+  transform-origin: bottom right; /* Origem da animação */
+  transition: transform 0.3s; /* Animação suave */
+}
+  
+/* Define a animação ao passar o mouse */
+ul li a:hover::after {
+  transform: scaleX(1); /* Expande a linha da direita para a esquerda */
+  transform-origin: bottom left;
+}
+
+
+/* Botão de Cadastre-se */
+header button{
+  color: white;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  border-radius: 10px;
+  width: 7vw;
+  height: 5vh;
+  margin-left: 30px;
+}
+
+header button::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: white; 
+  transform: scaleX(0); 
+  transform-origin: bottom right; 
+  transition: transform 0.8s; 
+}
+
+header button:hover::after{
+  transform: scaleX(1); 
+  transform-origin: bottom left;
+}
+/* final do botão */
+
+
+
+
+/* HAMBURGER DO MOBILE */
+/* =====================================CAIXA MOBILE===================================== */
+.mobile-menu { /*Estilização da caixa Mobile quando aberta*/
+    display: none; /*Display: Nenhum*/
+    position: fixed; /*Posição fixa na parte direita da página*/
+    top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
+    right: 0; /*Direita em 0 fazendo a caixa encostar a direita*/
+    width: 60%; /*Largura em porcentagem da caixa*/
+    height: 100%; /*Altura de 100% da tela*/
+    background-color: #0b0b0d; /*Cor de fundo*/
+    flex-direction: column; /*direção dos itens dentro da caixa */
+    align-items: center; /*Alinhamento na vertical do itens*/
+    font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
+}
+
+.nav-links-mobile { /*Lista não ordenada da versão mobile*/
+    display: flex; /*Tornando os itens (LISTAS) flexíveis*/
+    flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
+    text-align: center; /*Alinhando o texto ao centro*/
+    gap: 1.2rem; /*Espaço entre as listas */
+    list-style: none; /*Estilo de lista desabilitado*/
+}
+
+.nav-links-mobile li { /*listas da versão Mobile*/
+    border-bottom: 1px solid #787272; /*Bordar inferior de cada lista*/
+    padding-bottom: 1.2rem; /*Tamanho da borda*/
+}
+
+
+.hamburger,
+.close {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+.close {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: block;
+    align-self: end;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
 
 
 .form-container {
@@ -44,15 +184,22 @@
     /*define uma larura máxima para o formulário */
     padding: 20px;
     /* adiciona um espaçamento interno em todos os lados do contêiner */
+    box-shadow: 0px 0px 15px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
 .container {
     max-width: 500px;
     margin: 0 auto;
+    /* centraliza o contêiner do formulário horizontalmente */
     padding: 50px;
+    /* espaçamento interno em torno do conteúdo da página */
     background-color: #fff;
+    /* define a cor de fundo */
     border-radius: 8px;
+    /* aplica bordas arredondadas aos elementos */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -88,7 +235,7 @@ label {
     font-size: 14px;
     /* define o taamnho da fonte */
     margin-bottom: 6px;
-    /* adiciona um espaçamento */
+    /* espaço de baixo */
 }
 
 input,
@@ -105,13 +252,13 @@ textarea {
     border-radius: 4px;
     /* aplica bordas arredondadas aos elementos */
     font-size: 14px;
-    /* define o tamanho da fonte para o texto desntro ddesses elementos */
+    /* define o tamanho da fonte para o texto  */
     color: #333;
     /* define a cor do texto */
 }
 
 input:focus, select:focus, textarea:focus {
-    border-color: #2980b9;
+    border-color: #000000;
     /* quando o campo está em foco, a borda muda para uma cor azul */
     outline: none;
     /* remove a borda de destaque padrão do navegador */
@@ -158,7 +305,7 @@ button {
 
 button:hover {
     background-color: #005bb5;
-    /* quando passa o mouser por cima do botão, a cor defundo é alterda */
+    /* quando passa o mouser por cima do botão, a cor defundo é alterada */
     transition: 0.3s;
     /* aplica uma transição para a mudança de cor */
 }
@@ -169,7 +316,8 @@ button:hover {
 .div-checkbox {
     display: flex; /* organiza os elementos em linha horizontalmente */
     align-items: center; /* alinha o chekbox verticalmente ao centro */
-    margin-top: 20px; /* adiciona um espaço de 20px na parte superior */
+    justify-content: center;
+    margin-top: 5px; /* adiciona um espaço de 20px na parte superior */
 }
 
 .div-checkbox input {
@@ -178,42 +326,276 @@ button:hover {
     height: 20px; /* altura do checkbox */
     cursor: pointer; /* altera o cursos para uma mãozinha quando o usuário passa o mouse sobre o checkbox */
     margin-left: 60px;
-    margin-top: 16px;
+    margin-top: 12px;
+    text-align: center;
 }
 
 .div-checkbox label {
-    font-size: 16px; /* tamanho da fonte do texto */
+    font-size: 14px; /* tamanho da fonte do texto */
     margin-bottom: auto; /* ajusta o posicionamento do texto em relação ao checkbox */
     color: #333; /* cor do texto */
-    cursor: pointer; /* altera o cursos para uma mãozinha quando o usuário passa o mouse sobre o checkbox */
+    cursor: pointer; /* altera o cursor para uma mãozinha quando o usuário passa o mouse sobre o checkbox */
     margin: -10px 20px;
 }
 
+.di
 
- /* APLICANDO A RESPONSIVIIDADE */
-@media (max-width: 600px) {
-    /* aplica estilos específicos quando a largura da tela é 600px ou menor */
-    .form-container {
-        padding: 15px;
-        margin: 10px;
+.login-link {
+    text-align: center;
+    /*alinha ao centro*/
+    margin-top: 5px;
+    /*espaço de cima*/
+}
+
+.login-link a {
+    color: #007BFF;
+    /*cor do texto*/
+    text-decoration: none;
+    /*tira o sublinhado*/
+}
+
+
+
+/* ===========================================RODAPÉ====================================== */
+footer {
+    background-color: #0b0b0d;
+    padding: 3vw;
+    text-align: center;
+}
+.rodape-pai {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
+}
+.rodape-pai h2 {
+    color: #85e6c0;
+    font-size: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+}
+.rodape-pai a {
+    color: white;
+}
+.rodape-pai p {
+    color: white;
+}
+
+#whatsapp,
+#instagram,
+#telegram,
+#facebook {
+    font-size: 2rem;
+    margin: 0px 3px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+#whatsapp {
+    color: greenyellow;
+}
+#instagram {
+    background: linear-gradient(150deg, rgb(141, 2, 255),rgb(213, 2, 255), rgb(255, 238, 2));
+    background-clip: text;
+    color: transparent;
+}
+#telegram {
+    color: rgb(0, 204, 255);
+}
+#facebook {
+    color: rgb(0, 81, 255);
+}
+
+footer h3 {
+    color: yellow;
+    font-size: 25px;
+    margin-top: 2vh;
+}
+
+
+
+
+ /* APLICANDO A RESPONSIVIDADE */
+
+
+ @media (max-width : 980px) {
+    /* ===========================================CABEÇALHO MOBILE====================================== */
+    header {
+        flex-direction: row;
     }
-    /* reduz o padding e a margem do formulário para se ajustar melhor às telas pequenas. */
+    header img{
+        width: 6rem;
+        margin: 0px auto;
+    }
+    header h1{
+        font-size: 50px;
+        margin: 0px auto;
+    }
+    
+    /* ===========================================MOBILE MENU====================================== */
+    .ocultar-mobile{ 
+        display: none;
+        margin: 0px auto;
+    }
 
-    h1 {
+    .nav-links {
+        display: none;
+    }
+    
+      .hamburger {
+        display: block;
+        margin: 0px auto;
+    }
+    
+    .mobile-menu {
+        z-index: 999;
+    }
+    
+    #btn-header {
+       display: none;
+    }
+    
+    
+    .cad-mobile button {
+        width: 14rem;
+        height: 4rem;
+        border-radius: 5px;
+        background-color: #f8f4f46c;
+        color: #000000;
+    }
+    
+    .cad-mobile button a {
+        text-decoration: none;
+        color: white;
+    
+    }
+
+}
+
+
+
+
+
+@media (max-width : 880px) {
+   
+
+    .box-inform {
+        width: auto;
+        height: auto;
+    }
+
+    /* TAMANHO DAS DIV COM IMAGEM */
+    .box-img {
+        width: 80vw;
+    }
+
+    .botao button{
+        width: 15rem;
         font-size: 20px;
     }
-    /* reduz o tamanho da fonte do título */
-    p {
-        font-size: 14px;
-    }
-    /* reduz o tamanho da fonte do parágrafo */
 
-    input,
+    /* MODIFICAÇÃO DO BOTÃO */
+    .plano button{
+        width: 15rem;
+        font-size: 20px;
+    }
+    
+}
+
+/* ===========================================MOBILE====================================== */
+@media (max-width : 840px) {
+
+    /* ===========================================CABEÇALHO MOBILE====================================== */
+    
+    header img{
+        width: 4rem;
+        margin: 0px auto;
+    }
+    header h1{
+        font-size: 33px;
+        margin: 0px auto;
+    }
+
+
+
+    /* ===========================================RODAPÉ MOBILE====================================== */
+    footer {
+        padding: 2vw;
+        text-align: center;
+    }
+    .rodape-pai {
+        flex-wrap: wrap;
+    }
+    .rodape-pai h2 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+   
+
+    footer h3 {
+        color: yellow;
+        font-size: 20px;
+    }
+};
+
+
+
+
+/*responsividade do formulario*/
+@media (max-width: 768px) {
+    /* Ajustes para telas pequenas e dispositivos móveis */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="date"], select, textarea {
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+
+/* Responsividade para dispositivos muito pequenos, como celulares */
+@media (max-width: 480px) {
+    /* Tamanho da fonte do título */
+    h1 {
+        font-size: 22px;
+    }
+
+    /* Ajuste para o formulário */
+    form {
+        padding: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="date"],
     select,
-    textarea,
-    button {
+    textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    /* Ajustar o botão */
+    button[type="submit"] {
         font-size: 14px;
         padding: 10px;
     }
-    /* reduz o tamanho da fonte e o padding dos campos de formulário */
 }

@@ -58,15 +58,34 @@ document.getElementById("cadastro-form").onsubmit = validarFormulario;
 
 // Função para mostrar ou ocultar o campo de descrição da deficiência
 function toggleDeficienciaField() {
-    let deficienciaSelect = document.getElementById('#deficiencia');
-    let descricaoDeficienciaDiv = document.getElementById ('#deficiencia-descricao');
+    let deficienciaSelect = document.getElementById('deficiencia');
+    let descricaoDeficienciaDiv = document.getElementById('deficiencia-descricao');
     
-    // verifica a seleção do campo de deficiência
+    // Verifica a seleção do campo de deficiência
     if (deficienciaSelect.value === 'sim') {
-    // se a opção "Sim" for escolhida, o campo de descrição é mostrado
+        // Se a opção "Sim" for escolhida, o campo de descrição é mostrado
         descricaoDeficienciaDiv.style.display = 'block';  // Mostrar campo de descrição
     } else {
-        // se a opção "não" for escolhida, o campo de descrição é escondido
+        // Se a opção "Não" for escolhida, o campo de descrição é escondido
         descricaoDeficienciaDiv.style.display = 'none';  // Ocultar campo de descrição
     }
+}
+
+// Adicionando o evento para disparar a função sempre que o valor for alterado
+document.getElementById('deficiencia').addEventListener('change', toggleDeficienciaField);
+
+// Inicializa a exibição do campo de descrição, caso o valor já seja 'sim'
+window.onload = function() {
+    toggleDeficienciaField();
 };
+// VERSÃO MOBILE
+//Aqui  adicionamos um evento de escutar o click do Mouse sobre o ícone de Hamburger.
+hamburgerButton.addEventListener("click", function () {
+    mobileMenu.classList.add("flex");
+    // Criamos uma função que a ouvir o click do Mouse, ele adicione uma Class, que está fazendo mossa caixa (DIV) aparecer, ou seja, ficar visivel
+});
+
+//Criamos uma função que a o ouvir o click do mouse, ele REMOVA uma Class, que está fazendo mossa caixa (Div) desaparecer, ou seja, ficar invisivel.
+closeButton.addEventListener("click", function () {
+    mobileMenu.classList.remove("flex");
+});

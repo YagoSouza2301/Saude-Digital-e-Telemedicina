@@ -1,97 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 600;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 html {
     width: 100%;
     height: 100vh;
 }
+/* ===========================================CABEÇALHO====================================== */
 header {
-    background-color: pink;
-    width: 100%;
-    padding: min(3vw, 7vw);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  
+  background-color: #0b0b0d;
+  width: 100%;
+  padding: min(2vw, 7vw);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
 }
 header img {
-    width: 5rem;
+  width: 8rem;
 }
 header h1 {
-    font-size: 40px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+.ocultar-mobile {
+  display: flex;
 }
 header ul {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 header a {
-    color: black;
-    font-size: 20px;
-    font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
 }
 
+/* ===========================================FUNCIONA TANTO NO CABEÇALHO COMO NO RODAPÉ =========================================== */
 ul li {
-  position: relative;
-  padding: 10px 0;
-  cursor: pointer;
-  transition: color 0.3s;
+position: relative;
+padding: 10px 0;
+cursor: pointer;
+transition: color 0.3s;
 }
-  
+
 /* Linha oculta inicialmente */
 ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 3px;
-  background-color: black; /* Cor da linha */
-  transform: scaleX(0); /* Oculta a linha inicialmente */
-  transform-origin: bottom right; /* Origem da animação */
-  transition: transform 0.3s; /* Animação suave */
-}
-  
-/* Define a animação ao passar o mouse */
-ul li a:hover::after {
-  transform: scaleX(1); /* Expande a linha da direita para a esquerda */
-  transform-origin: bottom left;
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+height: 3px;
+background-color: #6bb39b; /* Cor da linha */
+transform: scaleX(0); /* Oculta a linha inicialmente */
+transform-origin: bottom right; /* Origem da animação */
+transition: transform 0.3s; /* Animação suave */
 }
 
+/* Define a animação ao passar o mouse */
+ul li a:hover::after {
+transform: scaleX(1); /* Expande a linha da direita para a esquerda */
+transform-origin: bottom left;
+}
+
+
+/* Botão de Cadastre-se */
 header button{
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  cursor: pointer;
-  transition: color 0.3s;
-  border-radius: 10px;
-  width: 9vw;
-  height: 5vh;
+color: white;
+position: relative;
+background-color: rgba(0, 0, 0, 0);
+border: none;
+cursor: pointer;
+transition: color 0.3s;
+border-radius: 10px;
+width: 7vw;
+height: 5vh;
+margin-left: 30px;
 }
 
 header button::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 3px;
-  background-color: white; 
-  transform: scaleX(0); 
-  transform-origin: bottom right; 
-  transition: transform 0.8s; 
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+height: 3px;
+background-color: white; 
+transform: scaleX(0); 
+transform-origin: bottom right; 
+transition: transform 0.8s; 
 }
 
 header button:hover::after{
-  transform: scaleX(1); 
-  transform-origin: bottom left;
+transform: scaleX(1); 
+transform-origin: bottom left;
+}
+/* final do botão */
+
+
+
+
+/* HAMBURGER DO MOBILE */
+/* =====================================CAIXA MOBILE===================================== */
+.mobile-menu { /*Estilização da caixa Mobile quando aberta*/
+  display: none; /*Display: Nenhum*/
+  position: fixed; /*Posição fixa na parte direita da página*/
+  top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
+  right: 0; /*Direita em 0 fazendo a caixa encostar a direita*/
+  width: 60%; /*Largura em porcentagem da caixa*/
+  height: 100%; /*Altura de 100% da tela*/
+  background-color: #0b0b0d; /*Cor de fundo*/
+  flex-direction: column; /*direção dos itens dentro da caixa */
+  align-items: center; /*Alinhamento na vertical do itens*/
+  font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
+}
+
+.nav-links-mobile { /*Lista não ordenada da versão mobile*/
+  display: flex; /*Tornando os itens (LISTAS) flexíveis*/
+  flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
+  text-align: center; /*Alinhando o texto ao centro*/
+  gap: 1.2rem; /*Espaço entre as listas */
+  list-style: none; /*Estilo de lista desabilitado*/
+}
+
+.nav-links-mobile li { /*listas da versão Mobile*/
+  border-bottom: 1px solid #787272; /*Bordar inferior de cada lista*/
+  padding-bottom: 1.2rem; /*Tamanho da borda*/
+}
+
+
+.hamburger,
+.close {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+
+.close {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: block;
+  align-self: end;
+}
+
+
+.flex {
+  display: flex;
 }
 /* ========================================= Fim do Header ============================================ */
 
@@ -133,6 +202,7 @@ header button:hover::after{
 
 .section02 {
   background:linear-gradient(180deg, #f7f4e8b6, #85e6bfb7);
+  padding: 6rem;
 }
 
 h2 {
@@ -151,14 +221,14 @@ h2 {
   margin-top: -2rem;
 }
 
-/*Estilizando as caixas*/
+
 .caixa01 {
-  background-color: rgba(132, 173, 173, 0.356); /*Cor de fundo*/
-  border-radius: 12px; /*Borda da caixa*/
+  background-color: rgba(132, 173, 173, 0.356); 
+  border-radius: 12px;
   box-shadow: 0px 6px 0px;
-  width: 20vw; /*Largura da caixa*/
-  height: 65vh; /*Altura da caixa*/
-  padding: 20px; /*Respiro da caixa*/
+  width: 20vw;
+  height: 65vh; 
+  padding: 20px; 
   flex-wrap: wrap;
   display: flex;
   text-align: center;
@@ -169,92 +239,410 @@ h2 {
   display: flex;
   justify-content: center;
 }
-/*Aplicando o hover*/
+
 .caixa01:hover {
-  transition: 0.5s; /*Tempo de transição*/
-  transform: scale(1.04, 1.04); /*Escala de movimentação dos eixos X e Y*/
+  transition: 0.5s; 
+  transform: scale(1.04, 1.04); 
   box-shadow: none;
 }
 
-/*Estilizando o parágrafo*/
+
 .caixa01 p {
-  font-size: 1.3rem; /*Tamanho da fonte*/
-  font-weight: 400; /*Peso da fonte*/
+  font-size: 1.3rem; 
+  font-weight: 400;
 }
 
 .caixa01 h3 {
-  font-size: 2rem; /*Peso da fonte*/
+  font-size: 2rem; 
 }
 
 /* ======================================== Fim da Section 02 ==========================================*/
 
 /* ======================================== Início da Section 03 =======================================*/
+
 .section03 {
-  background: linear-gradient(180deg,#85e6bfb7, #f7f4e8b6);
-  padding: 20px;
-}
-
-.card {
-  background-color: rgba(28, 134, 148, 0.63);
-  padding: 2rem;
-  text-align: center;
-  border-radius: 5px;
-  margin: 14px;
-  box-shadow: 0 5px 0px #009790;
-  width: 40vw;
-  height: 10vh;
-}
-.card:hover {
-  transition: 0.8s;
-  transform: scale(1.3 1.3);
-  box-shadow: rgba(0, 0, 0, 0.63);
-  background-color: rgb(1, 145, 137);
+  background:linear-gradient(180deg, #85e6bfb7, #f7f4e8b6);
+  padding: 3rem;
 }
 
 
-.carrossel {
+.div-pai {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-}
-
-.card h3 {
-  font-size: 2rem;
-  color:  rgba(255, 230, 0, 0.877);
-  padding: 15px;
-}
-
-
-.section04 {
-  background: linear-gradient(180deg, #f7f4e8b6,#85e6bfb7);
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.content2 {
-  width: 80vw;
-  height: 80vh;
   flex-wrap: wrap;
-  padding: 20px;
-}
-.content2 h1 {
-  padding: 2.5rem;
-  font-size: 4rem;
+  gap: 3rem;
+
 }
 
-/*Estilizando o parágrafo*/
-.content2 p {
-  font-size: 1.8rem; /*Tamanho da fonte*/
-  font-weight: 400; /*Peso da fonte*/
+.div-filho1 {
+  background-color: rgba(132, 173, 173, 0.356); 
+  border-radius: 12px;
+  box-shadow: 0px 6px 0px;
+  width: 20vw;
+  height: 65vh; 
+  padding: 20px; 
+  flex-wrap: wrap;
+  text-align: center;
 }
 
-.content2 span {
-  font-weight: 800;
-  color:  rgb(0, 94, 122);
+.div-filho1:hover {
+  transition: 0.5s; 
+  transform: scale(1.04, 1.04); 
+  box-shadow: none;
 }
 
-.section05 {
-    background: linear-gradient(180deg, #85e6bfb7, #f7f4e8b6);
+.div-filho1 p {
+  padding: 1rem;
+  font-size: 1.3rem; 
+  font-weight: 400;
+}
+
+.div-filho1 h3 {
+  font-size: 2rem; 
+}
+
+.div-filho1 h4 {
+  margin-top: -1rem;
+  font-size: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.div-filho1 hr {
+  width: 100%;
+  height: 2px;
+  border-color: #000000;
+}
+
+.div-filho1 button {
+  background-color: greenyellow;
+  border-color: rgb(201, 255, 119);
+  box-shadow: 2px 2px 8px rgb(0, 0, 0);
+  border-radius: 20px;
+  width: 60%;
+  transition: 0.6s;
+  font-size: 1.2rem;
+}
+
+.div-filho1 button:hover {
+  border-color: rgb(114, 114, 114);
+  box-shadow: 2px 2px 15px green;
+}
+.div-filho1 button a {
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+}
+
+/* ========================================== Fim da Section 03 ======================================= */
+
+/* ===========================================RODAPÉ====================================== */
+footer {
+  background-color: #0b0b0d;
+  padding: 3vw;
+  text-align: center;
+}
+.rodape-pai {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 3vh;
+}
+.rodape-pai h2 {
+  color: #85e6c0;
+  font-size: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid white;
+}
+.rodape-pai a {
+  color: white;
+}
+.rodape-pai p {
+  color: white;
+}
+
+#whatsapp,
+#instagram,
+#telegram,
+#facebook {
+  font-size: 2rem;
+  margin: 0px 3px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+#whatsapp {
+  color: greenyellow;
+}
+#instagram {
+  background: linear-gradient(150deg, rgb(141, 2, 255),rgb(213, 2, 255), rgb(255, 238, 2));
+  background-clip: text;
+  color: transparent;
+}
+#telegram {
+  color: rgb(0, 204, 255);
+}
+#facebook {
+  color: rgb(0, 81, 255);
+}
+
+footer h3 {
+  color: yellow;
+  font-size: 25px;
+  margin-top: 2vh;
+}
+
+
+/* ========================================= Responsividade ============================================*/
+
+@media (max-width : 1100px) {
+  /* ===========================================SESSAÕ2====================================== */
+  .content {
+      width: auto;
+      height: auto;
+  }
+  
+  .section02 {
+    padding: 3rem;
+  }
+
+  .section02 h2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .caixas {
+    flex-wrap: wrap;
+  }
+
+  .caixa01 {
+    width: 50%;
+    height: 80vh; 
+  }
+
+  .caixa01 p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .caixa01 h3 {
+    font-size: 3rem; 
+  }
+
+.section03 {
+  padding: 3rem;
+}
+
+.div-pai {
+  flex-wrap: wrap;
+}
+
+.div-filho1 {
+  width: 40%;
+  height: 80vh; 
+}
+
+.div-filho1 p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.div-filho1 h3 {
+  font-size: 3rem; 
+}
+
+}
+
+@media (max-width : 980px) {
+  /* ===========================================CABEÇALHO MOBILE====================================== */
+  header {
+      flex-direction: row;
+  }
+  header img{
+      width: 6rem;
+      margin: 0px auto;
+  }
+  header h1{
+      font-size: 50px;
+      margin: 0px auto;
+  }
+  
+  /* ===========================================MOBILE MENU====================================== */
+  .ocultar-mobile{ 
+      display: none;
+      margin: 0px auto;
+  }
+
+  .nav-links {
+      display: none;
+  }
+  
+    .hamburger {
+      display: block;
+      margin: 0px auto;
+  }
+  
+  .mobile-menu {
+      z-index: 999;
+  }
+  
+  #btn-header {
+     display: none;
+  }
+  
+  
+  .cad-mobile button {
+      width: 14rem;
+      height: 4rem;
+      border-radius: 5px;
+      background-color: #f8f4f46c;
+      color: #000000;
+  }
+  
+  .cad-mobile button a {
+      text-decoration: none;
+      color: white;
+  
+  }
+
+  .content {
+    width: auto;
+    height: auto;
+}
+
+.section02 {
+  padding: 3rem;
+}
+
+.section02 h2 {
+  flex-direction: column;
+  text-align: center;
+}
+.caixas {
+  flex-wrap: wrap;
+}
+
+.caixa01 {
+  width: 50%;
+  height: 80vh; 
+}
+
+.caixa01 p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.caixa01 h3 {
+  font-size: 2.6rem; 
+}
+}
+
+
+
+
+
+
+/* ===========================================MOBILE====================================== */
+@media (max-width : 840px) {
+  /* ===========================================CABEÇALHO MOBILE====================================== */
+  
+  header img{
+      width: 4rem;
+      margin: 0px auto;
+  }
+  header h1{
+      font-size: 33px;
+      margin: 0px auto;
+  }
+
+  .section01 {
+    padding: 2rem;
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+  }
+  
+  #plano {
+    font-size: 3rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+.section02 {
+  padding: 1rem;
+}
+
+.section02 h2 {
+  flex-direction: column;
+
+}
+.caixas {
+  flex-wrap: wrap;
+}
+
+.caixa01 {
+  width: 100%;
+  height: 60vh; 
+}
+
+.caixa01 p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.caixa01 h3 {
+  font-size: 2rem; 
+}
+
+
+
+.section03 {
+padding: 1rem;
+}
+
+.div-pai {
+flex-wrap: wrap;
+}
+
+.div-filho1 {
+width: 80%;
+height: 80vh; 
+}
+
+.div-filho1 p {
+font-size: 2rem;
+font-weight: 400;
+}
+
+.div-filho1 h3 {
+font-size: 3.5rem; 
+}
+
+.div-filho1 ul li {
+  font-size: 1.2rem;
+}
+
+.div-filho1 button {
+  width: 60%;
+  font-size: 1.2rem;
+}
+
+/* ===========================================RODAPÉ MOBILE====================================== */
+footer {
+    padding: 2vw;
+    text-align: center;
+}
+.rodape-pai {
+    flex-wrap: wrap;
+}
+.rodape-pai h2 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+footer h3 {
+    color: yellow;
+    font-size: 20px;
+}
 }

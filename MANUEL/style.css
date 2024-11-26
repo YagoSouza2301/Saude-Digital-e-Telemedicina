@@ -34,6 +34,163 @@ html {
     /* Altura Responsiva */
 
 }
+
+
+
+/* ===========================================CABEÇALHO====================================== */
+header {
+    background-color: #0b0b0d;
+    width: 100%;
+    padding: min(2vw, 7vw);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+header img {
+    width: 8rem;
+}
+header h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.ocultar-mobile {
+    display: flex;
+}
+header ul {
+    display: flex;
+    gap: 30px;
+}
+header a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ul li {
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+  
+/* Linha oculta inicialmente */
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: #6bb39b; /* Cor da linha */
+  transform: scaleX(0); /* Oculta a linha inicialmente */
+  transform-origin: bottom right; /* Origem da animação */
+  transition: transform 0.3s; /* Animação suave */
+}
+  
+/* Define a animação ao passar o mouse */
+ul li a:hover::after {
+  transform: scaleX(1); /* Expande a linha da direita para a esquerda */
+  transform-origin: bottom left;
+}
+
+
+/* Botão de Cadastre-se */
+header button{
+  color: white;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  border-radius: 10px;
+  width: 7vw;
+  height: 5vh;
+  margin-left: 30px;
+}
+
+header button::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: white; 
+  transform: scaleX(0); 
+  transform-origin: bottom right; 
+  transition: transform 0.8s; 
+}
+
+header button:hover::after{
+  transform: scaleX(1); 
+  transform-origin: bottom left;
+}
+/* final do botão */
+
+
+
+
+/* HAMBURGER DO MOBILE */
+/* =====================================CAIXA MOBILE===================================== */
+.mobile-menu { /*Estilização da caixa Mobile quando aberta*/
+    display: none; /*Display: Nenhum*/
+    position: fixed; /*Posição fixa na parte direita da página*/
+    top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
+    right: 0; /*Direita em 0 fazendo a caixa encostar a direita*/
+    width: 60%; /*Largura em porcentagem da caixa*/
+    height: 100%; /*Altura de 100% da tela*/
+    background-color: #0b0b0d; /*Cor de fundo*/
+    flex-direction: column; /*direção dos itens dentro da caixa */
+    align-items: center; /*Alinhamento na vertical do itens*/
+    font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
+}
+
+.nav-links-mobile { /*Lista não ordenada da versão mobile*/
+    display: flex; /*Tornando os itens (LISTAS) flexíveis*/
+    flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
+    text-align: center; /*Alinhando o texto ao centro*/
+    gap: 1.2rem; /*Espaço entre as listas */
+    list-style: none; /*Estilo de lista desabilitado*/
+}
+
+.nav-links-mobile li { /*listas da versão Mobile*/
+    border-bottom: 1px solid #787272; /*Bordar inferior de cada lista*/
+    padding-bottom: 1.2rem; /*Tamanho da borda*/
+}
+
+
+.hamburger,
+.close {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+.close {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: block;
+    align-self: end;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+/* FINAL */
+
+
+
+
+
 main{
 /* chamai diretamente meu conteudo principal da pagina para dar uma cor de fundo */
 
@@ -44,7 +201,7 @@ main{
 
 
 
-/*============================= Section 1 ======================*/
+/*============================= Section 1 ==============================*/
 .section-ouvidoria-top {
 /* chamando a section top para estilizar*/
 
@@ -82,6 +239,7 @@ main{
 
 
 
+
 /*============================= Section 2 ======================*/
 .div-container {
 /* chamei diretamente meu container da Section 2 */
@@ -105,7 +263,10 @@ main{
     /* sombreamento da caixa */
 
 }
-
+.div-container h2 {
+    text-align: center;
+    align-items: center;
+}
 
 .form-group {
 /* div que esta guardando as label, input e textarea */
@@ -132,6 +293,7 @@ input[type="text"], input[type="email"], textarea {
 
     margin-top: 5px;
     /* dando espaso em cima de 5px */
+    
     border: 1px solid #ccc;
     /* deixando a borda em 1px para ficar mais fino   solid = ("usei para deixar visivel") e o utimo a cor para ficar não muito chamativo */
     
@@ -141,47 +303,250 @@ input[type="text"], input[type="email"], textarea {
 
 
 textarea {
-/* chamando especificamente a textarea*/
+/* chamando especificamente a textarea */
 
     resize: vertical;
-    /**/
+    /* redimensionando na direção vertical. */
 
     height: 150px;
-    /**/
+    /* aumentando a altura */
 }
 
+.button-ouvidoria {
+/*chamando o botton*/
 
-button {
-/**/
     background-color: #2e3d49;
-    /**/
+    /* cor de fundo do botton */
+
     color: white;
-    /**/
+    /* cor da letra ou texto */
+    
     padding: 10px 20px;
-    /**/
+    /* espaçamento altura e largura */
+
     border: none;
-    /**/
+    /* removendo o estilo da borda */
+
     border-radius: 4px;
-    /**/
+    /* arredondando a borda */
+
     cursor: pointer;
-    /**/
+    /* alterando o cursor do mouse */
+
     font-size: 16px;
-    /**/
+    /* tamanho da font*/
 }
+/*====================== fim da Section 2 ======================*/
+
+
+
+
+
+/*===================================== Bilioteca ===============*/
+.slick-prev:before, .slick-next:before {
+    /* chamando as setas da biblioteca e mudando a cor e a visibilidade dela*/
+    
+        opacity: 1 !important;
+        /* visibilidade, Opacitade para ficar mais escuro*/
+    
+        color: rgba(0, 0, 0, 0.89) !important;
+        /* cor das setas */
+    
+     }
+/*================================== fim =====================*/
+
+
+
+
+/*====================== section 3 ==========================*/
 .contato {
+/* chamando o contato para estilizar*/
+
     padding: 50px;
+    /* espasamento*/
+
     font-size: 1.2em;
+    /* engrosando a letra*/
+
 }
 .contato h2 {
+/* chamando o sub titulo do contato*/
+
     font-size: 3em;
+    /* engrosando a letra*/
+
     text-align: center;
+    /* alinhando o texto no centro*/
+
 }
 .contato p {
+/* chamando o p do contato para estilizar*/
+
     text-align: center;
+    /* alinhando o texto no centro*/
+
 }
 
 button:hover {
-/**/
+/* chamando o houver do botão*/
+
     background-color: #4c5c6e;
-    /**/
+    /* cor de fundo do botão*/
+
 }
+
+/*===================== fim da section 3 =====================*/
+
+
+
+/* ====================== RODAPÉ ====================================== */
+footer {
+    background-color: #0b0b0d;
+    padding: 3vw;
+    text-align: center;
+}
+.rodape-pai {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
+}
+.rodape-pai h2 {
+    color: #85e6c0;
+    font-size: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+}
+.rodape-pai a {
+    color: white;
+}
+.rodape-pai p {
+    color: white;
+}
+
+#whatsapp,
+#instagram,
+#telegram,
+#facebook {
+    font-size: 2rem;
+    margin: 0px 3px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+#whatsapp {
+    color: greenyellow;
+}
+#instagram {
+    background: linear-gradient(150deg, rgb(141, 2, 255),rgb(213, 2, 255), rgb(255, 238, 2));
+    background-clip: text;
+    color: transparent;
+}
+#telegram {
+    color: rgb(0, 204, 255);
+}
+#facebook {
+    color: rgb(0, 81, 255);
+}
+
+footer h3 {
+    color: yellow;
+    font-size: 25px;
+    margin-top: 2vh;
+}
+
+
+
+
+
+@media (max-width : 980px) {
+    /* ===========================================CABEÇALHO MOBILE====================================== */
+    header {
+        flex-direction: row;
+    }
+    header img{
+        width: 6rem;
+        margin: 0px auto;
+    }
+    header h1{
+        font-size: 50px;
+        margin: 0px auto;
+    }
+    
+    /* ===========================================MOBILE MENU====================================== */
+    .ocultar-mobile{ 
+        display: none;
+        margin: 0px auto;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    
+      .hamburger {
+        display: block;
+        margin: 0px auto;
+    }
+    
+    .mobile-menu {
+        z-index: 999;
+    }
+    
+    #btn-header {
+       display: none;
+    }
+    
+    
+    .cad-mobile button {
+        width: 14rem;
+        height: 4rem;
+        border-radius: 5px;
+        background-color: #f8f4f46c;
+        color: #000000;
+    }
+    
+    .cad-mobile button a {
+        text-decoration: none;
+        color: white;
+    
+    }
+
+}
+
+
+/* ===========================================MOBILE====================================== */
+@media (max-width : 840px) {
+    /* ===========================================CABEÇALHO MOBILE====================================== */
+    
+   
+    header img{
+        width: 4rem;
+        margin: 0px auto;
+    }
+    header h1{
+        font-size: 33px;
+        margin: 0px auto;
+    }
+
+}
+
+@media (max-width : 840px) {
+
+    /* ===========================================RODAPÉ MOBILE====================================== */
+    footer {
+        padding: 2vw;
+        text-align: center;
+    }
+    .rodape-pai {
+        flex-wrap: wrap;
+    }
+    .rodape-pai h2 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+   
+
+    footer h3 {
+        color: yellow;
+        font-size: 20px;
+    }
+};

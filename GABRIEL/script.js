@@ -14,8 +14,15 @@ ScrollReveal().reveal('.div3',{
     origin: 'right', // origem do efeito: o conteudo virá da direita para a esquerda
     distance : '50px', // distancia que o elemento "viaja" antes de aparecer
 })
+
+
 ScrollReveal().reveal('.carousel-container',{
     duration: 3000, // duração do efeito (em milisegundos), define a velocidade da transição
+    origin: 'bottom', // origem do efeito: o conteudo virá da direita para a esquerda
+    distance : '50px', // distancia que o elemento "viaja" antes de aparecer
+})
+ScrollReveal().reveal('.section3',{
+    duration: 2000, // duração do efeito (em milisegundos), define a velocidade da transição
     origin: 'bottom', // origem do efeito: o conteudo virá da direita para a esquerda
     distance : '50px', // distancia que o elemento "viaja" antes de aparecer
 })
@@ -54,5 +61,17 @@ function moveCarousel() {
 
 //define um intervalo para mover o carrossel automaticamente a cada 3 segundos
 setInterval(moveCarousel, 10000);
+
+// VERSÃO MOBILE
+//Aqui  adicionamos um evento de escutar o click do Mouse sobre o ícone de Hamburger.
+hamburgerButton.addEventListener("click", function () {
+    mobileMenu.classList.add("flex");
+    // Criamos uma função que a ouvir o click do Mouse, ele adicione uma Class, que está fazendo mossa caixa (DIV) aparecer, ou seja, ficar visivel
+});
+
+//Criamos uma função que a o ouvir o click do mouse, ele REMOVA uma Class, que está fazendo mossa caixa (Div) desaparecer, ou seja, ficar invisivel.
+closeButton.addEventListener("click", function () {
+    mobileMenu.classList.remove("flex");
+});
 
 
