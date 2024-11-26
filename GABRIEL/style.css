@@ -467,7 +467,7 @@ footer h3 {
   /* ===========================================SECTION 1====================================== */
 
   .section1{
-    padding: 10rem;
+    padding: 13rem;
     align-items: center;
 
   }
@@ -475,10 +475,9 @@ footer h3 {
 
   .div-pai{
     flex-direction: column;
-    width: 1rem;
+    width: auto;
     height: auto;
     align-items: center;
-    margin-left: 5rem;
 
   }
   .div-dad1 img{
