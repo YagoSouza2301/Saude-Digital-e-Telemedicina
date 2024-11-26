@@ -118,63 +118,52 @@ header button:hover::after{
 /* =====================================CAIXA MOBILE===================================== */
 /* ===================== MOBILE MENU ===================== */
 
-.mobile-menu {
-  display: none; /* Inicialmente oculto */
-  position: fixed; /* Posição fixa na tela */
-  top: 0; /* Alinha ao topo */
-  right: 0; /* Alinha à direita */
-  width: 100%; /* Ocupa toda a largura no mobile */
-  height: 100%; /* Ocupa toda a altura da tela */
-  background-color: #0b0b0d; /* Fundo escuro */
-  flex-direction: column; /* Itens empilhados verticalmente */
-  align-items: center; /* Centraliza os itens */
-  font-size: 1.8rem; /* Tamanho da fonte */
-  z-index: 1000; /* Garante que o menu fique acima de outros elementos */
-  overflow-y: auto; /* Permite rolar o conteúdo se ultrapassar a altura */
+.mobile-menu { /*Estilização da caixa Mobile quando aberta*/
+  display: none; /*Display: Nenhum*/
+  position: fixed; /*Posição fixa na parte direita da página*/
+  top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
+  right: 0; /*Direita em 0 fazendo a caixa encostar a direita*/
+  width: 60%; /*Largura em porcentagem da caixa*/
+  height: 100%; /*Altura de 100% da tela*/
+  background-color: #0b0b0d; /*Cor de fundo*/
+  flex-direction: column; /*direção dos itens dentro da caixa */
+  align-items: center; /*Alinhamento na vertical do itens*/
+  font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
 }
 
-/* Links dentro do menu */
-.nav-links-mobile {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 1.2rem; /* Espaçamento entre os links */
-  list-style: none; /* Remove os marcadores */
-  margin-top: 5rem; /* Adiciona espaço no topo para evitar sobreposição com o botão de fechar */
-  padding: 1rem; /* Espaçamento interno */
+.nav-links-mobile { /*Lista não ordenada da versão mobile*/
+  display: flex; /*Tornando os itens (LISTAS) flexíveis*/
+  flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
+  text-align: center; /*Alinhando o texto ao centro*/
+  gap: 1.2rem; /*Espaço entre as listas */
+  list-style: none; /*Estilo de lista desabilitado*/
 }
 
-.nav-links-mobile li {
-  border-bottom: 1px solid #787272; /* Linha separadora */
-  padding-bottom: 1.2rem; /* Espaço abaixo de cada link */
+.nav-links-mobile li { /*listas da versão Mobile*/
+  border-bottom: 1px solid #787272; /*Bordar inferior de cada lista*/
+  padding-bottom: 1.2rem; /*Tamanho da borda*/
 }
 
-/* Botão para abrir e fechar o menu */
+
 .hamburger,
 .close {
-  font-size: 24px; /* Tamanho dos ícones */
-  background: none; /* Remove estilos de fundo */
-  border: none; /* Remove borda */
-  color: white; /* Cor do texto */
-  cursor: pointer; /* Cursor em formato de mão */
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
 }
 
-.hamburger {
-  display: block; /* Exibido por padrão */
-  position: fixed; /* Fixa no topo da tela */
-  top: 20px;
-  left: 20px;
-  z-index: 1100; /* Sempre acima do menu */
-}
 
 .close {
   margin-top: 20px;
   margin-right: 20px;
   display: block;
-  align-self: flex-end; /* Alinha no canto superior direito */
+  align-self: end;
 }
 
-/* Flex Utility */
+
 .flex {
   display: flex;
 }
