@@ -489,7 +489,12 @@ footer h3 {
 
 
 
-
+@media (max-width: 1312px) {
+    /* Botão de Cadastre-se */
+header button{
+    width: 8vw;
+  }
+}
 
 
 

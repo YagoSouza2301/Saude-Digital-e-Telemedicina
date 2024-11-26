@@ -400,6 +400,16 @@ footer h3 {
   margin-top: 2vh;
 }
 
+
+/* ============================================BOTÃO DO CABEÇALHO================================ */
+@media (max-width: 1312px) {
+  /* Botão de Cadastre-se */
+header button{
+  width: 8vw;
+}
+}
+
+
 @media (max-width : 840px) {
   /* ===========================================CABEÇALHO MOBILE====================================== */
   
@@ -495,6 +505,9 @@ footer h3 {
 footer h3 {
     color: yellow;
     font-size: 20px;
+}
+.rede {
+  display: flex;
 }
 
 }
